@@ -1,0 +1,63 @@
+\chapter{State of the Art}
+\label{chap:enabling_technologies}
+In this chapter a brief introduction on the main learning technologies used for text-based learning will be given. Moreover, an analysis on automatic sarcasm detection will be briefed and finally the main issues found shall be overviewed.
+
+\section{Introduction}
+Sarcasm detection is an important component for~\ac{nlp} very relevant to natural language understanding, dialogue systems and text mining. A challenge is to construct a balanced dataset, where the text is already labeled~\cite{khodak2017large}. In this project, the Tweets were previously classified and a balanced dataset was provided.
+\section{Analysis: Automatic Sarcasm Detection}
+This section will briefly discuss the analytical tools used to identify sarcasm. It will cover topics such sarcasm definition, data-set issues and analytical approaches available for sarcasm automatic detection. 
+\subsection{Sarcasm Definition~\cite{joshi2017automatic}}
+The Free Dictionary\footnote{www.thefreedictionary.com} defines sarcasm as a form of verbal irony that is intended to express contempt or ridicule . The subjective characteristic of sarcasm makes sarcasm very difficult to detect since a word may have a literal meaning and a sarcastic meaning. As a result, sarcasm automatic detection presents a big challenge. \\
+Typically, sarcasm detection has been formulated as a classification problem . In that sense, given a text the goal is to predict whether or not the text is sarcastic. However, the big challenge is to label the text, since the classifier is supposed to distinguish between irony,  humour and other sentimental meanings.\\
+Furthermore, sarcasm can also be formulated as detection for dialogue as a sequence labeling task. This technique consists of labelling every word in a sentence and predicting the sarcastic labels (as these words won't be labeled).
+
+\subsection{Data-set}
+
+As a matter of a fact, the studies already done in automatic sarcasm detection depend entirely on the data-set. That is why it is convenient to divide them into three kinds~\cite{joshi2017automatic}:
+\begin{itemize}
+\item \textit{Short texts}: The social network tweeter is extremely popular due to its popularity among users. It can serve as an example of short text since every tweet is restricted to not exceed an amount of words. One approach to obtain labels for the tweets is to manually mark them as sarcastic or non-sarcastic. Another approach is the hashtag-based supervision. Hashtags can reveal when a tweet is labeled as sarcastic. By introducing the \textit{sarcasm} label, the author makes clear his intention to use sarcasm.  This allows the dataset to be bigger. Many works using this variation have been reported since its popularity has constantly grown.
+    \item \textit{Long texts}: The information usually comes from reviews, posts, news, articles. 
+    \item \textit{Other data-sets}
+\end{itemize}
+\\
+It is noteworthy to mention the emphasis made on the Twitter social network since this project will be focusing on a Spanish set of tweets to detect sarcasm. 
+
+\subsection{Approaches used for Sarcasm Detection}
+In this section, several approaches used for detecting sarcasm will be discussed. In general, approaches for sarcasm detection can be classified into rule-based, statistical and deep learning-based approaches~\cite{joshi2017automatic}.
+\subsubsection{Rule-based Approaches~\cite{joshi2017automatic}}
+Rule-based approaches work by identifying sarcasm through a set or rules based upon evidence. The evidence is captured by using rules relying upon sarcasm. For instance, one rule can rely on Google to determine how likely that symbol (word) is while another rule can come from hashtag analysis . By identifying the hashtags present in a tweet, a sarcasm pattern could be found. Furthermore, one could find sarcasm if a negative phrase occurs in a positive sentence. There are more complex rule-based approaches which will not be further mentioned on this document.
+\subsubsection{Statistical Approaches}
+Statistical approaches are classified in two~\cite{joshi2017automatic}:
+\begin{itemize}
+    \item \textit{Features Used:} Most of these approaches use bag-of-words as features that have been found by statistical sarcasm detection. Apart from finding the features, some other works focus on designing pattern-based features, that are able to indicate sarcastic patterns on the corpus. To allow the classifier to spot sarcastic patterns, these pattern-based features take three real values: exact match, partial match and no match. Furthermore, pragmatic features, like emoticons, can also be considered.
+    \item \textit{Learning Algorithms:} A variety of classifier have already been experimented for sarcasm detection. SVM (Support Vector Machines) is quite often present in sarcasm detection classification techniques.
+    \item \textit{Deep Learning-based Approaches:} Although nowadays deep learning has raised a lot of awareness, there are still few approaches reported for automated sarcasm detection. Similarity between word embeddings as features for sarcasm detection has been used. This augments features based on similarity of word embeddings related to other word pairs and report an improvement on performance. Convolutional neural networks have also been used, reporting an improvement of $2\%$ in performance.
+\end{itemize}
+
+To put it in a nutshell, different techniques for automatic sarcasm detection can be performed. Despite these numerous techniques, sarcasm automatic detection is difficult to detect since a word can have a literal meaning but also a sarcastic meaning that is not so easily labelled.
+\section{Main Issues in Sarcasm Detection}
+There are three main issues present in sarcasm automatic detection techniques~\cite{joshi2017automatic}:
+\begin{itemize}
+    \item \textit{Data:} Even though hashtag-based labelling can provide large-scale supervision, the quality of the dataset can be doubtful. For example, let us take the hashtag $#not$. Is this supposed to express sarcasm in the sentence or is it simply used to express a negation? In most of the works, this problem is tackled by removing the $#not$ in the pre-processing step and analyzing the sentence. However, this may as well not be the optimum solution. Another solution is to use as test set some manually labelled tweets and as train set a hashtag labelled set. 
+    \item \textit{Features as Sentiment:} The question is how can sentiment be detected in a sentence? In the case of sarcasm, some answers have already been given. If a negative phrase occurs in a positive sentence then that sentence has most likely sarcasm. In a statistical classifier, surface polarity can be used as a feature of the tweet. To capture surface polarity one has to analyze two emotions: activation and pleasantness. This can lead to a $4\%$ improvement in the accuracy.
+    \item \textit{Skewed Data-sets: }
+    Sarcasm is hard to find in an expression. For that reason, skew is reflected in data-sets.
+\end{itemize}
+
+\section{Figures of Merit}
+This section is committed to showing other past works in Sarcasm Detection for tweets. The decisive parameters shown in this section will be the F-measure and the classifier itself.
+
+\begin{itemize}
+    \item Sarcasm Detection on Czech and English Twitter~\cite{ptavcek2014sarcasm}:
+    \begin{itemize}
+        \item \textit{Description}: This paper presents a \ac{ml} approach to sarcasm detection on Twitter in two languages - English and Czech. The classification was carried out by using~\ac{svm} classifiers and Maximum Entropy. Since only \ac{svm} has been implemented in this project, the latter will be discarded.
+        \item \textit{Results:} F-measure (balanced dataset):~\textbf{0.947}. F-measure (unbalanced dataset):~\textbf{0.924}. Algorithm:~\textbf{\ac{svm}}
+    \end{itemize}
+    \item Irony detection in short texts~\cite{mexic}:
+    \begin{itemize}
+        \item \textit{Description}: This docuemnt summarizes the result of analyzing ironic tweets. The language is spanish.
+        \item \textit{Results:} F-measure (balanced dataset):~\textbf{0.86}. F-measure (unbalanced dataset):~\textbf{0.82}. Algorithm:~\textbf{\ac{svm}}
+        F-measure (balanced dataset):~\textbf{0.82}. F-measure (unbalanced dataset):~\textbf{0.74}. Algorithm:~\textbf{\ac{rf}}
+    \end{itemize}
+    
+\end{itemize}
