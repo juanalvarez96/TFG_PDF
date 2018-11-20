@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: 0-preamble.aux
+A level-1 auxiliary file: A-resumen.aux
+A level-1 auxiliary file: B-abstract.aux
+A level-1 auxiliary file: D-agradecimientos.aux
+A level-1 auxiliary file: E-contents.aux
+A level-1 auxiliary file: 1-introduction.aux
+A level-1 auxiliary file: 2-state-of-the-art.aux
+A level-1 auxiliary file: 7-enabling-technologies.aux
+A level-1 auxiliary file: 3-requirements.aux
+A level-1 auxiliary file: 4-architecture.aux
+A level-1 auxiliary file: 5-case-study.aux
+A level-1 auxiliary file: 6-conclusions.aux
+The style file: plain.bst
+Database file #1: biblio/ref.bib
+Warning--to sort, need author or key in pipeline
+Warning--to sort, need author or key in senpy
+Warning--to sort, need author or key in luigi
+Warning--to sort, need author or key in sefarad
+Warning--to sort, need author or key in mexic
+You've used 21 entries,
+            2118 wiz_defined-function locations,
+            595 strings with 6465 characters,
+and the built_in function-call counts, 4705 in all, are:
+= -- 434
+> -- 161
+< -- 1
++ -- 70
+- -- 48
+* -- 212
+:= -- 780
+add.period$ -- 58
+call.type$ -- 21
+change.case$ -- 77
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 227
+empty$ -- 466
+format.name$ -- 48
+if$ -- 1021
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 25
+newline$ -- 103
+num.names$ -- 32
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 144
+swap$ -- 29
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 62
+warning$ -- 5
+while$ -- 36
+width$ -- 23
+write$ -- 202
+(There were 5 warnings)

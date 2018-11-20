@@ -1,0 +1,52 @@
+\contentsline {chapter}{Resumen}{VII}{chapter*.3}
+\contentsline {chapter}{Abstract}{IX}{chapter*.5}
+\contentsline {chapter}{Agradecimientos}{XI}{chapter*.7}
+\contentsline {chapter}{Contents}{XIII}{section*.8}
+\contentsline {chapter}{List of Figures}{XV}{section*.10}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.12}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.13}
+\contentsline {section}{\numberline {1.2}Project goals}{1}{section.14}
+\contentsline {section}{\numberline {1.3}Structure of this document}{1}{section.15}
+\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.16}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.17}
+\contentsline {section}{\numberline {2.2}Analysis: Automatic Sarcasm Detection}{3}{section.19}
+\contentsline {subsection}{\numberline {2.2.1}Sarcasm Definition\nobreakspace {}\cite {joshi2017automatic}}{4}{subsection.20}
+\contentsline {subsection}{\numberline {2.2.2}Data-set}{4}{subsection.22}
+\contentsline {subsection}{\numberline {2.2.3}Approaches used for Sarcasm Detection}{4}{subsection.23}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Rule-based Approaches\nobreakspace {}\cite {joshi2017automatic}}{5}{subsubsection.24}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Statistical Approaches}{5}{subsubsection.25}
+\contentsline {section}{\numberline {2.3}Main Issues in Sarcasm Detection}{5}{section.26}
+\contentsline {section}{\numberline {2.4}Figures of Merit}{6}{section.27}
+\contentsline {chapter}{\numberline {3}Enabling Technologies}{7}{chapter.31}
+\contentsline {section}{\numberline {3.1}Introduction}{7}{section.32}
+\contentsline {section}{\numberline {3.2}Natural Language Processing}{7}{section.34}
+\contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{8}{subsection.35}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Definition}{8}{subsubsection.36}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Application}{8}{subsubsection.39}
+\contentsline {section}{\numberline {3.3}\nobreakspace {}\acl {ml}}{9}{section.42}
+\contentsline {subsection}{\numberline {3.3.1}Sklearn}{9}{subsection.43}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Definition}{9}{subsubsection.44}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Application}{10}{subsubsection.46}
+\contentsline {section}{\numberline {3.4}Senpy}{11}{section.55}
+\contentsline {subsection}{\numberline {3.4.1}Architecture}{12}{subsection.56}
+\contentsline {section}{\numberline {3.5}Luigi}{12}{section.58}
+\contentsline {subsection}{\numberline {3.5.1}Architecture}{12}{subsection.59}
+\contentsline {section}{\numberline {3.6}Bitter}{13}{section.61}
+\contentsline {section}{\numberline {3.7}Sefarad}{13}{section.63}
+\contentsline {subsection}{\numberline {3.7.1}Architecture}{13}{subsection.64}
+\contentsline {section}{\numberline {3.8}Elasticsearch}{14}{section.66}
+\contentsline {subsection}{\numberline {3.8.1}Architecture}{14}{subsection.68}
+\contentsline {chapter}{\numberline {4}Requirement Analysis}{17}{chapter.70}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.71}
+\contentsline {section}{\numberline {4.2}Use cases}{17}{section.72}
+\contentsline {subsection}{\numberline {4.2.1}System actors}{17}{subsection.73}
+\contentsline {chapter}{\numberline {5}Architecture}{19}{chapter.74}
+\contentsline {section}{\numberline {5.1}Introduction}{19}{section.75}
+\contentsline {chapter}{\numberline {6}Case study}{21}{chapter.76}
+\contentsline {section}{\numberline {6.1}Introduction}{21}{section.77}
+\contentsline {section}{\numberline {6.2}Rule edition}{21}{section.78}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{23}{chapter.79}
+\contentsline {section}{\numberline {7.1}Conclusions}{23}{section.80}
+\contentsline {section}{\numberline {7.2}Achieved goals}{23}{section.81}
+\contentsline {section}{\numberline {7.3}Future work}{23}{section.82}
+\contentsline {chapter}{Bibliography}{24}{section*.83}

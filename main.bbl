@@ -1,0 +1,108 @@
+\begin{thebibliography}{10}
+
+\bibitem{mexic}
+Hacia la detección de ironía en textos cortos.
+\newblock
+  \url{http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y}.
+
+\bibitem{luigi}
+Luigi documentation.
+\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+
+\bibitem{sefarad}
+Sefarad architecture.
+\newblock \url{https://sefarad.readthedocs.io/en/latest/sefarad.html}.
+
+\bibitem{pipeline}
+Spark dataframes and ml pipelines.
+\newblock \url{https://www.slideshare.net/databricks/dataframes-and-pipelines}.
+
+\bibitem{senpy}
+What is senpy?
+\newblock \url{https://senpy.readthedocs.io/en/latest/senpy.html}.
+
+\bibitem{elastic1}
+Abhishek Andhavarapu.
+\newblock {\em Learning Elasticsearch}.
+\newblock Packt Publishing, 2017.
+
+\bibitem{oaraque}
+Oscar Araque.
+\newblock {D}esign and {I}mplementation of an {E}vent {R}ules {W}eb {E}ditor.
+\newblock Trabajo fin de grado, Universidad Polit{\'e}cnica de Madrid, ETSI
+  Telecomunicaci{\'o}n, July 2014.
+
+\bibitem{bird2009natural}
+Steven Bird, Ewan Klein, and Edward Loper.
+\newblock {\em Natural language processing with Python: analyzing text with the
+  natural language toolkit}.
+\newblock " O'Reilly Media, Inc.", 2009.
+
+\bibitem{knn1}
+Giuseppe Bonaccorso.
+\newblock {\em Machine Learning Algorithms}.
+\newblock "Packt Publishing", 2017.
+
+\bibitem{countvect1}
+Giuseppe Bonaccorso.
+\newblock {\em Machine Learning Algorithms - Second Edition}.
+\newblock "Packt Publishing", 2018.
+
+\bibitem{lr1}
+Andrew Bruce;~Peter Bruce.
+\newblock {\em Practical Statistics for Data Scientists}.
+\newblock "O'Reilly Media, Inc", 2017.
+
+\bibitem{mltypes}
+Giuseppe Ciaburro.
+\newblock {\em MATLAB for Machine Learning}.
+\newblock Packt Publishing, 2017.
+
+\bibitem{elastic2}
+Bharvi Dixit.
+\newblock {\em Elasticsearch Essentials}.
+\newblock Packt Publishing, 2016.
+
+\bibitem{joshi2017automatic}
+Aditya Joshi, Pushpak Bhattacharyya, and Mark~J Carman.
+\newblock Automatic sarcasm detection: A survey.
+\newblock {\em ACM Computing Surveys (CSUR)}, 50(5):73, 2017.
+
+\bibitem{pipeline1}
+Russell Jurney.
+\newblock {\em Agile Data Science 2.0, 1st Edition}.
+\newblock "O'Reilly Media, Inc", 2017.
+
+\bibitem{khodak2017large}
+Mikhail Khodak, Nikunj Saunshi, and Kiran Vodrahalli.
+\newblock A large self-annotated corpus for sarcasm.
+\newblock {\em arXiv preprint arXiv:1704.05579}, 2017.
+
+\bibitem{nltk}
+Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
+\newblock {\em Natural Language Processing: Python and NLTK}.
+\newblock " Packt Publishing", 2016.
+
+\bibitem{pos}
+Benjamin Bengfort; Rebecca Bilbro;~Tony Ojedar.
+\newblock {\em Applied Text Analysis with Python}.
+\newblock " O'Reilly Media, Inc", 2018.
+
+\bibitem{ptavcek2014sarcasm}
+Tom{\'a}{\v{s}} Pt{\'a}{\v{c}}ek, Ivan Habernal, and Jun Hong.
+\newblock Sarcasm detection on czech and english twitter.
+\newblock In {\em Proceedings of COLING 2014, the 25th International Conference
+  on Computational Linguistics: Technical Papers}, pages 213--223, 2014.
+
+\bibitem{jfernando}
+J.~Fernando S{\'a}nchez-Rada.
+\newblock {D}esign and {I}mplementation of an {A}gent {A}rchitecture {B}ased on
+  {W}eb {H}ooks.
+\newblock Master's thesis, ETSIT-UPM, 2012.
+
+\bibitem{tfidf1}
+Sinan Ozdemir;~Divya Susarla.
+\newblock {\em eature Engineering Made Easy}.
+\newblock "Packt Publishing", 2018.
+
+\end{thebibliography}

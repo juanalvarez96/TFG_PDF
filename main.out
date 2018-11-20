@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{chapter*.3}{Resumen}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.7}{Agradecimientos}{}% 3
+\BOOKMARK [0][-]{section*.8}{Contents}{}% 4
+\BOOKMARK [0][-]{section*.10}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter.12}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.13}{Context}{chapter.12}% 7
+\BOOKMARK [1][-]{section.14}{Project goals}{chapter.12}% 8
+\BOOKMARK [1][-]{section.15}{Structure of this document}{chapter.12}% 9
+\BOOKMARK [0][-]{chapter.16}{State of the Art}{}% 10
+\BOOKMARK [1][-]{section.17}{Introduction}{chapter.16}% 11
+\BOOKMARK [1][-]{section.19}{Analysis: Automatic Sarcasm Detection}{chapter.16}% 12
+\BOOKMARK [2][-]{subsection.20}{Sarcasm Definition joshi2017automatic}{section.19}% 13
+\BOOKMARK [2][-]{subsection.22}{Data-set}{section.19}% 14
+\BOOKMARK [2][-]{subsection.23}{Approaches used for Sarcasm Detection}{section.19}% 15
+\BOOKMARK [3][-]{subsubsection.24}{Rule-based Approaches joshi2017automatic}{subsection.23}% 16
+\BOOKMARK [3][-]{subsubsection.25}{Statistical Approaches}{subsection.23}% 17
+\BOOKMARK [1][-]{section.26}{Main Issues in Sarcasm Detection}{chapter.16}% 18
+\BOOKMARK [1][-]{section.27}{Figures of Merit}{chapter.16}% 19
+\BOOKMARK [0][-]{chapter.31}{Enabling Technologies}{}% 20
+\BOOKMARK [1][-]{section.32}{Introduction}{chapter.31}% 21
+\BOOKMARK [1][-]{section.34}{Natural Language Processing}{chapter.31}% 22
+\BOOKMARK [2][-]{subsection.35}{Natural Language Toolkit}{section.34}% 23
+\BOOKMARK [3][-]{subsubsection.36}{Definition}{subsection.35}% 24
+\BOOKMARK [3][-]{subsubsection.39}{Application}{subsection.35}% 25
+\BOOKMARK [1][-]{section.42}{ Machine Learning}{chapter.31}% 26
+\BOOKMARK [2][-]{subsection.43}{Sklearn}{section.42}% 27
+\BOOKMARK [3][-]{subsubsection.44}{Definition}{subsection.43}% 28
+\BOOKMARK [3][-]{subsubsection.46}{Application}{subsection.43}% 29
+\BOOKMARK [1][-]{section.55}{Senpy}{chapter.31}% 30
+\BOOKMARK [2][-]{subsection.56}{Architecture}{section.55}% 31
+\BOOKMARK [1][-]{section.58}{Luigi}{chapter.31}% 32
+\BOOKMARK [2][-]{subsection.59}{Architecture}{section.58}% 33
+\BOOKMARK [1][-]{section.61}{Bitter}{chapter.31}% 34
+\BOOKMARK [1][-]{section.63}{Sefarad}{chapter.31}% 35
+\BOOKMARK [2][-]{subsection.64}{Architecture}{section.63}% 36
+\BOOKMARK [1][-]{section.66}{Elasticsearch}{chapter.31}% 37
+\BOOKMARK [2][-]{subsection.68}{Architecture}{section.66}% 38
+\BOOKMARK [0][-]{chapter.70}{Requirement Analysis}{}% 39
+\BOOKMARK [1][-]{section.71}{Introduction}{chapter.70}% 40
+\BOOKMARK [1][-]{section.72}{Use cases}{chapter.70}% 41
+\BOOKMARK [2][-]{subsection.73}{System actors}{section.72}% 42
+\BOOKMARK [0][-]{chapter.74}{Architecture}{}% 43
+\BOOKMARK [1][-]{section.75}{Introduction}{chapter.74}% 44
+\BOOKMARK [0][-]{chapter.76}{Case study}{}% 45
+\BOOKMARK [1][-]{section.77}{Introduction}{chapter.76}% 46
+\BOOKMARK [1][-]{section.78}{Rule edition}{chapter.76}% 47
+\BOOKMARK [0][-]{chapter.79}{Conclusions and future work}{}% 48
+\BOOKMARK [1][-]{section.80}{Conclusions}{chapter.79}% 49
+\BOOKMARK [1][-]{section.81}{Achieved goals}{chapter.79}% 50
+\BOOKMARK [1][-]{section.82}{Future work}{chapter.79}% 51
+\BOOKMARK [0][-]{section*.83}{Bibliography}{}% 52
