@@ -3,23 +3,24 @@
 \bibitem{mexic}
 Hacia la detección de ironía en textos cortos.
 \newblock
-  \url{http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y}.
-
+\url{  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
+}
 \bibitem{luigi}
 Luigi documentation.
-\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+\newblock
+\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf}.
 
 \bibitem{sefarad}
 Sefarad architecture.
-\newblock \url{https://sefarad.readthedocs.io/en/latest/sefarad.html}.
+\newblock https://sefarad.readthedocs.io/en/latest/sefarad.html.
 
 \bibitem{pipeline}
 Spark dataframes and ml pipelines.
-\newblock \url{https://www.slideshare.net/databricks/dataframes-and-pipelines}.
+\newblock https://www.slideshare.net/databricks/dataframes-and-pipelines.
 
 \bibitem{senpy}
 What is senpy?
-\newblock \url{https://senpy.readthedocs.io/en/latest/senpy.html}.
+\newblock https://senpy.readthedocs.io/en/latest/senpy.html.
 
 \bibitem{elastic1}
 Abhishek Andhavarapu.
@@ -63,6 +64,11 @@ Bharvi Dixit.
 \newblock {\em Elasticsearch Essentials}.
 \newblock Packt Publishing, 2016.
 
+\bibitem{stopwords}
+Nitin Hardeniya.
+\newblock {\em NLTK Essentials}.
+\newblock "Packt Publishing", 2015.
+
 \bibitem{joshi2017automatic}
 Aditya Joshi, Pushpak Bhattacharyya, and Mark~J Carman.
 \newblock Automatic sarcasm detection: A survey.
@@ -94,11 +100,21 @@ Tom{\'a}{\v{s}} Pt{\'a}{\v{c}}ek, Ivan Habernal, and Jun Hong.
 \newblock In {\em Proceedings of COLING 2014, the 25th International Conference
   on Computational Linguistics: Technical Papers}, pages 213--223, 2014.
 
+\bibitem{dataclust}
+Charu C. Aggarwal; Chandan~K. Reddy.
+\newblock {\em Data Clustering}.
+\newblock "Chapman and Hall/CRC", 2013.
+
 \bibitem{jfernando}
 J.~Fernando S{\'a}nchez-Rada.
 \newblock {D}esign and {I}mplementation of an {A}gent {A}rchitecture {B}ased on
   {W}eb {H}ooks.
 \newblock Master's thesis, ETSIT-UPM, 2012.
+
+\bibitem{preprocess}
+Bhargav Srinivasa-Desikan.
+\newblock {\em Natural Language Processing and Computational Linguistics}.
+\newblock "Packt Publishing", 2018.
 
 \bibitem{tfidf1}
 Sinan Ozdemir;~Divya Susarla.

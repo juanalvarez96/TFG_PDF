@@ -29,12 +29,19 @@ These tasks were coordinated by using pipelines. \todo[inline]{No me termina de 
 
 \section{~\acl{ml}}
 When it comes to defining models capable of learning from a text-based source, the two dominant technologies are Natural Language Processing and ~\ac{ml}. These two main technologies are concerned in how does the machine process human text. \\
-Given data and the proper statistical techniques, ~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required. The learning process can be classified in three~\cite{mltypes}:
+Given data and the proper statistical techniques, ~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required. \ac{ml} methods can be classified in three categories ~\cite{dataclust}:
 \begin{itemize}
-	\item \textit{Supervised learning}: Widely used for classification applications. A model is trained to make predictions and is corrected whenever the model makes a mistake.
-	\item \textit{Unsupervised learning}: Extract general rules. A model deduces recognizable structures in the input data-set. Result is unknown  
-	\item \textit{Semi-supervised learning}: Part of the data-set result is known. 
+	\item \textit{Regression}: Regression learning is predicting a continous varying variable.
+	\item \textit{Classification}: Classification is predicting a discrete class label.
+	\item \textit{Clustering}: Data clustering is the task of labelling unlabeled data, creating clusters with different properties. 
 \end{itemize} 
+
+Furthermore, depending on the dataset the learning process can be carried out in two different ways:
+\begin{itemize}
+	\item \textit{Supervised learning:} \label{ml:super}The classifier is trained using a percentage of the total dataset while feeding the rest of the dataset to make predictions and to evaluate how good the classifier is. Particularly, this project will be using supervised learning.
+	
+	\item \textit{Unsupervised learning:} These algorithms base their learning properties on learning patterns present on the dataset. Unlike in supervised learning, there is no training and test dataset partition
+\end{itemize}
 
 In contrast with ~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so, it provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though Natural Language Processing has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
 
