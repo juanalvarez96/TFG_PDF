@@ -2,51 +2,56 @@
 \BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.7}{Agradecimientos}{}% 3
 \BOOKMARK [0][-]{section*.8}{Contents}{}% 4
-\BOOKMARK [0][-]{section*.10}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter.12}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.13}{Context}{chapter.12}% 7
-\BOOKMARK [1][-]{section.14}{Project goals}{chapter.12}% 8
-\BOOKMARK [1][-]{section.16}{Structure of this document}{chapter.12}% 9
-\BOOKMARK [0][-]{chapter.17}{State of the Art}{}% 10
-\BOOKMARK [1][-]{section.18}{Introduction}{chapter.17}% 11
-\BOOKMARK [1][-]{section.20}{Analysis: Automatic Sarcasm Detection}{chapter.17}% 12
-\BOOKMARK [2][-]{subsection.21}{Sarcasm Definition joshi2017automatic}{section.20}% 13
-\BOOKMARK [2][-]{subsection.23}{Data-set}{section.20}% 14
-\BOOKMARK [2][-]{subsection.24}{Approaches used for Sarcasm Detection}{section.20}% 15
-\BOOKMARK [3][-]{subsubsection.25}{Rule-based Approaches joshi2017automatic}{subsection.24}% 16
-\BOOKMARK [3][-]{subsubsection.26}{Statistical Approaches}{subsection.24}% 17
-\BOOKMARK [1][-]{section.27}{Main Issues in Sarcasm Detection}{chapter.17}% 18
-\BOOKMARK [1][-]{section.28}{Figures of Merit}{chapter.17}% 19
-\BOOKMARK [0][-]{chapter.31}{Enabling Technologies}{}% 20
-\BOOKMARK [1][-]{section.32}{Introduction}{chapter.31}% 21
-\BOOKMARK [1][-]{section.34}{Natural Language Processing}{chapter.31}% 22
-\BOOKMARK [2][-]{subsection.35}{Natural Language Toolkit}{section.34}% 23
-\BOOKMARK [3][-]{subsubsection.36}{Definition}{subsection.35}% 24
-\BOOKMARK [3][-]{subsubsection.39}{Application}{subsection.35}% 25
-\BOOKMARK [1][-]{section.42}{ Machine Learning}{chapter.31}% 26
-\BOOKMARK [2][-]{subsection.43}{Sklearn}{section.42}% 27
-\BOOKMARK [3][-]{subsubsection.44}{Definition}{subsection.43}% 28
-\BOOKMARK [3][-]{subsubsection.46}{Application}{subsection.43}% 29
-\BOOKMARK [1][-]{section.55}{Senpy}{chapter.31}% 30
-\BOOKMARK [2][-]{subsection.56}{Architecture}{section.55}% 31
-\BOOKMARK [1][-]{section.58}{Luigi}{chapter.31}% 32
-\BOOKMARK [2][-]{subsection.59}{Architecture}{section.58}% 33
-\BOOKMARK [1][-]{section.61}{Bitter}{chapter.31}% 34
-\BOOKMARK [1][-]{section.63}{Sefarad}{chapter.31}% 35
-\BOOKMARK [2][-]{subsection.64}{Architecture}{section.63}% 36
-\BOOKMARK [1][-]{section.66}{Elasticsearch}{chapter.31}% 37
-\BOOKMARK [2][-]{subsection.68}{Architecture}{section.66}% 38
-\BOOKMARK [0][-]{chapter.70}{Model}{}% 39
-\BOOKMARK [1][-]{section.71}{Introduction}{chapter.70}% 40
-\BOOKMARK [1][-]{section.72}{Dataset}{chapter.70}% 41
-\BOOKMARK [1][-]{section.74}{Preprocessing}{chapter.70}% 42
-\BOOKMARK [0][-]{chapter.75}{Architecture}{}% 43
-\BOOKMARK [1][-]{section.76}{Introduction}{chapter.75}% 44
-\BOOKMARK [0][-]{chapter.77}{Case study}{}% 45
-\BOOKMARK [1][-]{section.78}{Introduction}{chapter.77}% 46
-\BOOKMARK [1][-]{section.79}{Rule edition}{chapter.77}% 47
-\BOOKMARK [0][-]{chapter.80}{Conclusions and future work}{}% 48
-\BOOKMARK [1][-]{section.81}{Conclusions}{chapter.80}% 49
-\BOOKMARK [1][-]{section.82}{Achieved goals}{chapter.80}% 50
-\BOOKMARK [1][-]{section.83}{Future work}{chapter.80}% 51
-\BOOKMARK [0][-]{section*.84}{Bibliography}{}% 52
+\BOOKMARK [0][-]{section*.11}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter.13}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.14}{Context}{chapter.13}% 7
+\BOOKMARK [1][-]{section.15}{Project goals}{chapter.13}% 8
+\BOOKMARK [1][-]{section.17}{Structure of this document}{chapter.13}% 9
+\BOOKMARK [0][-]{chapter.18}{State of the Art}{}% 10
+\BOOKMARK [1][-]{section.19}{Introduction}{chapter.18}% 11
+\BOOKMARK [1][-]{section.21}{Analysis: Automatic Sarcasm Detection}{chapter.18}% 12
+\BOOKMARK [2][-]{subsection.22}{Sarcasm Definition joshi2017automatic}{section.21}% 13
+\BOOKMARK [2][-]{subsection.24}{Data-set}{section.21}% 14
+\BOOKMARK [2][-]{subsection.25}{Approaches used for Sarcasm Detection}{section.21}% 15
+\BOOKMARK [3][-]{subsubsection.26}{Rule-based Approaches joshi2017automatic}{subsection.25}% 16
+\BOOKMARK [3][-]{subsubsection.27}{Statistical Approaches}{subsection.25}% 17
+\BOOKMARK [1][-]{section.28}{Main Issues in Sarcasm Detection}{chapter.18}% 18
+\BOOKMARK [1][-]{section.29}{Figures of Merit}{chapter.18}% 19
+\BOOKMARK [0][-]{chapter.32}{Enabling Technologies}{}% 20
+\BOOKMARK [1][-]{section.33}{Introduction}{chapter.32}% 21
+\BOOKMARK [1][-]{section.35}{Natural Language Processing}{chapter.32}% 22
+\BOOKMARK [2][-]{subsection.36}{Natural Language Toolkit}{section.35}% 23
+\BOOKMARK [3][-]{subsubsection.37}{Definition}{subsection.36}% 24
+\BOOKMARK [3][-]{subsubsection.40}{Application}{subsection.36}% 25
+\BOOKMARK [1][-]{section.43}{ Machine Learning}{chapter.32}% 26
+\BOOKMARK [2][-]{subsection.44}{Sklearn}{section.43}% 27
+\BOOKMARK [3][-]{subsubsection.45}{Definition}{subsection.44}% 28
+\BOOKMARK [3][-]{subsubsection.47}{Application}{subsection.44}% 29
+\BOOKMARK [1][-]{section.56}{Senpy}{chapter.32}% 30
+\BOOKMARK [2][-]{subsection.57}{Architecture}{section.56}% 31
+\BOOKMARK [1][-]{section.59}{Luigi}{chapter.32}% 32
+\BOOKMARK [2][-]{subsection.60}{Architecture}{section.59}% 33
+\BOOKMARK [1][-]{section.62}{Bitter}{chapter.32}% 34
+\BOOKMARK [1][-]{section.64}{Sefarad}{chapter.32}% 35
+\BOOKMARK [2][-]{subsection.65}{Architecture}{section.64}% 36
+\BOOKMARK [1][-]{section.67}{Elasticsearch}{chapter.32}% 37
+\BOOKMARK [2][-]{subsection.69}{Architecture}{section.67}% 38
+\BOOKMARK [0][-]{chapter.71}{Model}{}% 39
+\BOOKMARK [1][-]{section.72}{Introduction}{chapter.71}% 40
+\BOOKMARK [1][-]{section.73}{Dataset}{chapter.71}% 41
+\BOOKMARK [1][-]{section.75}{Preprocessing}{chapter.71}% 42
+\BOOKMARK [1][-]{section.76}{Feature Extraction}{chapter.71}% 43
+\BOOKMARK [2][-]{subsection.77}{Lexical Features}{section.76}% 44
+\BOOKMARK [2][-]{subsection.79}{Syntactic Features}{section.76}% 45
+\BOOKMARK [2][-]{subsection.82}{Ngram Features. Pipeline}{section.76}% 46
+\BOOKMARK [2][-]{subsection.84}{LDA Features}{section.76}% 47
+\BOOKMARK [0][-]{chapter.87}{Architecture}{}% 48
+\BOOKMARK [1][-]{section.88}{Introduction}{chapter.87}% 49
+\BOOKMARK [0][-]{chapter.89}{Case study}{}% 50
+\BOOKMARK [1][-]{section.90}{Introduction}{chapter.89}% 51
+\BOOKMARK [1][-]{section.91}{Rule edition}{chapter.89}% 52
+\BOOKMARK [0][-]{chapter.92}{Conclusions and future work}{}% 53
+\BOOKMARK [1][-]{section.93}{Conclusions}{chapter.92}% 54
+\BOOKMARK [1][-]{section.94}{Achieved goals}{chapter.92}% 55
+\BOOKMARK [1][-]{section.95}{Future work}{chapter.92}% 56
+\BOOKMARK [0][-]{section*.96}{Bibliography}{}% 57
