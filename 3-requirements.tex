@@ -41,15 +41,68 @@ This section will be committed to extensively explaining the selected features.
 \par
 The extraction will be performed inside a Pipeline, which will execute each extraction sequentially. In this project, two pipelines are defined, the first aims at extracting the ngrams. With the ngrams extracted from the first pipeline, a second one will extract other features and unify the ngrams with the other extracted features. Even though there are two pipelines defined, the results of the ngrams pipeline are added to the other pipeline. This is done thanks to the Feature Union class provided by Scikit-Learn.
 \subsection{Lexical Features}
-Usually extracting lexical features involves getting the number of sentences and the number of words in each sentence. However, since this projects' dataset is made out of tweets and the number of characters in a tweet is limited, I have considered that each tweet contains only one sentence. As a consequence, the lexical feature extraction becomes very simple. The extraction consists of tokenizing each sentence and stemming each token (or word) to get the root. At the same time, the words belonging to the spanish stop list are removed (see \cref{sec:preprocessing} for more details). In \todo[inline]{pon aqui la seccion en la que se explica el tfidf} is explained what happens with the extracted words in this stage.
+Usually extracting lexical features involves getting the number of sentences and the number of words in each sentence. However, since this projects' dataset is made out of tweets and the number of characters in a tweet is limited, I have considered that each tweet contains only one sentence. As a consequence, the lexical feature extraction becomes very simple. The extraction consists of tokenizing each sentence and stemming each token (or word) to get the root. At the same time, the words belonging to the spanish stop list are removed (see \cref{sec:preprocessing} for more details). In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage.
 \subsection{Syntactic Features}
 \todo[inline]{Esto no aparece en el código}
-The syntactic feature extraction consists of counting the number of nouns, adjectives, verbs, adverbs, conjunctions, pronouns and numbers present in each tweet.In \todo[inline]{pon aqui la seccion en la que se explica el tfidf} is explained what happens with the extracted words in this stage.
+The syntactic feature extraction consists of counting the number of nouns, adjectives, verbs, adverbs, conjunctions, pronouns and numbers present in each tweet. In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage.
 \subsection{Ngram Features. Pipeline}
 Ngram extractions consist of grouping the words into bag of words. If we group the words individually then a sentence with five words will be considered as a five words sentence. If we group two words together then a sentence of six words will be considered as a three word sentence. So each pair of words are understood by the estimator as one.\\
 Since it is very difficult to guess what is the optimum bag of words (i.e. number of words) CountVectorizer method provided by the Scikit-Learn class allows us to define a range. Finally, to select the optimum range, a Grid Search will be performed (see \todo[inline]{Pon aqui la seccion donde explicas el grid search}).
-\subsection{\ac{lda} Features}
+\subsection{\acf{lda} Features}
 \ac{lda}~\footnote{\url{https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation}} is a generative statistical model that allows sets of observations to be explained by unobserved groups that explain why some parts of the data are similar.\\ In other words, \ac{lda} extraction can be used to extract how many topics are being spoken about in the dataset. This can be observed by analyzing each words' presence.\\
 The main parameter of this statistical model is the number of topics. Similarly as with the ngrams features, a Grid Search will be performed to find the optimum number of topics (see \todo[inline]{Pon aqui la seccion donde explicas el grid search}).
+\subsection{\acf{tfidf}}
+\label{sec:tfidf}
+\ac{tfidf}~\footnote{\url{https://en.wikipedia.org/wiki/Tf–idf}} is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. Particularly, the \ac{tfidf} recognizes those words that are rare in the corpus but may be of great importance. The \ac{tfidf} uses a word as an argument and outputs the inverse frequency of that word.\\
+The equation used is~\cite{tfidf}:
+\begin{equation}
+\label{ec:tf}
+	tf_{t,d} = \frac{count(t)}{count(alltermsindocument)}
+\end{equation}
+with
+\begin{equation}
+\label{ec:idf}
+	idf_t=log(\frac{N}{df_t})
+\end{equation}
+and
+\begin{equation}
+\label{ec:tfidf}
+	tfidf_{t,d}=tf_{t,d}\times idf_t
+\end{equation}
+The number of occurences of a word in a complete document is computed with ~\cref{ec:tf}. ~\Cref{ec:idf} represents the $idf$ of a word. That amount serves as how much information a word provides. As explained before, terms with less frequency are considered to provide more information to the whole document as more common terms. Finally, ~\cref{ec:tfidf} computes the weight of a word.
+\section{Classifiers}
+This section will explain extensively the classifiers used for the learning process.\\
+Classification~\cite{classif} is the task of predicting the class to which an object, known as pattern, belongs. The pattern is assumed to belong to one and only one among a number of a priori known classes. Each pattern is uniquely represented by a set of measurements, known as features. One of the early stages in designing a classification system is to select an appropriate set of feature variables. These should “encode” as much class-discriminatory information, so that, by measuring their value for a given pattern, to be able to predict, with high enough probability, the class of the pattern. 
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/classifier.png}
+	\caption{Classifier~\cite{classif}}
+	\label{fig:classifier}
+\end{figure}
+\Cref{fig:classifier} is an example of two linearly separable classes, where a straight line can separate the two classes. \\
+In this project, there will be three classifiers.
+\subsection{\acf{nb}}
+The ~\ac{nb} classifier is a typical and popular example of a suboptimal classifier. The basic assumption is that the components (features) in the feature vector are statistically independent; hence, the joint ~\ac{pdf} can be written as a product of $l$ marginals ~\cite{classif}:
+\begin{equation}
+	p(x|\omega_i)=\prod_{k=1}^{l}p(x_k|\omega_i)
+	\label{ec:nb}
+\end{equation}
+Considering that both $\omega_i$ and $x$ are Gaussian variables, it is only necessary to compute the mean and the variance for each pair of variables. That leads to a total of $2\times l$ unknown variables for a subclass. Computationally speaking, $2\times l$ complexity is achievable in a reasonable amount of time for a large $l$. This is the great advantage of the \ac{nb}.\par
+In this project, the results obtained for the \ac{nb} are:
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c c||} 
+		\hline
+		Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+		\hline\hline
+		1 & 6 & 87837 & 787 \\ 
+		2 & 7 & 78 & 5415 \\
+		3 & 545 & 778 & 7507 \\
+		4 & 545 & 18744 & 7560 \\
+		5 & 88 & 788 & 6344 \\ [1ex] 
+		\hline
+	\end{tabular}
+\end{table}
+
+
 
 

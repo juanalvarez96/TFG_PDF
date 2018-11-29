@@ -3,13 +3,14 @@
 \bibitem{mexic}
 Hacia la detección de ironía en textos cortos.
 \newblock
-\url{  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
+\url{
+  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
 }
 \bibitem{luigi}
 Luigi documentation.
-\newblock
-\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf}.
-
+url~{
+\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+}
 \bibitem{sefarad}
 Sefarad architecture.
 \newblock https://sefarad.readthedocs.io/en/latest/sefarad.html.
@@ -63,6 +64,11 @@ Giuseppe Ciaburro.
 Bharvi Dixit.
 \newblock {\em Elasticsearch Essentials}.
 \newblock Packt Publishing, 2016.
+
+\bibitem{tfidf}
+Josh Patterson;~Adam Gibso.
+\newblock {\em Deep Learning}.
+\newblock " O'Reilly Media, Inc.", 2017.
 
 \bibitem{stopwords}
 Nitin Hardeniya.
@@ -120,5 +126,10 @@ Bhargav Srinivasa-Desikan.
 Sinan Ozdemir;~Divya Susarla.
 \newblock {\em eature Engineering Made Easy}.
 \newblock "Packt Publishing", 2018.
+
+\bibitem{classif}
+Sergios Theodoridis.
+\newblock {\em Machine Learning}.
+\newblock Academic Press, 2015.
 
 \end{thebibliography}
