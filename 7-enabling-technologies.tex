@@ -6,12 +6,12 @@ In this chapter the technologies used to achieve this projects' objective shall 
 
 \section{Introduction}\par
 \todo[inline]{Metemos como hemos sacado los tweets?}
-In this project two main technologies have been used:~\ac{nlp}  and ~\ac{ml}. The implementation of these tools has been performed in a combined fashion. \par
-\ac{nlp} has allowed me to transform words into tokens, find syntactical connections between tokens in the same tweet and, finally, construct a numerical vector. ~\ac{ml} granted me a way to construct a classifier, define a model and feed the vectors from the previous step into the model to make predictions.\par
+In this project two main technologies have been used:~\ac{nlp}  and~\ac{ml}. The implementation of these tools has been performed in a combined fashion. \par
+\ac{nlp} has allowed me to transform words into tokens, find syntactical connections between tokens in the same tweet and, finally, construct a numerical vector.~\ac{ml} granted me a way to construct a classifier, define a model and feed the vectors from the previous step into the model to make predictions.\par
 In short, this is how the project was carried out. Both technologies will be extensively explained in the next sections.
 
 \section{Natural Language Processing}
-\ac{nlp} has a crucial role in this project since what I am analyzing are Tweets, which contain sentences. Hence, the information that I will use to train the ~\ac{ml} algorithm will come in the form of text. According to~\cite{bird2009natural}, at one extreme~\ac{nlp} could be as simple as counting word frequencies to compare different writing styles. At the other extreme,~\ac{nlp} involves "understanding" complete human utterances, at least to the extent of being able to give useful responses to them.\par
+\ac{nlp} has a crucial role in this project since what I am analyzing are Tweets, which contain sentences. Hence, the information that I will use to train the~\ac{ml} algorithm will come in the form of text. According to~\cite{bird2009natural}, at one extreme~\ac{nlp} could be as simple as counting word frequencies to compare different writing styles. At the other extreme,~\ac{nlp} involves "understanding" complete human utterances, at least to the extent of being able to give useful responses to them.\par
 After mentioning its importance, I will clarify what libraries have I used and how.
 \label{sec:NLP}
 \subsection{Natural Language Toolkit}
@@ -28,8 +28,8 @@ After mentioning its importance, I will clarify what libraries have I used and h
 These tasks were coordinated by using pipelines. \todo[inline]{No me termina de convencer este párrafo. Qué quiero decir?}
 
 \section{~\acl{ml}}
-When it comes to defining models capable of learning from a text-based source, the two dominant technologies are Natural Language Processing and ~\ac{ml}. These two main technologies are concerned in how does the machine process human text. \\
-Given data and the proper statistical techniques, ~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required. \ac{ml} methods can be classified in three categories ~\cite{dataclust}:
+When it comes to defining models capable of learning from a text-based source, the two dominant technologies are Natural Language Processing and~\ac{ml}. These two main technologies are concerned in how does the machine process human text. \\
+Given data and the proper statistical techniques,~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required. \ac{ml} methods can be classified in three categories~\cite{dataclust}:
 \begin{itemize}
 	\item \textit{Regression}: Regression learning is predicting a continous varying variable.
 	\item \textit{Classification}: Classification is predicting a discrete class label.
@@ -43,7 +43,7 @@ Furthermore, depending on the dataset the learning process can be carried out in
 	\item \textit{Unsupervised learning:} These algorithms base their learning properties on learning patterns present on the dataset. Unlike in supervised learning, there is no training and test dataset partition
 \end{itemize}
 
-In contrast with ~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so, it provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though Natural Language Processing has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
+In contrast with~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so, it provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though Natural Language Processing has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
 
 \subsection{Sklearn}
 \subsubsection{Definition}
@@ -51,13 +51,13 @@ Sklearn (a.k.a scikit-learn) is defined \footnote{http://scikit-learn.org/stable
 \subsubsection{Application}
 Sklearn has provided the following tools to this project:
 \begin{itemize}
-	\item \textit{Train and Test splitting}: This method is responsible for splitting the main dataset into two parts, one for training the model and the other one for testing the model. It is a very common ~\ac{ml} technique. I chose a test set size of 25 \% of the main dataset. In addition, testing set will later be used to compute parameters such as accuracy and f1 score.
+	\item \textit{Train and Test splitting}: This method is responsible for splitting the main dataset into two parts, one for training the model and the other one for testing the model. It is a very common~\ac{ml} technique. I chose a test set size of 25 \% of the main dataset. In addition, testing set will later be used to compute parameters such as accuracy and f1 score.
 	\item \textit{Pipeline}: A pipeline is a set of procedures connected in series, one after the other where the output of one process is the input to the next~\cite{pipeline1}. Image~\ref{fig:pipeline}\footnote{\url{https://www.slideshare.net/databricks/dataframes-and-pipelines}} represents the idea of a pipeline, though it does not resemble exactly this projects' pipeline.
 	\item \textit{Tf-idf-Vectorizer}: The Tf-idfVectorizer is used for every word. It contains two parts; the \textit{if} part, which represents the word frequency and the \textit{idf} part, which represents inverse document frequency~\cite{tfidf1}. This term represents a words' weight in a text. The vectorizer has been used in the pipeline to assign each word a number. \todo[inline]{Es esto cierto?}
 	\item \textit{Count Vectorizer}: The algorithm consists of representing a token by considering how many times it appears in a text~\cite{countvect1}. Moreover, Count Vectorizer has defined the ngram range.
 	\item \textit{Multinomial NaiveBayes}: A multinomial distribution useful to model feature vectors where each value represents a number of occurrences of a term (or its relative frequency)~\cite{countvect1}. The MultinomialNB has been used as a classifier fed into the pipeline. Its results can be seen.\todo[inline]{añade referencia tabla resultados cuando lo pongas}.
 	\item \textit{SVM classifier}: Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier\footnote{\url{https://en.wikipedia.org/wiki/Support_vector_machine}}. The SVM classifier has been  fed into the pipeline as input. Its results can be seen.\todo[inline]{añade referencia tabla resultados cuando lo pongas}
-	\item \textit{Kneighbors classifier}: Is a non-generalized ~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{knn1}.The KNeighbors classifier has been  fed into the pipeline as input. Its results can be seen.\todo[inline]{añade referencia tabla resultados cuando lo pongas}
+	\item \textit{Kneighbors classifier}: Is a non-generalized~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{knn1}.The KNeighbors classifier has been  fed into the pipeline as input. Its results can be seen.\todo[inline]{añade referencia tabla resultados cuando lo pongas}
 	\item \textit{Logistic Regression classifier}: Is analogous to multiple linear regression, except the outcome is binary. Various transformations are employed to convert the problem to one in which a linear model can be fit~\cite{lr1}. Its results can be seen.\todo[inline]{añade referencia tabla resultados cuando lo pongas}.
 \end{itemize}
 

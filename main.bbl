@@ -1,15 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{modcons}
+Classification models.
+\newblock
+  http://algolytics.com/tutorial-how-to-determine-the-quality-and-correctness-of-classification-models-part-1-introduction/.
+
 \bibitem{mexic}
 Hacia la detección de ironía en textos cortos.
 \newblock
-\url{
-  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
+\url{  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
 }
 \bibitem{luigi}
 Luigi documentation.
-url~{
-\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+\newblock
+\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
 }
 \bibitem{sefarad}
 Sefarad architecture.
@@ -33,6 +37,11 @@ Oscar Araque.
 \newblock {D}esign and {I}mplementation of an {E}vent {R}ules {W}eb {E}ditor.
 \newblock Trabajo fin de grado, Universidad Polit{\'e}cnica de Madrid, ETSI
   Telecomunicaci{\'o}n, July 2014.
+
+\bibitem{f1score}
+Rounak Banik.
+\newblock {\em Hands-On Recommendation Systems with Python}.
+\newblock Packt Publishing, 2018.
 
 \bibitem{bird2009natural}
 Steven Bird, Ewan Klein, and Edward Loper.
@@ -131,5 +140,10 @@ Sinan Ozdemir;~Divya Susarla.
 Sergios Theodoridis.
 \newblock {\em Machine Learning}.
 \newblock Academic Press, 2015.
+
+\bibitem{svm}
+Dr. Param Jeet;~Prashant Vats.
+\newblock {\em Learning Quantitative Finance with R}.
+\newblock Packt Publishing, 2017.
 
 \end{thebibliography}

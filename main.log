@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.20)  30 NOV 2018 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.20)  1 DEC 2018 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,7 +934,7 @@ LaTeX Info: Redefining \nameref on input line 257.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<img/portada.png, id=248, 597.95369pt x 845.60503pt>
+<img/portada.png, id=276, 597.95369pt x 845.60503pt>
 File: img/portada.png Graphic file (type png)
 <use img/portada.png>
 Package pdftex.def Info: img/portada.png  used on input line 28.
@@ -953,7 +953,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 [3] [4
 
 ]
-<img/logo_etsit.jpg, id=269, 526.1256pt x 206.2104pt>
+<img/logo_etsit.jpg, id=297, 526.1256pt x 206.2104pt>
 File: img/logo_etsit.jpg Graphic file (type jpg)
 <use img/logo_etsit.jpg>
 Package pdftex.def Info: img/logo_etsit.jpg  used on input line 73.
@@ -1003,6 +1003,10 @@ n
 although it is yet undefined on input line 48.
 Package acronym Info: Label `acro:nb' newly defined as it shall be overridden
 although it is yet undefined on input line 50.
+Package acronym Info: Label `acro:svm' newly defined as it shall be overridden
+although it is yet undefined on input line 51.
+Package acronym Info: Label `acro:knn' newly defined as it shall be overridden
+although it is yet undefined on input line 52.
  [14])
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1059,9 +1063,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 27.
 
 [4] [5]
-Package acronym Info: Label `acro:svm' newly defined as it shall be overridden
-although it is yet undefined on input line 53.
-
 Overfull \hbox (30.38655pt too wide) in paragraph at lines 54--55
 []\OT1/cmr/m/it/10.95 Results: \OT1/cmr/m/n/10.95 F-measure (bal-anced dataset)
 : \OT1/cmr/bx/n/10.95 0.947\OT1/cmr/m/n/10.95 . F-measure (un-bal-anced dataset
@@ -1105,12 +1106,12 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 55.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [10]
-Overfull \hbox (3.27795pt too wide) in paragraph at lines 60--60
+Overfull \hbox (8.75296pt too wide) in paragraph at lines 60--60
 \OT1/cmr/m/n/10.95 from one point to all the train-ing dataset points and choos
 es the $\OML/cmm/m/it/10.95 k$ \OT1/cmr/m/n/10.95 near-est points [[]].The
  []
 
-<img/pipeline1.png, id=536, 611.28375pt x 362.35374pt>
+<img/pipeline1.png, id=576, 611.28375pt x 362.35374pt>
 File: img/pipeline1.png Graphic file (type png)
 <use img/pipeline1.png>
 Package pdftex.def Info: img/pipeline1.png  used on input line 65.
@@ -1119,19 +1120,19 @@ Package pdftex.def Info: img/pipeline1.png  used on input line 65.
 Package acronym Warning: Acronym `ML' is not defined on input line 72.
 
 [11 <./img/pipeline1.png>]
-<img/senpy_architecture.png, id=553, 659.46375pt x 242.9075pt>
+<img/senpy_architecture.png, id=593, 659.46375pt x 242.9075pt>
 File: img/senpy_architecture.png Graphic file (type png)
 <use img/senpy_architecture.png>
 Package pdftex.def Info: img/senpy_architecture.png  used on input line 81.
 (pdftex.def)             Requested size: 433.62pt x 159.72269pt.
  [12 <./img/senpy_architecture.png>]
-<img/luigi_tasks.png, id=564, 785.93625pt x 403.5075pt>
+<img/luigi_tasks.png, id=605, 785.93625pt x 403.5075pt>
 File: img/luigi_tasks.png Graphic file (type png)
 <use img/luigi_tasks.png>
 Package pdftex.def Info: img/luigi_tasks.png  used on input line 97.
 (pdftex.def)             Requested size: 433.62pt x 222.63171pt.
  [13 <./img/luigi_tasks.png>]
-<img/sefarad_architecture.png, id=576, 584.1825pt x 312.16624pt>
+<img/sefarad_architecture.png, id=617, 584.1825pt x 312.16624pt>
 File: img/sefarad_architecture.png Graphic file (type png)
 <use img/sefarad_architecture.png>
 Package pdftex.def Info: img/sefarad_architecture.png  used on input line 112.
@@ -1139,7 +1140,7 @@ Package pdftex.def Info: img/sefarad_architecture.png  used on input line 112.
 Package acronym Info: Label `acro:json' newly defined as it shall be overridden
 
 although it is yet undefined on input line 118.
-<img/elastic_1.png, id=583, 662.475pt x 276.03125pt>
+<img/elastic_1.png, id=624, 662.475pt x 276.03125pt>
 File: img/elastic_1.png Graphic file (type png)
 <use img/elastic_1.png>
 Package pdftex.def Info: img/elastic_1.png  used on input line 123.
@@ -1155,12 +1156,15 @@ Package pdftex.def Info: img/elastic_1.png  used on input line 123.
 ]
 Chapter 4.
 [17]
-<img/dataset.png, id=609, 428.60126pt x 329.23pt>
+<img/dataset.png, id=649, 428.60126pt x 329.23pt>
 File: img/dataset.png Graphic file (type png)
 <use img/dataset.png>
 Package pdftex.def Info: img/dataset.png  used on input line 18.
 (pdftex.def)             Requested size: 433.62pt x 333.08734pt.
- [18 <./img/dataset.png>] [19] [20]
+ [18 <./img/dataset.png>] [19]
+Package acronym Info: Label `acro:gs' newly defined as it shall be overridden
+although it is yet undefined on input line 50.
+ [20]
 Missing character: There is no â in font pcrr7t!
 Missing character: There is no € in font pcrr7t!
 Missing character: There is no “ in font pcrr7t!
@@ -1170,71 +1174,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 roup \ let \ relax \ relax \
  []
 
+
+Overfull \hbox (5.04962pt too wide) in paragraph at lines 71--73
+\OT1/cmr/m/n/10.95 The num-ber of oc-curences of a word in a com-plete doc-u-me
+nt is com-puted with eq. ([][]4.1[][]). Equa-
+ []
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-<img/classifier.png, id=643, 541.02126pt x 472.76625pt>
+<img/classifier.png, id=686, 541.02126pt x 472.76625pt>
 File: img/classifier.png Graphic file (type png)
 <use img/classifier.png>
 Package pdftex.def Info: img/classifier.png  used on input line 77.
 (pdftex.def)             Requested size: 433.62pt x 378.92767pt.
- [21]
-[22 <./img/classifier.png>]
 Package acronym Info: Label `acro:pdf' newly defined as it shall be overridden
 although it is yet undefined on input line 84.
-) [23]
+ [21]
+[22 <./img/classifier.png>] [23] [24]
+Package acronym Info: Label `acro:tp' newly defined as it shall be overridden
+although it is yet undefined on input line 151.
+Package acronym Info: Label `acro:tn' newly defined as it shall be overridden
+although it is yet undefined on input line 152.
+Package acronym Info: Label `acro:fp' newly defined as it shall be overridden
+although it is yet undefined on input line 153.
+Package acronym Info: Label `acro:fn' newly defined as it shall be overridden
+although it is yet undefined on input line 154.
+ [25]
+<img/model_construction.png, id=752, 679.53876pt x 353.32pt>
+File: img/model_construction.png Graphic file (type png)
+<use img/model_construction.png>
+Package pdftex.def Info: img/model_construction.png  used on input line 180.
+(pdftex.def)             Requested size: 433.62pt x 225.45552pt.
+) [26 <./img/model_construction.png>]
 \openout2 = `4-architecture.aux'.
 
- (./4-architecture.tex [24
+(./4-architecture.tex
+Chapter 5.
+) [27
 
 
 
 ]
-Chapter 5.
-) [25]
 \openout2 = `5-case-study.aux'.
 
- (./5-case-study.tex [26
+ (./5-case-study.tex [28
 
 
 
 ]
 Chapter 6.
-) [27]
+) [29]
 \openout2 = `6-conclusions.aux'.
 
- (./6-conclusions.tex [28
+ (./6-conclusions.tex [30
 
 
 
 ]
 Chapter 7.
-) [29] (./main.bbl [30
+) [31] (./main.bbl [32
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+[]\OT1/cmr/m/n/10 Classification mod-els.  http://algolytics.com/tutorial-how-t
+o-determine-the-quality-and-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 \OT1/pcr/m/n/10 handle / 10391 / 4787 / VII _ CoLiCo _ G _ Jasso _ Mesa _ 3 _ 2
 015 . pdf ? sequence = 2 &
  []
 
-[31])
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+[]\OT1/cmr/m/n/10 Luigi doc-u-men-ta-tion.  [][]$\OT1/pcr/m/n/10 https : / / me
+dia . readthedocs . org / pdf / luigi / latest /
+ []
+
+[33])
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 103.
 See the caption package documentation for explanation.
 
-[32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
+[34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
  (./main.aux (./0-preamble.aux) (./A-resumen.aux) (./B-abstract.aux)
 (./D-agradecimientos.aux) (./E-contents.aux) (./1-introduction.aux)
 (./2-state-of-the-art.aux) (./7-enabling-technologies.aux)
 (./3-requirements.aux) (./4-architecture.aux) (./5-case-study.aux)
 (./6-conclusions.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AC1E7ACD5917D3EC47B7ABED7098F1CE;3772.
+(rerunfilecheck)             Checksum: A07A7730B1E43E451101C7B91F5AFF69;4250.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1242,13 +1278,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 23736 strings out of 492649
- 430221 string characters out of 6129621
- 528458 words of memory out of 5000000
- 26915 multiletter control sequences out of 15000+600000
+ 23832 strings out of 492649
+ 431417 string characters out of 6129621
+ 529461 words of memory out of 5000000
+ 26985 multiletter control sequences out of 15000+600000
  15747 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,82p,768b,849s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1272,10 +1308,10 @@ t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (50 pages, 1015965 bytes).
+Output written on main.pdf (52 pages, 1038599 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 723 compressed objects within 8 object streams
- 185 named destinations out of 1000 (max. 500000)
- 538 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 806 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 599 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,59 +2,66 @@
 \contentsline {chapter}{Abstract}{IX}{chapter*.5}
 \contentsline {chapter}{Agradecimientos}{XI}{chapter*.7}
 \contentsline {chapter}{Contents}{XIII}{section*.8}
-\contentsline {chapter}{List of Figures}{XVII}{section*.13}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.15}
-\contentsline {section}{\numberline {1.1}Context}{1}{section.16}
-\contentsline {section}{\numberline {1.2}Project goals}{1}{section.17}
-\contentsline {section}{\numberline {1.3}Structure of this document}{1}{section.19}
-\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.20}
-\contentsline {section}{\numberline {2.1}Introduction}{3}{section.21}
-\contentsline {section}{\numberline {2.2}Analysis: Automatic Sarcasm Detection}{3}{section.23}
-\contentsline {subsection}{\numberline {2.2.1}Sarcasm Definition\nobreakspace {}\cite {joshi2017automatic}}{4}{subsection.24}
-\contentsline {subsection}{\numberline {2.2.2}Data-set}{4}{subsection.26}
-\contentsline {subsection}{\numberline {2.2.3}Approaches used for Sarcasm Detection}{4}{subsection.27}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Rule-based Approaches\nobreakspace {}\cite {joshi2017automatic}}{5}{subsubsection.28}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Statistical Approaches}{5}{subsubsection.29}
-\contentsline {section}{\numberline {2.3}Main Issues in Sarcasm Detection}{5}{section.30}
-\contentsline {section}{\numberline {2.4}Figures of Merit}{6}{section.31}
-\contentsline {chapter}{\numberline {3}Enabling Technologies}{7}{chapter.34}
-\contentsline {section}{\numberline {3.1}Introduction}{7}{section.35}
-\contentsline {section}{\numberline {3.2}Natural Language Processing}{7}{section.37}
-\contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{8}{subsection.38}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Definition}{8}{subsubsection.39}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Application}{8}{subsubsection.42}
-\contentsline {section}{\numberline {3.3}\nobreakspace {}\acl {ml}}{9}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}Sklearn}{10}{subsection.46}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Definition}{10}{subsubsection.47}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Application}{10}{subsubsection.49}
-\contentsline {section}{\numberline {3.4}Senpy}{12}{section.58}
-\contentsline {subsection}{\numberline {3.4.1}Architecture}{12}{subsection.59}
-\contentsline {section}{\numberline {3.5}Luigi}{12}{section.61}
-\contentsline {subsection}{\numberline {3.5.1}Architecture}{12}{subsection.62}
-\contentsline {section}{\numberline {3.6}Bitter}{13}{section.64}
-\contentsline {section}{\numberline {3.7}Sefarad}{13}{section.66}
-\contentsline {subsection}{\numberline {3.7.1}Architecture}{13}{subsection.67}
-\contentsline {section}{\numberline {3.8}Elasticsearch}{14}{section.69}
-\contentsline {subsection}{\numberline {3.8.1}Architecture}{14}{subsection.71}
-\contentsline {chapter}{\numberline {4}Model}{17}{chapter.73}
-\contentsline {section}{\numberline {4.1}Introduction}{17}{section.74}
-\contentsline {section}{\numberline {4.2}Dataset}{17}{section.75}
-\contentsline {section}{\numberline {4.3}Preprocessing}{18}{section.77}
-\contentsline {section}{\numberline {4.4}Feature Extraction}{19}{section.78}
-\contentsline {subsection}{\numberline {4.4.1}Lexical Features}{20}{subsection.79}
-\contentsline {subsection}{\numberline {4.4.2}Syntactic Features}{20}{subsection.80}
-\contentsline {subsection}{\numberline {4.4.3}Ngram Features. Pipeline}{20}{subsection.82}
-\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{20}{subsection.84}
-\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{21}{subsection.87}
-\contentsline {section}{\numberline {4.5}Classifiers}{21}{section.92}
-\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{23}{subsection.94}
-\contentsline {chapter}{\numberline {5}Architecture}{25}{chapter.98}
-\contentsline {section}{\numberline {5.1}Introduction}{25}{section.99}
-\contentsline {chapter}{\numberline {6}Case study}{27}{chapter.100}
-\contentsline {section}{\numberline {6.1}Introduction}{27}{section.101}
-\contentsline {section}{\numberline {6.2}Rule edition}{27}{section.102}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{29}{chapter.103}
-\contentsline {section}{\numberline {7.1}Conclusions}{29}{section.104}
-\contentsline {section}{\numberline {7.2}Achieved goals}{29}{section.105}
-\contentsline {section}{\numberline {7.3}Future work}{29}{section.106}
-\contentsline {chapter}{Bibliography}{30}{section*.107}
+\contentsline {chapter}{List of Figures}{XVII}{section*.15}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.17}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.18}
+\contentsline {section}{\numberline {1.2}Project goals}{1}{section.19}
+\contentsline {section}{\numberline {1.3}Structure of this document}{1}{section.21}
+\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.22}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.23}
+\contentsline {section}{\numberline {2.2}Analysis: Automatic Sarcasm Detection}{3}{section.25}
+\contentsline {subsection}{\numberline {2.2.1}Sarcasm Definition\nobreakspace {}\cite {joshi2017automatic}}{4}{subsection.26}
+\contentsline {subsection}{\numberline {2.2.2}Data-set}{4}{subsection.28}
+\contentsline {subsection}{\numberline {2.2.3}Approaches used for Sarcasm Detection}{4}{subsection.29}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Rule-based Approaches\nobreakspace {}\cite {joshi2017automatic}}{5}{subsubsection.30}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Statistical Approaches}{5}{subsubsection.31}
+\contentsline {section}{\numberline {2.3}Main Issues in Sarcasm Detection}{5}{section.32}
+\contentsline {section}{\numberline {2.4}Figures of Merit}{6}{section.33}
+\contentsline {chapter}{\numberline {3}Enabling Technologies}{7}{chapter.35}
+\contentsline {section}{\numberline {3.1}Introduction}{7}{section.36}
+\contentsline {section}{\numberline {3.2}Natural Language Processing}{7}{section.38}
+\contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{8}{subsection.39}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Definition}{8}{subsubsection.40}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Application}{8}{subsubsection.43}
+\contentsline {section}{\numberline {3.3}\nobreakspace {}\acl {ml}}{9}{section.46}
+\contentsline {subsection}{\numberline {3.3.1}Sklearn}{10}{subsection.47}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Definition}{10}{subsubsection.48}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Application}{10}{subsubsection.50}
+\contentsline {section}{\numberline {3.4}Senpy}{12}{section.59}
+\contentsline {subsection}{\numberline {3.4.1}Architecture}{12}{subsection.60}
+\contentsline {section}{\numberline {3.5}Luigi}{12}{section.62}
+\contentsline {subsection}{\numberline {3.5.1}Architecture}{12}{subsection.63}
+\contentsline {section}{\numberline {3.6}Bitter}{13}{section.65}
+\contentsline {section}{\numberline {3.7}Sefarad}{13}{section.67}
+\contentsline {subsection}{\numberline {3.7.1}Architecture}{13}{subsection.68}
+\contentsline {section}{\numberline {3.8}Elasticsearch}{14}{section.70}
+\contentsline {subsection}{\numberline {3.8.1}Architecture}{14}{subsection.72}
+\contentsline {chapter}{\numberline {4}Model}{17}{chapter.74}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.75}
+\contentsline {section}{\numberline {4.2}Dataset}{17}{section.76}
+\contentsline {section}{\numberline {4.3}Preprocessing}{18}{section.78}
+\contentsline {section}{\numberline {4.4}Feature Extraction}{19}{section.79}
+\contentsline {subsection}{\numberline {4.4.1}Lexical Features}{20}{subsection.80}
+\contentsline {subsection}{\numberline {4.4.2}Syntactic Features}{20}{subsection.81}
+\contentsline {subsection}{\numberline {4.4.3}Ngram Features. Pipeline}{20}{subsection.83}
+\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{20}{subsection.86}
+\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{21}{subsection.89}
+\contentsline {section}{\numberline {4.5}Classifiers}{21}{section.94}
+\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{23}{subsection.96}
+\contentsline {subsection}{\numberline {4.5.2}\acf {svm}}{23}{subsection.101}
+\contentsline {subsection}{\numberline {4.5.3}\acf {knn}}{24}{subsection.103}
+\contentsline {section}{\numberline {4.6}Quality of a Classfier}{25}{section.105}
+\contentsline {subsection}{\numberline {4.6.1}Precision}{25}{subsection.110}
+\contentsline {subsection}{\numberline {4.6.2}Recall}{25}{subsection.112}
+\contentsline {subsection}{\numberline {4.6.3}F1 Score}{26}{subsection.114}
+\contentsline {subsection}{\numberline {4.6.4}Model Creation}{26}{subsection.116}
+\contentsline {chapter}{\numberline {5}Architecture}{27}{chapter.118}
+\contentsline {section}{\numberline {5.1}Introduction}{27}{section.119}
+\contentsline {chapter}{\numberline {6}Case study}{29}{chapter.120}
+\contentsline {section}{\numberline {6.1}Introduction}{29}{section.121}
+\contentsline {section}{\numberline {6.2}Rule edition}{29}{section.122}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{31}{chapter.123}
+\contentsline {section}{\numberline {7.1}Conclusions}{31}{section.124}
+\contentsline {section}{\numberline {7.2}Achieved goals}{31}{section.125}
+\contentsline {section}{\numberline {7.3}Future work}{31}{section.126}
+\contentsline {chapter}{Bibliography}{32}{section*.127}

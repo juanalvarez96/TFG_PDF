@@ -19,46 +19,47 @@ Warning--to sort, need author or key in pipeline
 Warning--to sort, need author or key in senpy
 Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
+Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
-You've used 26 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            614 strings with 6785 characters,
-and the built_in function-call counts, 5780 in all, are:
-= -- 529
-> -- 196
+            623 strings with 7064 characters,
+and the built_in function-call counts, 6369 in all, are:
+= -- 582
+> -- 211
 < -- 1
-+ -- 85
-- -- 58
-* -- 252
-:= -- 970
-add.period$ -- 73
-call.type$ -- 26
-change.case$ -- 92
++ -- 92
+- -- 62
+* -- 273
+:= -- 1063
+add.period$ -- 81
+call.type$ -- 29
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 287
-empty$ -- 576
-format.name$ -- 58
-if$ -- 1251
+cite$ -- 35
+duplicate$ -- 318
+empty$ -- 643
+format.name$ -- 62
+if$ -- 1383
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 35
-newline$ -- 128
-num.names$ -- 42
-pop$ -- 195
+int.to.str$ -- 29
+missing$ -- 39
+newline$ -- 142
+num.names$ -- 46
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 89
 quote$ -- 0
-skip$ -- 180
+skip$ -- 200
 stack$ -- 0
-substring$ -- 169
-swap$ -- 34
+substring$ -- 184
+swap$ -- 37
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 5
-while$ -- 46
-width$ -- 28
-write$ -- 252
-(There were 5 warnings)
+type$ -- 80
+warning$ -- 6
+while$ -- 50
+width$ -- 31
+write$ -- 279
+(There were 6 warnings)
