@@ -2,66 +2,68 @@
 \BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.7}{Agradecimientos}{}% 3
 \BOOKMARK [0][-]{section*.8}{Contents}{}% 4
-\BOOKMARK [0][-]{section*.15}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter.17}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.18}{Context}{chapter.17}% 7
-\BOOKMARK [1][-]{section.19}{Project goals}{chapter.17}% 8
-\BOOKMARK [1][-]{section.21}{Structure of this document}{chapter.17}% 9
-\BOOKMARK [0][-]{chapter.22}{State of the Art}{}% 10
-\BOOKMARK [1][-]{section.23}{Introduction}{chapter.22}% 11
-\BOOKMARK [1][-]{section.25}{Analysis: Automatic Sarcasm Detection}{chapter.22}% 12
-\BOOKMARK [2][-]{subsection.26}{Sarcasm Definition joshi2017automatic}{section.25}% 13
-\BOOKMARK [2][-]{subsection.28}{Data-set}{section.25}% 14
-\BOOKMARK [2][-]{subsection.29}{Approaches used for Sarcasm Detection}{section.25}% 15
-\BOOKMARK [3][-]{subsubsection.30}{Rule-based Approaches joshi2017automatic}{subsection.29}% 16
-\BOOKMARK [3][-]{subsubsection.31}{Statistical Approaches}{subsection.29}% 17
-\BOOKMARK [1][-]{section.32}{Main Issues in Sarcasm Detection}{chapter.22}% 18
-\BOOKMARK [1][-]{section.33}{Figures of Merit}{chapter.22}% 19
-\BOOKMARK [0][-]{chapter.35}{Enabling Technologies}{}% 20
-\BOOKMARK [1][-]{section.36}{Introduction}{chapter.35}% 21
-\BOOKMARK [1][-]{section.38}{Natural Language Processing}{chapter.35}% 22
-\BOOKMARK [2][-]{subsection.39}{Natural Language Toolkit}{section.38}% 23
-\BOOKMARK [3][-]{subsubsection.40}{Definition}{subsection.39}% 24
-\BOOKMARK [3][-]{subsubsection.43}{Application}{subsection.39}% 25
-\BOOKMARK [1][-]{section.46}{ Machine Learning}{chapter.35}% 26
-\BOOKMARK [2][-]{subsection.47}{Sklearn}{section.46}% 27
-\BOOKMARK [3][-]{subsubsection.48}{Definition}{subsection.47}% 28
-\BOOKMARK [3][-]{subsubsection.50}{Application}{subsection.47}% 29
-\BOOKMARK [1][-]{section.59}{Senpy}{chapter.35}% 30
-\BOOKMARK [2][-]{subsection.60}{Architecture}{section.59}% 31
-\BOOKMARK [1][-]{section.62}{Luigi}{chapter.35}% 32
-\BOOKMARK [2][-]{subsection.63}{Architecture}{section.62}% 33
-\BOOKMARK [1][-]{section.65}{Bitter}{chapter.35}% 34
-\BOOKMARK [1][-]{section.67}{Sefarad}{chapter.35}% 35
-\BOOKMARK [2][-]{subsection.68}{Architecture}{section.67}% 36
-\BOOKMARK [1][-]{section.70}{Elasticsearch}{chapter.35}% 37
-\BOOKMARK [2][-]{subsection.72}{Architecture}{section.70}% 38
-\BOOKMARK [0][-]{chapter.74}{Model}{}% 39
-\BOOKMARK [1][-]{section.75}{Introduction}{chapter.74}% 40
-\BOOKMARK [1][-]{section.76}{Dataset}{chapter.74}% 41
-\BOOKMARK [1][-]{section.78}{Preprocessing}{chapter.74}% 42
-\BOOKMARK [1][-]{section.79}{Feature Extraction}{chapter.74}% 43
-\BOOKMARK [2][-]{subsection.80}{Lexical Features}{section.79}% 44
-\BOOKMARK [2][-]{subsection.81}{Syntactic Features}{section.79}% 45
-\BOOKMARK [2][-]{subsection.83}{Ngram Features. Pipeline}{section.79}% 46
-\BOOKMARK [2][-]{subsection.86}{Latent Dirichlet Allocator \(LDA\) Features}{section.79}% 47
-\BOOKMARK [2][-]{subsection.89}{Frequency Inverse Document Frequency \(TFIDF\)}{section.79}% 48
-\BOOKMARK [1][-]{section.94}{Classifiers}{chapter.74}% 49
-\BOOKMARK [2][-]{subsection.96}{Naive Bayes Classifier \(NB\)}{section.94}% 50
-\BOOKMARK [2][-]{subsection.101}{Support Vector Machine \(SVM\)}{section.94}% 51
-\BOOKMARK [2][-]{subsection.103}{K-Nearest Neighbors \(k-NN\)}{section.94}% 52
-\BOOKMARK [1][-]{section.105}{Quality of a Classfier}{chapter.74}% 53
-\BOOKMARK [2][-]{subsection.110}{Precision}{section.105}% 54
-\BOOKMARK [2][-]{subsection.112}{Recall}{section.105}% 55
-\BOOKMARK [2][-]{subsection.114}{F1 Score}{section.105}% 56
-\BOOKMARK [2][-]{subsection.116}{Model Creation}{section.105}% 57
-\BOOKMARK [0][-]{chapter.118}{Architecture}{}% 58
-\BOOKMARK [1][-]{section.119}{Introduction}{chapter.118}% 59
-\BOOKMARK [0][-]{chapter.120}{Case study}{}% 60
-\BOOKMARK [1][-]{section.121}{Introduction}{chapter.120}% 61
-\BOOKMARK [1][-]{section.122}{Rule edition}{chapter.120}% 62
-\BOOKMARK [0][-]{chapter.123}{Conclusions and future work}{}% 63
-\BOOKMARK [1][-]{section.124}{Conclusions}{chapter.123}% 64
-\BOOKMARK [1][-]{section.125}{Achieved goals}{chapter.123}% 65
-\BOOKMARK [1][-]{section.126}{Future work}{chapter.123}% 66
-\BOOKMARK [0][-]{section*.127}{Bibliography}{}% 67
+\BOOKMARK [0][-]{section*.16}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter.18}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.19}{Context}{chapter.18}% 7
+\BOOKMARK [1][-]{section.20}{Project goals}{chapter.18}% 8
+\BOOKMARK [1][-]{section.22}{Structure of this document}{chapter.18}% 9
+\BOOKMARK [0][-]{chapter.23}{State of the Art}{}% 10
+\BOOKMARK [1][-]{section.24}{Introduction}{chapter.23}% 11
+\BOOKMARK [1][-]{section.26}{Analysis: Automatic Sarcasm Detection}{chapter.23}% 12
+\BOOKMARK [2][-]{subsection.27}{Sarcasm Definition joshi2017automatic}{section.26}% 13
+\BOOKMARK [2][-]{subsection.29}{Data-set}{section.26}% 14
+\BOOKMARK [2][-]{subsection.30}{Approaches used for Sarcasm Detection}{section.26}% 15
+\BOOKMARK [3][-]{subsubsection.31}{Rule-based Approaches joshi2017automatic}{subsection.30}% 16
+\BOOKMARK [3][-]{subsubsection.32}{Statistical Approaches}{subsection.30}% 17
+\BOOKMARK [1][-]{section.33}{Main Issues in Sarcasm Detection}{chapter.23}% 18
+\BOOKMARK [1][-]{section.34}{Figures of Merit}{chapter.23}% 19
+\BOOKMARK [0][-]{chapter.36}{Enabling Technologies}{}% 20
+\BOOKMARK [1][-]{section.37}{Introduction}{chapter.36}% 21
+\BOOKMARK [1][-]{section.39}{Natural Language Processing}{chapter.36}% 22
+\BOOKMARK [2][-]{subsection.40}{Natural Language Toolkit}{section.39}% 23
+\BOOKMARK [3][-]{subsubsection.41}{Definition}{subsection.40}% 24
+\BOOKMARK [3][-]{subsubsection.44}{Application}{subsection.40}% 25
+\BOOKMARK [1][-]{section.47}{ Machine Learning}{chapter.36}% 26
+\BOOKMARK [2][-]{subsection.48}{Sklearn}{section.47}% 27
+\BOOKMARK [3][-]{subsubsection.49}{Definition}{subsection.48}% 28
+\BOOKMARK [3][-]{subsubsection.51}{Application}{subsection.48}% 29
+\BOOKMARK [1][-]{section.60}{Senpy}{chapter.36}% 30
+\BOOKMARK [2][-]{subsection.61}{Architecture}{section.60}% 31
+\BOOKMARK [1][-]{section.63}{Luigi}{chapter.36}% 32
+\BOOKMARK [2][-]{subsection.64}{Architecture}{section.63}% 33
+\BOOKMARK [1][-]{section.66}{Bitter}{chapter.36}% 34
+\BOOKMARK [1][-]{section.68}{Sefarad}{chapter.36}% 35
+\BOOKMARK [2][-]{subsection.69}{Architecture}{section.68}% 36
+\BOOKMARK [1][-]{section.71}{Elasticsearch}{chapter.36}% 37
+\BOOKMARK [2][-]{subsection.73}{Architecture}{section.71}% 38
+\BOOKMARK [0][-]{chapter.75}{Model}{}% 39
+\BOOKMARK [1][-]{section.76}{Introduction}{chapter.75}% 40
+\BOOKMARK [1][-]{section.77}{Dataset}{chapter.75}% 41
+\BOOKMARK [1][-]{section.79}{Preprocessing}{chapter.75}% 42
+\BOOKMARK [1][-]{section.80}{Feature Extraction}{chapter.75}% 43
+\BOOKMARK [2][-]{subsection.81}{Lexical Features}{section.80}% 44
+\BOOKMARK [2][-]{subsection.82}{Syntactic Features}{section.80}% 45
+\BOOKMARK [2][-]{subsection.84}{Ngram Features. Pipeline}{section.80}% 46
+\BOOKMARK [2][-]{subsection.87}{Latent Dirichlet Allocator \(LDA\) Features}{section.80}% 47
+\BOOKMARK [2][-]{subsection.90}{Frequency Inverse Document Frequency \(TFIDF\)}{section.80}% 48
+\BOOKMARK [1][-]{section.95}{Classifiers}{chapter.75}% 49
+\BOOKMARK [2][-]{subsection.97}{Naive Bayes Classifier \(NB\)}{section.95}% 50
+\BOOKMARK [2][-]{subsection.102}{Support Vector Machine \(SVM\)}{section.95}% 51
+\BOOKMARK [2][-]{subsection.104}{K-Nearest Neighbors \(k-NN\)}{section.95}% 52
+\BOOKMARK [2][-]{subsection.106}{Logistic Regression \(LR\)}{section.95}% 53
+\BOOKMARK [1][-]{section.109}{Quality of a Classfier}{chapter.75}% 54
+\BOOKMARK [2][-]{subsection.114}{Precision}{section.109}% 55
+\BOOKMARK [2][-]{subsection.116}{Recall}{section.109}% 56
+\BOOKMARK [2][-]{subsection.118}{F1 Score}{section.109}% 57
+\BOOKMARK [2][-]{subsection.120}{Model Creation}{section.109}% 58
+\BOOKMARK [1][-]{section.122}{Parameter Optimization}{chapter.75}% 59
+\BOOKMARK [0][-]{chapter.127}{Architecture}{}% 60
+\BOOKMARK [1][-]{section.128}{Introduction}{chapter.127}% 61
+\BOOKMARK [0][-]{chapter.129}{Case study}{}% 62
+\BOOKMARK [1][-]{section.130}{Introduction}{chapter.129}% 63
+\BOOKMARK [1][-]{section.131}{Rule edition}{chapter.129}% 64
+\BOOKMARK [0][-]{chapter.132}{Conclusions and future work}{}% 65
+\BOOKMARK [1][-]{section.133}{Conclusions}{chapter.132}% 66
+\BOOKMARK [1][-]{section.134}{Achieved goals}{chapter.132}% 67
+\BOOKMARK [1][-]{section.135}{Future work}{chapter.132}% 68
+\BOOKMARK [0][-]{section*.136}{Bibliography}{}% 69

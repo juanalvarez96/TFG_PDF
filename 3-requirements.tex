@@ -36,6 +36,7 @@ These steps of preprocessing were all executed defining a custom tokenizer but t
 It is noteworthy to mention that the custom tokenizer is used later for the feature extraction.\\
 At the beginning of the preprocessing stage, the dataset is split into two parts, a training part and a testing part. The purpose of this split is to train a clasifier using the train  sequence and evaluate the accuracy of the classifier using the test sequence. The split is taken randomly. The size of each sequence is 75\% for the train sequence and 25\% for the test sequence (8311 and 2771). More information on can be found on \cref{sec:modcons}.
 \section{Feature Extraction}
+\label{sec:feature}
  The feature extraction process consist of reading the text and extracting certain features. Furthermore, those extracted features will be fed to the classifier and finally the model will be completed. As a result, the accuracy of the model will be directly related to the choice of features. Therefore, it is very important to choose wisely the features to extract.\\
 This section will be committed to extensively explaining the selected features.
 \par
@@ -71,6 +72,7 @@ and
 \end{equation}
 The number of occurences of a word in a complete document is computed with~\cref{ec:tf}.~\Cref{ec:idf} represents the $idf$ of a word. That amount serves as how much information a word provides. As explained before, terms with less frequency are considered to provide more information to the whole document as more common terms. Finally,~\cref{ec:tfidf} computes the weight of a word.
 \section{Classifiers}
+\label{sec:clasif}
 This section will explain extensively the classifiers used for the learning process.\\
 Classification~\cite{classif} is the task of predicting the class to which an object, known as pattern, belongs. The pattern is assumed to belong to one and only one among a number of a priori known classes. Each pattern is uniquely represented by a set of measurements, known as features. One of the early stages in designing a classification system is to select an appropriate set of feature variables. These should “encode” as much class-discriminatory information, so that, by measuring their value for a given pattern, to be able to predict, with high enough probability, the class of the pattern. 
 \begin{figure}
@@ -145,7 +147,31 @@ The results can be observed in~\cref{tab:knn1}. The quality of the classifier wa
 	\label{tab:knn1}
 \end{table}
 \subsection{\acf{lr}}
- \ac{lr} is a classification method that is based on the probability of a sample belonging to a class.
+ \acl{lr} is a classification method that is based on the probability of a sample belonging to a class.
+ It consists of maximum-entropy classification. Mathematically, the aim is to compute the minimum of~\cref{ec:lr}~\cite{lr}.
+ \begin{equation}
+ 	min_{w,c}\frac{1}{2}w^{T}w+C\sum_{i=1}^{n}log(exp(-y_i(X_i^{T}w+c))+1)
+ 	\label{ec:lr}
+ \end{equation}
+ The \ac{lr} classifier was defined setting the parameter \textit{C} = 1. \\
+ For such a parameter, the results obtained can be observed in~\cref{tab:lr1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see \cref{sec:score}.
+ 
+ \begin{table}[h!]
+ 	\centering
+ 	\begin{tabular}{||c c c c c||} 
+ 		\hline
+ 		Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+ 		\hline\hline
+ 		0 & 0.90007 & 0.90074 & 0.90040 & 1360 \\ 
+ 		1 & 0.90426 & 0.90361 & 0.90393 & 1411 \\
+ 		avg/total & 0.90220 & 0.90220 & 0.90220 & 2771 \\
+ 		[1ex] 
+ 		\hline
+ 	\end{tabular}
+ 	\caption{\acl{lr} Classification Report}
+ 	\label{tab:lr1}
+ \end{table}
+ 
 \section{Quality of a Classfier}
 \label{sec:score}
 In order to ensure a sufficient classifier accuracy, precision is not always the best indicator. Let us consider a binary class dataset where 99\% of the data belongs to one class and only 1\% of the data belongs to the other class. Now, if a classifier were to always predict the majority class for every data point, it would have 99\% accuracy. But that would not mean that the classifier is performing well. To have a better idea of the classifiers' efficiency we first must define some parameters~\cite{f1score}:
@@ -183,6 +209,20 @@ The \cref{fig:modcons} depicts the methodology followed for training and evaluat
 	\caption{Model Construction~\cite{modcons}}
 	\label{fig:modcons}
 \end{figure}
+\section{Parameter Optimization}
+This section will cover how was the parameter optimization performed and what were the results obtained for each classifier.\\
+To understand the parameter optimization, first we must comprehend how is the classifier built in this project.\\
+The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{lr}. That stage is accomplished by making use of the pipeline described in \cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in \cref{sec:feature} and one of the classifiers chosen in \cref{sec:clasif}.\\
+In order to find the right classifier parameters, it must be carried out a parameter search for the pipeline parameters and the classifier parameters.\\
+From \cref{sec:feature}, the pipeline extracts three main features; ngrams, words (custom tokenizer) and topics (\ac{lda}). From these features, the only parameters that will be searched are the number of topics from \ac{lda} and the number of ngrams.\\
+From \cref{sec:clasif}, the parameters searched will depend on the type of classifier. On the following subsections from this section, the topics will be covered.
+The parameter search will be done using the GridSearchCV from the Scikit Learn class. The principle of the GridSearchCV is:
+\begin{enumerate}
+	\item Define a dictionary of parameters to change.
+	\item Fit the grid search with the train dataset (this process can take a very long time).
+	\item Print best score alongside with the best parameters.
+	\item Print the metrics accuracy score by testing the classifier with the best parameters found. For this, it is required a test dataset.
+\end{enumerate}
 
 
 

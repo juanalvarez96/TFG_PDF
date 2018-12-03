@@ -12,8 +12,7 @@ Hacia la detección de ironía en textos cortos.
 }
 \bibitem{luigi}
 Luigi documentation.
-\newblock
-\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+\newblock \url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
 }
 \bibitem{sefarad}
 Sefarad architecture.
@@ -103,6 +102,11 @@ Mikhail Khodak, Nikunj Saunshi, and Kiran Vodrahalli.
 Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
 \newblock {\em Natural Language Processing: Python and NLTK}.
 \newblock " Packt Publishing", 2016.
+
+\bibitem{lr}
+Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
+\newblock {\em Natural Language Processing: Python and NLTK}.
+\newblock Packt Publishing, 2016.
 
 \bibitem{pos}
 Benjamin Bengfort; Rebecca Bilbro;~Tony Ojedar.

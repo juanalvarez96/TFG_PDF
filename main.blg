@@ -21,45 +21,45 @@ Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
-You've used 29 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            623 strings with 7064 characters,
-and the built_in function-call counts, 6369 in all, are:
-= -- 582
-> -- 211
+            624 strings with 7066 characters,
+and the built_in function-call counts, 6584 in all, are:
+= -- 601
+> -- 218
 < -- 1
-+ -- 92
-- -- 62
-* -- 273
-:= -- 1063
-add.period$ -- 81
-call.type$ -- 29
-change.case$ -- 101
++ -- 95
+- -- 64
+* -- 281
+:= -- 1101
+add.period$ -- 84
+call.type$ -- 30
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 318
-empty$ -- 643
-format.name$ -- 62
-if$ -- 1383
+cite$ -- 36
+duplicate$ -- 330
+empty$ -- 665
+format.name$ -- 64
+if$ -- 1429
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 39
-newline$ -- 142
-num.names$ -- 46
-pop$ -- 219
+int.to.str$ -- 30
+missing$ -- 41
+newline$ -- 147
+num.names$ -- 48
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 92
 quote$ -- 0
-skip$ -- 200
+skip$ -- 206
 stack$ -- 0
-substring$ -- 184
-swap$ -- 37
+substring$ -- 189
+swap$ -- 38
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 82
 warning$ -- 6
-while$ -- 50
-width$ -- 31
-write$ -- 279
+while$ -- 52
+width$ -- 32
+write$ -- 289
 (There were 6 warnings)
