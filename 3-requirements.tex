@@ -48,10 +48,10 @@ Usually extracting lexical features involves getting the number of sentences and
 The syntactic feature extraction consists of counting the number of nouns, adjectives, verbs, adverbs, conjunctions, pronouns and numbers present in each tweet. In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage.
 \subsection{Ngram Features. Pipeline}
 Ngram extractions consist of grouping the words into bag of words. If we group the words individually then a sentence with five words will be considered as a five words sentence. If we group two words together then a sentence of six words will be considered as a three word sentence. So each pair of words are understood by the estimator as one.\\
-Since it is very difficult to guess what is the optimum bag of words (i.e. number of words) CountVectorizer method provided by the Scikit-Learn class allows us to define a range. Finally, to select the optimum range, a~\ac{gs} will be performed (see \todo[inline]{Pon aqui la seccion donde explicas el grid search}).
+Since it is very difficult to guess what is the optimum bag of words (i.e. number of words) CountVectorizer method provided by the Scikit-Learn class allows us to define a range. Finally, to select the optimum range, a~\ac{gs} will be performed (see~\cref{sec:gs}).
 \subsection{\acf{lda} Features}
 \ac{lda}~\footnote{\url{https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation}} is a generative statistical model that allows sets of observations to be explained by unobserved groups that explain why some parts of the data are similar.\\ In other words, \ac{lda} extraction can be used to extract how many topics are being spoken about in the dataset. This can be observed by analyzing each words' presence.\\
-The main parameter of this statistical model is the number of topics. Similarly as with the ngrams features, a~\ac{gs} will be performed to find the optimum number of topics (see \todo[inline]{Pon aqui la seccion donde explicas el grid search}).
+The main parameter of this statistical model is the number of topics. Similarly as with the ngrams features, a~\ac{gs} will be performed to find the optimum number of topics (see~\cref{sec:gs}).
 \subsection{\acf{tfidf}}
 \label{sec:tfidf}
 \ac{tfidf}~\footnote{\url{https://en.wikipedia.org/wiki/Tf–idf}} is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. Particularly, the \ac{tfidf} recognizes those words that are rare in the corpus but may be of great importance. The \ac{tfidf} uses a word as an argument and outputs the inverse frequency of that word.\\
@@ -89,8 +89,8 @@ The~\ac{nb} classifier is a typical and popular example of a suboptimal classifi
 	\label{ec:nb}
 \end{equation}
 Considering that both $\omega_i$ and $x$ are Gaussian variables, it is only necessary to compute the mean and the variance for each pair of variables. That leads to a total of $2\times l$ unknown variables for a subclass. Computationally speaking, $2\times l$ complexity is achievable in a reasonable amount of time for a large $l$. This is the great advantage of the \ac{nb}.\par
-The \ac{nb} classifier was defined setting the parameter $alpha = 0.01$. Nevertheless, it is not very important what parameters to set when defining the classifier since a \ac{gs} will be performed with the purpose of discovering the best classifier parameters. (See \todo[inline]{Pon aquí la sección del grid search})
-In this project, the results obtained for the \ac{nb} with no parameter optimization can be observed in ~\cref{tab:nb1}.
+The \ac{nb} classifier was defined setting the parameter $alpha = 0.01$. Nevertheless, it is not very important what parameters to set when defining the classifier since a \ac{gs} will be performed with the purpose of discovering the best classifier parameters. (See~\cref{sec:gs})
+In this project, the results obtained for the~\ac{nb} with no parameter optimization can be observed in~\cref{tab:nb1}.
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{||c c c c c||} 
@@ -106,11 +106,11 @@ In this project, the results obtained for the \ac{nb} with no parameter optimiza
 		\caption{\acl{nb} Classification Report}
 		\label{tab:nb1}
 \end{table}
-The quality of a classifier will be established using the \textit{F1-Score} field from the classification report. For more details about this precedent see \cref{sec:score}.
+The quality of a classifier will be established using the \textit{F1-Score} field from the classification report. For more details about this precedent see~\cref{sec:score}.
 \subsection{\acf{svm}}
 Support vector machine~\cite{svm} is a supervised learning algorithm that can be used for classification and regression. It is able to classify data linearly and nonlinearly using kernel methods. Each data point in the training dataset is labeled, as it is supervised learning, and mapped to the input feature space, and the aim is to classify every point of new data to one of the classes. A data point is an N dimension number, as N is the number of features, and the problem is to separate this data using N-1 dimensional hyperplane and this is considered to be a linear classifier.\par
-The \ac{svm} was defined setting as parameters \textit{C} = 1 and \textit{kernel} = linear. In other words, the initial \ac{svm} model was the linear \ac{svm} model.\\
-With such parameters, the results can be observed in~\cref{tab:sv1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see \cref{sec:score}. 
+The~\ac{svm} was defined setting as parameters \textit{C} = 1 and \textit{kernel} = linear. In other words, the initial~\ac{svm} model was the linear~\ac{svm} model.\\
+With such parameters, the results can be observed in~\cref{tab:sv1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}. 
 
 \begin{table}[h!]
 	\centering
@@ -129,8 +129,8 @@ With such parameters, the results can be observed in~\cref{tab:sv1}. The quality
 \end{table}
 \subsection{\acf{knn}}
 \ac{knn} is based on the idea that samples that are close with respect to a predefined distance metric are also similar, so they can share their peculiar features. To measure that distance, a distance function is defined. Usually, that distance function is the Minkowski metric~\cite{countvect1}. For each data point in the out-sample data, we calculate its distance from all data points in the in-sample data. Each data point has a vector of distances and the K distance which is close enough will be selected and the final decision about the class of the data point is based on a weighted combination of all k neighborhoods~\cite{svm}.\par
-The \ac{knn} was defined setting as parameters \textit{neighbors} = 7.\\
-The results can be observed in~\cref{tab:knn1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see \cref{sec:score}. 
+The~\ac{knn} was defined setting as parameters \textit{neighbors} = 7.\\
+The results can be observed in~\cref{tab:knn1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}. 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{||c c c c c||} 
@@ -153,8 +153,8 @@ The results can be observed in~\cref{tab:knn1}. The quality of the classifier wa
  	min_{w,c}\frac{1}{2}w^{T}w+C\sum_{i=1}^{n}log(exp(-y_i(X_i^{T}w+c))+1)
  	\label{ec:lr}
  \end{equation}
- The \ac{lr} classifier was defined setting the parameter \textit{C} = 1. \\
- For such a parameter, the results obtained can be observed in~\cref{tab:lr1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see \cref{sec:score}.
+ The~\ac{lr} classifier was defined setting the parameter \textit{C} = 1. \\
+ For such a parameter, the results obtained can be observed in~\cref{tab:lr1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}.
  
  \begin{table}[h!]
  	\centering
@@ -200,10 +200,10 @@ is the harmonic average of the precision and recall. It is a metric that conveys
 	F1 = 2\times \frac{Precision \times Recall}{Precision + Recall}
 	\label{ec:f1score}
 \end{equation}
-Since the F1 score takes into account both the precision and the recall (see \cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropiate quality measure.
+Since the F1 score takes into account both the precision and the recall (see~\cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropiate quality measure.
 \subsection{Model Creation}
 \label{sec:modcons}
-The \cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the \cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary in this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
+The~\cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary in this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/model_construction.png}
 	\caption{Model Construction~\cite{modcons}}
@@ -212,10 +212,10 @@ The \cref{fig:modcons} depicts the methodology followed for training and evaluat
 \section{Parameter Optimization}
 This section will cover how was the parameter optimization performed and what were the results obtained for each classifier.\\
 To understand the parameter optimization, first we must comprehend how is the classifier built in this project.\\
-The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{lr}. That stage is accomplished by making use of the pipeline described in \cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in \cref{sec:feature} and one of the classifiers chosen in \cref{sec:clasif}.\\
+The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{lr}. That stage is accomplished by making use of the pipeline described in~\cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in~\cref{sec:feature} and one of the classifiers chosen in~\cref{sec:clasif}.\\
 In order to find the right classifier parameters, it must be carried out a parameter search for the pipeline parameters and the classifier parameters.\\
-From \cref{sec:feature}, the pipeline extracts three main features; ngrams, words (custom tokenizer) and topics (\ac{lda}). From these features, the only parameters that will be searched are the number of topics from \ac{lda} and the number of ngrams.\\
-From \cref{sec:clasif}, the parameters searched will depend on the type of classifier. On the following subsections from this section, the topics will be covered.
+From~\cref{sec:feature}, the pipeline extracts three main features; ngrams, words (custom tokenizer) and topics (\ac{lda}). From these features, the only parameters that will be searched are the number of topics from~\ac{lda} and the number of ngrams.\\
+From~\cref{sec:clasif}, the parameters searched will depend on the type of classifier. On the following subsections from this section, the topics will be covered.
 The parameter search will be done using the GridSearchCV from the Scikit Learn class. The principle of the GridSearchCV is:
 \begin{enumerate}
 	\item Define a dictionary of parameters to change.
@@ -223,7 +223,89 @@ The parameter search will be done using the GridSearchCV from the Scikit Learn c
 	\item Print best score alongside with the best parameters.
 	\item Print the metrics accuracy score by testing the classifier with the best parameters found. For this, it is required a test dataset.
 \end{enumerate}
+\subsection{Grid Search}
+\label{sec:gs}
+A grid search is an exhaustive search through a manually-specified subset of the hyperparameter space. The grid search algorithm requires a performance metric, such as cross-validation error or validation-set error to evaluate the best possible parameter~\cite{gs}. The grid search method comes from the Scikit Learn class.\\
+A grid search was optimizied for each classifier to get the best performance. 
+\subsubsection{\acl{nb}}
+\begin{itemize}
+	\item \textbf{Parameters to optimize}:
+	\begin{enumerate}
+		\item \textit{Alpha}. Belongs to classfier
+		\item \textit{Number of topics}. Belongs to pipeline
+	\end{enumerate}
+	\item \textbf{Results}
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{||c c c c c||} 
+				\hline
+				Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+				\hline\hline
+				0 & 0.96481 & 0.96765 & 0.96623 & 1360 \\ 
+				1 & 0.96873 & 0.96598 & 0.96735 & 1411 \\
+				avg/total & 0.96680 & 0.96680 & 0.92602 & 2771 \\
+				[1ex] 
+				\hline
+			\end{tabular}
+			\caption{\acl{nb} Classification Report Optimized}
+			\label{tab:nb2}
+		\end{table}
+	
+\end{itemize}
 
+\subsubsection{\acl{svm}}
+\begin{itemize}
+	\item \textbf{Parameters to optimize}:
+	\begin{enumerate}
+		\item \textit{C}. Belongs to classfier
+		\item \textit{Number of topics}. Belongs to pipeline
+		\item \textit{NUmber of ngrams}. Belongs to pipeline
+		
+	\end{enumerate}
+	\item \textbf{Results}
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c c c c c||} 
+			\hline
+			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+			\hline\hline
+			0 & 0.91131 & 0.90662 & 0.90896 & 1360 \\ 
+			1 & 0.91044 & 0.91495 & 0.91269 & 1411 \\
+			avg/total & 0.91086 & 0.91086 & 0.91086 & 2771 \\
+			[1ex] 
+			\hline
+		\end{tabular}
+		\caption{\acl{svm} Classification Report Optimized}
+		\label{tab:sv2}
+	\end{table}
+	
+\end{itemize}
+\subsubsection{\acl{knn}}
+Since the results of the~\ac{knn} were very low (see~\cref{tab:knn1}) there was no grid search performed to predict the best classifier parameters. Furthermore,~\ac{knn} it is not a recommended classifier for the porpose of the project.
+\subsubsection{\acl{lr}}
+\begin{itemize}
+	\item \textbf{Parameters to optimize}:
+	\begin{enumerate}
+		\item \textit{Number of topics}. Belongs to pipeline
+	\end{enumerate}
+	\item \textbf{Results}
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c c c c c||} 
+			\hline
+			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+			\hline\hline
+			0 & 0.90007 & 0.90074 & 0.90040 & 1360 \\ 
+			1 & 0.90426 & 0.90361 & 0.90393 & 1411 \\
+			avg/total & 0.90220 & 0.90220 & 0.90220 & 2771 \\
+			[1ex] 
+			\hline
+		\end{tabular}
+		\caption{\acl{lr} Classification Report Optimized}
+		\label{tab:lr2}
+	\end{table}
+	
+\end{itemize}
 
 
 

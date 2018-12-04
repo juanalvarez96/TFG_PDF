@@ -12,7 +12,8 @@ Hacia la detección de ironía en textos cortos.
 }
 \bibitem{luigi}
 Luigi documentation.
-\newblock \url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+\newblock
+\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
 }
 \bibitem{sefarad}
 Sefarad architecture.
@@ -72,6 +73,11 @@ Giuseppe Ciaburro.
 Bharvi Dixit.
 \newblock {\em Elasticsearch Essentials}.
 \newblock Packt Publishing, 2016.
+
+\bibitem{gs}
+Dipanjan Sarkar; Raghav Bali;~Tamoghna Ghosh.
+\newblock {\em Hands-On Transfer Learning with Python}.
+\newblock Packt Publishing, 2018.
 
 \bibitem{tfidf}
 Josh Patterson;~Adam Gibso.

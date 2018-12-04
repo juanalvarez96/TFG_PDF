@@ -44,26 +44,32 @@
 \contentsline {subsection}{\numberline {4.4.1}Lexical Features}{20}{subsection.81}
 \contentsline {subsection}{\numberline {4.4.2}Syntactic Features}{20}{subsection.82}
 \contentsline {subsection}{\numberline {4.4.3}Ngram Features. Pipeline}{20}{subsection.84}
-\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{20}{subsection.87}
-\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{21}{subsection.90}
-\contentsline {section}{\numberline {4.5}Classifiers}{21}{section.95}
-\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{23}{subsection.97}
-\contentsline {subsection}{\numberline {4.5.2}\acf {svm}}{23}{subsection.102}
-\contentsline {subsection}{\numberline {4.5.3}\acf {knn}}{24}{subsection.104}
-\contentsline {subsection}{\numberline {4.5.4}\acf {lr}}{25}{subsection.106}
-\contentsline {section}{\numberline {4.6}Quality of a Classfier}{25}{section.109}
-\contentsline {subsection}{\numberline {4.6.1}Precision}{26}{subsection.114}
-\contentsline {subsection}{\numberline {4.6.2}Recall}{26}{subsection.116}
-\contentsline {subsection}{\numberline {4.6.3}F1 Score}{26}{subsection.118}
-\contentsline {subsection}{\numberline {4.6.4}Model Creation}{26}{subsection.120}
-\contentsline {section}{\numberline {4.7}Parameter Optimization}{27}{section.122}
-\contentsline {chapter}{\numberline {5}Architecture}{29}{chapter.127}
-\contentsline {section}{\numberline {5.1}Introduction}{29}{section.128}
-\contentsline {chapter}{\numberline {6}Case study}{31}{chapter.129}
-\contentsline {section}{\numberline {6.1}Introduction}{31}{section.130}
-\contentsline {section}{\numberline {6.2}Rule edition}{31}{section.131}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{33}{chapter.132}
-\contentsline {section}{\numberline {7.1}Conclusions}{33}{section.133}
-\contentsline {section}{\numberline {7.2}Achieved goals}{33}{section.134}
-\contentsline {section}{\numberline {7.3}Future work}{33}{section.135}
-\contentsline {chapter}{Bibliography}{34}{section*.136}
+\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{20}{subsection.86}
+\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{21}{subsection.88}
+\contentsline {section}{\numberline {4.5}Classifiers}{21}{section.93}
+\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{21}{subsection.95}
+\contentsline {subsection}{\numberline {4.5.2}\acf {svm}}{23}{subsection.99}
+\contentsline {subsection}{\numberline {4.5.3}\acf {knn}}{24}{subsection.101}
+\contentsline {subsection}{\numberline {4.5.4}\acf {lr}}{24}{subsection.103}
+\contentsline {section}{\numberline {4.6}Quality of a Classfier}{25}{section.106}
+\contentsline {subsection}{\numberline {4.6.1}Precision}{26}{subsection.111}
+\contentsline {subsection}{\numberline {4.6.2}Recall}{26}{subsection.113}
+\contentsline {subsection}{\numberline {4.6.3}F1 Score}{26}{subsection.115}
+\contentsline {subsection}{\numberline {4.6.4}Model Creation}{26}{subsection.117}
+\contentsline {section}{\numberline {4.7}Parameter Optimization}{27}{section.119}
+\contentsline {subsection}{\numberline {4.7.1}Grid Search}{28}{subsection.124}
+\contentsline {subsubsection}{\numberline {4.7.1.1}\acl {nb}}{28}{subsubsection.125}
+\contentsline {subsubsection}{\numberline {4.7.1.2}\acl {svm}}{28}{subsubsection.129}
+\contentsline {subsubsection}{\numberline {4.7.1.3}\acl {knn}}{29}{subsubsection.134}
+\contentsline {subsubsection}{\numberline {4.7.1.4}\acl {lr}}{29}{subsubsection.135}
+\contentsline {chapter}{\numberline {5}Sarcsm Analysis}{31}{chapter.138}
+\contentsline {section}{\numberline {5.1}Introduction}{31}{section.139}
+\contentsline {section}{\numberline {5.2}Architecture}{31}{section.140}
+\contentsline {chapter}{\numberline {6}Case study}{33}{chapter.141}
+\contentsline {section}{\numberline {6.1}Introduction}{33}{section.142}
+\contentsline {section}{\numberline {6.2}Rule edition}{33}{section.143}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{35}{chapter.144}
+\contentsline {section}{\numberline {7.1}Conclusions}{35}{section.145}
+\contentsline {section}{\numberline {7.2}Achieved goals}{35}{section.146}
+\contentsline {section}{\numberline {7.3}Future work}{35}{section.147}
+\contentsline {chapter}{Bibliography}{36}{section*.148}
