@@ -15,51 +15,61 @@ A level-1 auxiliary file: 5-case-study.aux
 A level-1 auxiliary file: 6-conclusions.aux
 The style file: plain.bst
 Database file #1: biblio/ref.bib
+Warning--string name "giuseppe" is undefined
+--line 200 of file biblio/ref.bib
+I was expecting a `,' or a `}'---line 200 of file biblio/ref.bib
+ :  author=giuseppe 
+ :                  Ciaburro},
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pipeline
 Warning--to sort, need author or key in senpy
 Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
-You've used 31 entries,
+Warning--to sort, need author, editor, or key in model
+Warning--empty author and editor in model
+Warning--empty publisher in model
+Warning--empty year in model
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            627 strings with 7150 characters,
-and the built_in function-call counts, 6799 in all, are:
-= -- 620
-> -- 225
+            629 strings with 7181 characters,
+and the built_in function-call counts, 6972 in all, are:
+= -- 632
+> -- 226
 < -- 1
-+ -- 98
++ -- 99
 - -- 66
-* -- 289
-:= -- 1139
-add.period$ -- 87
-call.type$ -- 31
-change.case$ -- 107
+* -- 305
+:= -- 1158
+add.period$ -- 88
+call.type$ -- 32
+change.case$ -- 109
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 342
-empty$ -- 687
+cite$ -- 42
+duplicate$ -- 355
+empty$ -- 711
 format.name$ -- 66
-if$ -- 1475
+if$ -- 1513
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 43
-newline$ -- 152
+int.to.str$ -- 32
+missing$ -- 44
+newline$ -- 155
 num.names$ -- 50
-pop$ -- 235
+pop$ -- 245
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 97
 quote$ -- 0
-skip$ -- 212
+skip$ -- 217
 stack$ -- 0
-substring$ -- 194
-swap$ -- 39
+substring$ -- 199
+swap$ -- 40
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 6
+type$ -- 86
+warning$ -- 10
 while$ -- 54
-width$ -- 33
-write$ -- 299
-(There were 6 warnings)
+width$ -- 34
+write$ -- 304
+(There was 1 error message)

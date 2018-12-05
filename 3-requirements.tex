@@ -5,13 +5,24 @@
 \label{sec:introduction}
 In this chapter a technical description of the implemented model will be given.\par 
 Firstly, a description of the dataset will be given. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classificator options shall be extensively explained, making emphasis on the best classificator results. Finally, the parameter optimization will be briefed altogether with the best founded parameters results.
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/model.png}
+	\caption{The Model~\cite{model}}
+	\label{fig:model}
+\end{figure}
+\par
+\Cref{fig:model} shows the steps followed during the~\ac{ml} stage.\\
+The first three steps are summarized in~\cref{sec:use-cases}. Training the algorithm is done in~\cref{sec:feature} and~\cref{sec:clasif}. Finally, the last three steps are outlined in~\cref{sec:score}.
 \section{Dataset}
 \label{sec:use-cases}
 This section explains the dataset choice, as well as the main label present in the dataset.\par
-This project is fromerly designed to detect sarcasm in spanish written texts, more particularly tweets. Therefore, all the datasets used in this project are written in spanish.\\
+This project is formerly designed to detect sarcasm in spanish written texts, particularly tweets. Therefore, all the datasets used in this project are written in spanish.\\
 The dataset body will contain two rows, the tweet body, i.e. the text, and a binary value expressing the sarcasm nature of that tweet.\\
-The entire body of the dataset is composed of three datasets. The initial database~\cite{mexic} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. Even though 4529 labelled tweets is a good start, the dataset is completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the mayority of the dataset is sarcastic, finding new non-sarcastic tweets is not a difficult duty.\\
+The final dataset will be composed of three different datasets.\\ 
+The initial database~\cite{mexic} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. At first, the dataset contained only the tweet identifier and the sarcastic label, meaning there was no text present on the dataset. In order to obtain the tweet text, it was necessary to use the bitter tool (see~\cref{sec:bitter}). While doing so, many tweet bodies were no longer available to retrieve since the Twitter platform had removed them or the owners had privatized them. As a consequence, new sarcastic tweets were provided by a colleague from the Intelligent Systems Group in the UPM.\\
+Even though the numerous amount of sarcastic tweets was a good start, the dataset was completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the mayority of the dataset is sarcastic, finding new non-sarcastic tweets was not a difficult duty.\\
 At the end, the result was 5638 sarcastic tweets and 5444 non-sarcastic. That can be rewritten as $49.12\%$ of non-sarcastic and $49.5\%$ of sarcastic tweets.\par
+
 
 The~\cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The '1' refers to sarcastic, while '0' is non-sarcastic.
 \begin{figure}

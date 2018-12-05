@@ -5,31 +5,40 @@
 In this chapter the technologies used to achieve this projects' objective shall be discussed.
 
 \section{Introduction}\par
-\todo[inline]{Metemos como hemos sacado los tweets?}
-In this project two main technologies have been used:~\ac{nlp}  and~\ac{ml}. The implementation of these tools has been performed in a combined fashion. \par
-\ac{nlp} has allowed me to transform words into tokens, find syntactical connections between tokens in the same tweet and, finally, construct a numerical vector.~\ac{ml} granted me a way to construct a classifier, define a model and feed the vectors from the previous step into the model to make predictions.\par
+In this project two main technologies have been used:~\ac{nlp}  and~\ac{ml}. The implementation of these tools has been performed in a combined fashion. Furthermore, other technologies have also been used but they are less relevant than~\ac{nlp} and~\ac{ml}.
+On the one hand, with~\ac{nlp} it was possible to transform words into tokens, find syntactical connections between tokens in the same tweet and, finally, construct a numerical vector. On the other hand,~\ac{ml} was very useful to construct a classifier, define a model and feed the vectors from the previous step into the model to make predictions.\par
 In short, this is how the project was carried out. Both technologies will be extensively explained in the next sections.
 
 \section{Natural Language Processing}
-\ac{nlp} has a crucial role in this project since what I am analyzing are Tweets, which contain sentences. Hence, the information that I will use to train the~\ac{ml} algorithm will come in the form of text. According to~\cite{bird2009natural}, at one extreme~\ac{nlp} could be as simple as counting word frequencies to compare different writing styles. At the other extreme,~\ac{nlp} involves "understanding" complete human utterances, at least to the extent of being able to give useful responses to them.\par
-After mentioning its importance, I will clarify what libraries have I used and how.
+\ac{nlp} has a crucial role in this project since tests (tweets) is what this project is trying to deal with. Hence, the information that used to train the~\ac{ml} algorithm will come in the form of text. According to~\cite{bird2009natural}, at one extreme~\ac{nlp} could be as simple as counting word frequencies to compare different writing styles. At the other extreme,~\ac{nlp} involves "understanding" complete human utterances, at least to the extent of being able to give useful responses to them.\\
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/nlp.jpg}
+	\caption{Image is taken from~\url{http://www.gartner.com/newsroom/id/2819918}}
+	\label{fig:nlptech}
+\end{figure}
+\Cref{fig:nlptech} shows many emerging technologies that are using \ac{nlp} to provide their services.
+After making the reader conscious of the potential of~\ac{nlp}, it will be shown what has been achieved in this project with~\ac{nlp}. \\
+Many other examples of \ac{nlp} applications are machine translation, optical character recognition, language detection, topic modeling and many more~\cite{stopwords}.
+
 \label{sec:NLP}
 \subsection{Natural Language Toolkit}
 \subsubsection{Definition}
-\ac{nltk} is a platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength~\ac{nlp} libraries, and an active discussion forum. \footnote{https://www.nltk.org/}
+\ac{nltk} is a platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength~\ac{nlp} libraries, and an active discussion forum. \footnote{https://www.nltk.org/}.\\
+The following applications explained beneath belong to the~\ac{nltk} class.
 \subsubsection{Application}
 ~\ac{nltk} has provided the following tools to this project:
 \begin{itemize}
-	\item \textit{Stemmer}: An stemmer is needed to remove afflixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of index while increasing retrieval accuracy~\cite{nltk}. Particularly, I have chosen the SnowballStemmer because it supports stemming in 13 non-English languages, especially Spanish.
+	
 	\item \textit{Tokenizer}: A word (Token) is the minimal unit that a machine can understand and process. So any text string cannot be further processed without going through tokenization. Tokenization is the process of splitting the raw string into meaningful tokens~\cite{nltk}. In this project, tokenization was required to get the words containing a tweet. Furthermore, some of the tokens were removed since they do not add meaningful information (e.g. yo, a). These words belong to a stoplist provided by~\ac{nltk} for all supported languages~\cite{nltk}.
+	\item \textit{Stemmer}: An stemmer is needed to remove afflixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of index while increasing retrieval accuracy~\cite{nltk}. Particularly, I have chosen the SnowballStemmer because it supports stemming in 13 non-English languages, especially Spanish.
 	\item \textit{Part-of-Speech tagging}: \todo[inline]{En tu proyecto no has usado POS porque te fallaba.} A-part-of-Speech tagger (pos\_tag) indicates how a word is functioning within the context of a sentence~\cite{pos}. This part is crucial since a word can function in multiple ways and we would like to distinguish those cases. POS\_tagging has been achieved by collecting each word feature (i.e. noun, verb, adj, adv) and building up a dictionary with the word features' stats.
 \end{itemize}
 
-These tasks were coordinated by using pipelines. \todo[inline]{No me termina de convencer este párrafo. Qué quiero decir?}
+The applications at the top of this section are more commonly known as the preprocessing part previously needed to any \ac{ml} application. Since there are plenty of tasks, they could be easily coordinated by using pipelines.
 
 \section{~\acl{ml}}
 When it comes to defining models capable of learning from a text-based source, the two dominant technologies are Natural Language Processing and~\ac{ml}. These two main technologies are concerned in how does the machine process human text. \\
-Given data and the proper statistical techniques,~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required. \ac{ml} methods can be classified in three categories~\cite{dataclust}:
+Given data and the proper statistical techniques,~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required.~\ac{ml} algorithms can be classified in three categories~\cite{dataclust}:
 \begin{itemize}
 	\item \textit{Regression}: Regression learning is predicting a continous varying variable.
 	\item \textit{Classification}: Classification is predicting a discrete class label.
@@ -42,8 +51,25 @@ Furthermore, depending on the dataset the learning process can be carried out in
 	
 	\item \textit{Unsupervised learning:} These algorithms base their learning properties on learning patterns present on the dataset. Unlike in supervised learning, there is no training and test dataset partition
 \end{itemize}
-
-In contrast with~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so, it provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though Natural Language Processing has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
+Two major problems encountered in a~\ac{ml} appication are underfitting and overfitting. These two problems appear due to the bias generated when training the model.\\
+It turns out that depending on \textit{how much trained} the classifier is, it can make more assumptions. A learned function that can perform well enough on unseen data points as well as on the training data is termed a generalizable function~\cite{gs}. A generalizable function is achieved through a generalizing fit.
+\begin{itemize}
+	\item \textit{Underfitting:}
+	\begin{figure}
+		\includegraphics[width=\linewidth]{img/underfit.png}
+		\caption{Underfitting~\cite{gs}}
+		\label{fig:underfit}
+	\end{figure}
+\Cref{fig:underfit} shows that for any point in the diagram, the function always assigns the same predicted value.
+	\item \textit{Overfitting:} 
+		\begin{figure}
+		\includegraphics[width=\linewidth]{img/overfit.png}
+		\caption{Overfitting~\cite{gs}}
+		\label{fig:overfit}
+	\end{figure}
+\Cref{fig:overfit} shows that for any point in the diagram, the function performs very good. However, the function has become very unflexible and it will not perform good enough on new points.
+\end{itemize}
+In contrast with~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so,~\ac{nlp} provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though~\ac{nlp} has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
 
 \subsection{Sklearn}
 \subsubsection{Definition}
@@ -99,7 +125,9 @@ The behaviour of Luigi is briefly depicted in the \cref{fig:luigytask}.
 	\label{fig:luigytask}
 \end{figure}
 \section{Bitter}
-In order to download the Tweets which integrate my datataset I used Bitter. Bitter is able to automate several actions (e.g. downloading Tweets) by using a Python wrapper over Twitter which adds support for several Twitter API actions~\footnote{https://github.com/balkian/bitter}.
+\label{sec:bitter}
+In order to download the Tweets which integrate partially the dataset, the tool bitter was used. Bitter is able to automate several actions (e.g. downloading Tweets) by using a Python wrapper over Twitter which adds support for several Twitter API actions~\footnote{https://github.com/balkian/bitter}.\\
+Bitter could be used after installing it and running commands on the UNIX terminal.
 \section{Sefarad}
 Sefarad~\cite{sefarad} is an environment developed to explore, analyse and visualise data. 
 \subsection{Architecture}

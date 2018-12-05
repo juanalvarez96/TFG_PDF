@@ -19,57 +19,57 @@
 \contentsline {section}{\numberline {2.4}Figures of Merit}{6}{section.34}
 \contentsline {chapter}{\numberline {3}Enabling Technologies}{7}{chapter.36}
 \contentsline {section}{\numberline {3.1}Introduction}{7}{section.37}
-\contentsline {section}{\numberline {3.2}Natural Language Processing}{7}{section.39}
+\contentsline {section}{\numberline {3.2}Natural Language Processing}{7}{section.38}
 \contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{8}{subsection.40}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Definition}{8}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Application}{8}{subsubsection.44}
-\contentsline {section}{\numberline {3.3}\nobreakspace {}\acl {ml}}{9}{section.47}
-\contentsline {subsection}{\numberline {3.3.1}Sklearn}{10}{subsection.48}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Definition}{10}{subsubsection.49}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Application}{10}{subsubsection.51}
-\contentsline {section}{\numberline {3.4}Senpy}{12}{section.60}
-\contentsline {subsection}{\numberline {3.4.1}Architecture}{12}{subsection.61}
-\contentsline {section}{\numberline {3.5}Luigi}{12}{section.63}
-\contentsline {subsection}{\numberline {3.5.1}Architecture}{12}{subsection.64}
-\contentsline {section}{\numberline {3.6}Bitter}{13}{section.66}
-\contentsline {section}{\numberline {3.7}Sefarad}{13}{section.68}
-\contentsline {subsection}{\numberline {3.7.1}Architecture}{13}{subsection.69}
-\contentsline {section}{\numberline {3.8}Elasticsearch}{14}{section.71}
-\contentsline {subsection}{\numberline {3.8.1}Architecture}{14}{subsection.73}
-\contentsline {chapter}{\numberline {4}Model}{17}{chapter.75}
-\contentsline {section}{\numberline {4.1}Introduction}{17}{section.76}
-\contentsline {section}{\numberline {4.2}Dataset}{17}{section.77}
-\contentsline {section}{\numberline {4.3}Preprocessing}{18}{section.79}
-\contentsline {section}{\numberline {4.4}Feature Extraction}{19}{section.80}
-\contentsline {subsection}{\numberline {4.4.1}Lexical Features}{20}{subsection.81}
-\contentsline {subsection}{\numberline {4.4.2}Syntactic Features}{20}{subsection.82}
-\contentsline {subsection}{\numberline {4.4.3}Ngram Features. Pipeline}{20}{subsection.84}
-\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{20}{subsection.86}
-\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{21}{subsection.88}
-\contentsline {section}{\numberline {4.5}Classifiers}{21}{section.93}
-\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{21}{subsection.95}
-\contentsline {subsection}{\numberline {4.5.2}\acf {svm}}{23}{subsection.99}
-\contentsline {subsection}{\numberline {4.5.3}\acf {knn}}{24}{subsection.101}
-\contentsline {subsection}{\numberline {4.5.4}\acf {lr}}{24}{subsection.103}
-\contentsline {section}{\numberline {4.6}Quality of a Classfier}{25}{section.106}
-\contentsline {subsection}{\numberline {4.6.1}Precision}{26}{subsection.111}
-\contentsline {subsection}{\numberline {4.6.2}Recall}{26}{subsection.113}
-\contentsline {subsection}{\numberline {4.6.3}F1 Score}{26}{subsection.115}
-\contentsline {subsection}{\numberline {4.6.4}Model Creation}{26}{subsection.117}
-\contentsline {section}{\numberline {4.7}Parameter Optimization}{27}{section.119}
-\contentsline {subsection}{\numberline {4.7.1}Grid Search}{28}{subsection.124}
-\contentsline {subsubsection}{\numberline {4.7.1.1}\acl {nb}}{28}{subsubsection.125}
-\contentsline {subsubsection}{\numberline {4.7.1.2}\acl {svm}}{28}{subsubsection.129}
-\contentsline {subsubsection}{\numberline {4.7.1.3}\acl {knn}}{29}{subsubsection.134}
-\contentsline {subsubsection}{\numberline {4.7.1.4}\acl {lr}}{29}{subsubsection.135}
-\contentsline {chapter}{\numberline {5}Sarcsm Analysis}{31}{chapter.138}
-\contentsline {section}{\numberline {5.1}Introduction}{31}{section.139}
-\contentsline {section}{\numberline {5.2}Architecture}{31}{section.140}
-\contentsline {chapter}{\numberline {6}Case study}{33}{chapter.141}
-\contentsline {section}{\numberline {6.1}Introduction}{33}{section.142}
-\contentsline {section}{\numberline {6.2}Rule edition}{33}{section.143}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{35}{chapter.144}
-\contentsline {section}{\numberline {7.1}Conclusions}{35}{section.145}
-\contentsline {section}{\numberline {7.2}Achieved goals}{35}{section.146}
-\contentsline {section}{\numberline {7.3}Future work}{35}{section.147}
-\contentsline {chapter}{Bibliography}{36}{section*.148}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Application}{9}{subsubsection.44}
+\contentsline {section}{\numberline {3.3}\nobreakspace {}\acl {ml}}{9}{section.46}
+\contentsline {subsection}{\numberline {3.3.1}Sklearn}{12}{subsection.49}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Definition}{12}{subsubsection.50}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Application}{12}{subsubsection.52}
+\contentsline {section}{\numberline {3.4}Senpy}{14}{section.61}
+\contentsline {subsection}{\numberline {3.4.1}Architecture}{14}{subsection.62}
+\contentsline {section}{\numberline {3.5}Luigi}{14}{section.64}
+\contentsline {subsection}{\numberline {3.5.1}Architecture}{14}{subsection.65}
+\contentsline {section}{\numberline {3.6}Bitter}{15}{section.67}
+\contentsline {section}{\numberline {3.7}Sefarad}{15}{section.69}
+\contentsline {subsection}{\numberline {3.7.1}Architecture}{15}{subsection.70}
+\contentsline {section}{\numberline {3.8}Elasticsearch}{16}{section.72}
+\contentsline {subsection}{\numberline {3.8.1}Architecture}{16}{subsection.74}
+\contentsline {chapter}{\numberline {4}Model}{19}{chapter.76}
+\contentsline {section}{\numberline {4.1}Introduction}{19}{section.77}
+\contentsline {section}{\numberline {4.2}Dataset}{21}{section.79}
+\contentsline {section}{\numberline {4.3}Preprocessing}{23}{section.81}
+\contentsline {section}{\numberline {4.4}Feature Extraction}{23}{section.82}
+\contentsline {subsection}{\numberline {4.4.1}Lexical Features}{24}{subsection.83}
+\contentsline {subsection}{\numberline {4.4.2}Syntactic Features}{24}{subsection.84}
+\contentsline {subsection}{\numberline {4.4.3}Ngram Features. Pipeline}{24}{subsection.86}
+\contentsline {subsection}{\numberline {4.4.4}\acf {lda} Features}{25}{subsection.88}
+\contentsline {subsection}{\numberline {4.4.5}\acf {tfidf}}{25}{subsection.90}
+\contentsline {section}{\numberline {4.5}Classifiers}{25}{section.95}
+\contentsline {subsection}{\numberline {4.5.1}\acf {nb}}{26}{subsection.97}
+\contentsline {subsection}{\numberline {4.5.2}\acf {svm}}{27}{subsection.101}
+\contentsline {subsection}{\numberline {4.5.3}\acf {knn}}{28}{subsection.103}
+\contentsline {subsection}{\numberline {4.5.4}\acf {lr}}{28}{subsection.105}
+\contentsline {section}{\numberline {4.6}Quality of a Classfier}{29}{section.108}
+\contentsline {subsection}{\numberline {4.6.1}Precision}{30}{subsection.113}
+\contentsline {subsection}{\numberline {4.6.2}Recall}{30}{subsection.115}
+\contentsline {subsection}{\numberline {4.6.3}F1 Score}{30}{subsection.117}
+\contentsline {subsection}{\numberline {4.6.4}Model Creation}{30}{subsection.119}
+\contentsline {section}{\numberline {4.7}Parameter Optimization}{31}{section.121}
+\contentsline {subsection}{\numberline {4.7.1}Grid Search}{32}{subsection.126}
+\contentsline {subsubsection}{\numberline {4.7.1.1}\acl {nb}}{32}{subsubsection.127}
+\contentsline {subsubsection}{\numberline {4.7.1.2}\acl {svm}}{32}{subsubsection.131}
+\contentsline {subsubsection}{\numberline {4.7.1.3}\acl {knn}}{33}{subsubsection.136}
+\contentsline {subsubsection}{\numberline {4.7.1.4}\acl {lr}}{33}{subsubsection.137}
+\contentsline {chapter}{\numberline {5}Sarcasm Analysis}{35}{chapter.140}
+\contentsline {section}{\numberline {5.1}Introduction}{35}{section.141}
+\contentsline {section}{\numberline {5.2}Architecture}{35}{section.142}
+\contentsline {chapter}{\numberline {6}Case study}{37}{chapter.145}
+\contentsline {section}{\numberline {6.1}Introduction}{37}{section.146}
+\contentsline {section}{\numberline {6.2}Rule edition}{37}{section.147}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{39}{chapter.148}
+\contentsline {section}{\numberline {7.1}Conclusions}{39}{section.149}
+\contentsline {section}{\numberline {7.2}Achieved goals}{39}{section.150}
+\contentsline {section}{\numberline {7.3}Future work}{39}{section.151}
+\contentsline {chapter}{Bibliography}{40}{section*.152}

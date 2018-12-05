@@ -1,15 +1,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A Pipeline.\nobreakspace {}\cite {pipeline}\relax }}{11}{figure.caption.59}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Senpy's Architecture\nobreakspace {}\cite {senpy}\relax }}{12}{figure.caption.62}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Task and Target illustration.\nobreakspace {}\cite {luigi}\relax }}{13}{figure.caption.65}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sefarad Architecture\nobreakspace {}\cite {sefarad}\relax }}{14}{figure.caption.70}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Elasticsearch as a Database\nobreakspace {}\cite {elastic2}\relax }}{15}{figure.caption.74}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image is taken from\nobreakspace {}\url {http://www.gartner.com/newsroom/id/2819918}\relax }}{8}{figure.caption.39}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Underfitting\nobreakspace {}\cite {gs}\relax }}{11}{figure.caption.47}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overfitting\nobreakspace {}\cite {gs}\relax }}{11}{figure.caption.48}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A Pipeline.\nobreakspace {}\cite {pipeline}\relax }}{13}{figure.caption.60}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Senpy's Architecture\nobreakspace {}\cite {senpy}\relax }}{14}{figure.caption.63}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Task and Target illustration.\nobreakspace {}\cite {luigi}\relax }}{15}{figure.caption.66}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sefarad Architecture\nobreakspace {}\cite {sefarad}\relax }}{16}{figure.caption.71}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Elasticsearch as a Database\nobreakspace {}\cite {elastic2}\relax }}{17}{figure.caption.75}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Dataset\relax }}{18}{figure.caption.78}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Classifier\nobreakspace {}\cite {classif}\relax }}{22}{figure.caption.94}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Model Construction\nobreakspace {}\cite {modcons}\relax }}{27}{figure.caption.118}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The Model\nobreakspace {}\cite {model}\relax }}{20}{figure.caption.78}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dataset\relax }}{22}{figure.caption.80}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Classifier\nobreakspace {}\cite {classif}\relax }}{26}{figure.caption.96}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Model Construction\nobreakspace {}\cite {modcons}\relax }}{31}{figure.caption.120}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
