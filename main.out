@@ -38,38 +38,39 @@
 \BOOKMARK [2][-]{subsection.74}{Architecture}{section.72}% 38
 \BOOKMARK [0][-]{chapter.76}{Model}{}% 39
 \BOOKMARK [1][-]{section.77}{Introduction}{chapter.76}% 40
-\BOOKMARK [1][-]{section.79}{Dataset}{chapter.76}% 41
-\BOOKMARK [1][-]{section.81}{Preprocessing}{chapter.76}% 42
-\BOOKMARK [1][-]{section.82}{Feature Extraction}{chapter.76}% 43
-\BOOKMARK [2][-]{subsection.83}{Lexical Features}{section.82}% 44
-\BOOKMARK [2][-]{subsection.84}{Syntactic Features}{section.82}% 45
-\BOOKMARK [2][-]{subsection.86}{Ngram Features. Pipeline}{section.82}% 46
-\BOOKMARK [2][-]{subsection.88}{Latent Dirichlet Allocator \(LDA\) Features}{section.82}% 47
-\BOOKMARK [2][-]{subsection.90}{Frequency Inverse Document Frequency \(TFIDF\)}{section.82}% 48
-\BOOKMARK [1][-]{section.95}{Classifiers}{chapter.76}% 49
-\BOOKMARK [2][-]{subsection.97}{Naive Bayes Classifier \(NB\)}{section.95}% 50
-\BOOKMARK [2][-]{subsection.101}{Support Vector Machine \(SVM\)}{section.95}% 51
-\BOOKMARK [2][-]{subsection.103}{K-Nearest Neighbors \(k-NN\)}{section.95}% 52
-\BOOKMARK [2][-]{subsection.105}{Logistic Regression \(LR\)}{section.95}% 53
-\BOOKMARK [1][-]{section.108}{Quality of a Classfier}{chapter.76}% 54
-\BOOKMARK [2][-]{subsection.113}{Precision}{section.108}% 55
-\BOOKMARK [2][-]{subsection.115}{Recall}{section.108}% 56
-\BOOKMARK [2][-]{subsection.117}{F1 Score}{section.108}% 57
-\BOOKMARK [2][-]{subsection.119}{Model Creation}{section.108}% 58
-\BOOKMARK [1][-]{section.121}{Parameter Optimization}{chapter.76}% 59
-\BOOKMARK [2][-]{subsection.126}{Grid Search}{section.121}% 60
-\BOOKMARK [3][-]{subsubsection.127}{Naive Bayes Classifier}{subsection.126}% 61
-\BOOKMARK [3][-]{subsubsection.131}{Support Vector Machine}{subsection.126}% 62
-\BOOKMARK [3][-]{subsubsection.136}{K-Nearest Neighbors}{subsection.126}% 63
-\BOOKMARK [3][-]{subsubsection.137}{Logistic Regression}{subsection.126}% 64
-\BOOKMARK [0][-]{chapter.140}{Sarcasm Analysis}{}% 65
-\BOOKMARK [1][-]{section.141}{Introduction}{chapter.140}% 66
-\BOOKMARK [1][-]{section.142}{Architecture}{chapter.140}% 67
-\BOOKMARK [0][-]{chapter.145}{Case study}{}% 68
-\BOOKMARK [1][-]{section.146}{Introduction}{chapter.145}% 69
-\BOOKMARK [1][-]{section.147}{Rule edition}{chapter.145}% 70
-\BOOKMARK [0][-]{chapter.148}{Conclusions and future work}{}% 71
-\BOOKMARK [1][-]{section.149}{Conclusions}{chapter.148}% 72
-\BOOKMARK [1][-]{section.150}{Achieved goals}{chapter.148}% 73
-\BOOKMARK [1][-]{section.151}{Future work}{chapter.148}% 74
-\BOOKMARK [0][-]{section*.152}{Bibliography}{}% 75
+\BOOKMARK [2][-]{subsection.79}{Overview}{section.77}% 41
+\BOOKMARK [1][-]{section.80}{Dataset}{chapter.76}% 42
+\BOOKMARK [1][-]{section.82}{Preprocessing}{chapter.76}% 43
+\BOOKMARK [1][-]{section.83}{Feature Extraction}{chapter.76}% 44
+\BOOKMARK [2][-]{subsection.84}{Lexical Features}{section.83}% 45
+\BOOKMARK [2][-]{subsection.85}{Syntactic Features}{section.83}% 46
+\BOOKMARK [2][-]{subsection.87}{Ngram Features. Pipeline}{section.83}% 47
+\BOOKMARK [2][-]{subsection.89}{Latent Dirichlet Allocator \(LDA\) Features}{section.83}% 48
+\BOOKMARK [2][-]{subsection.91}{Frequency Inverse Document Frequency \(TFIDF\)}{section.83}% 49
+\BOOKMARK [1][-]{section.96}{Classifiers}{chapter.76}% 50
+\BOOKMARK [2][-]{subsection.98}{Naive Bayes Classifier \(NB\)}{section.96}% 51
+\BOOKMARK [2][-]{subsection.102}{Support Vector Machine \(SVM\)}{section.96}% 52
+\BOOKMARK [2][-]{subsection.104}{K-Nearest Neighbors \(k-NN\)}{section.96}% 53
+\BOOKMARK [2][-]{subsection.106}{Logistic Regression \(LR\)}{section.96}% 54
+\BOOKMARK [1][-]{section.109}{Quality of a Classfier}{chapter.76}% 55
+\BOOKMARK [2][-]{subsection.114}{Precision}{section.109}% 56
+\BOOKMARK [2][-]{subsection.116}{Recall}{section.109}% 57
+\BOOKMARK [2][-]{subsection.118}{F1 Score}{section.109}% 58
+\BOOKMARK [2][-]{subsection.120}{Model Creation}{section.109}% 59
+\BOOKMARK [1][-]{section.122}{Parameter Optimization}{chapter.76}% 60
+\BOOKMARK [2][-]{subsection.127}{Grid Search}{section.122}% 61
+\BOOKMARK [3][-]{subsubsection.128}{Naive Bayes Classifier}{subsection.127}% 62
+\BOOKMARK [3][-]{subsubsection.132}{Support Vector Machine}{subsection.127}% 63
+\BOOKMARK [3][-]{subsubsection.137}{K-Nearest Neighbors}{subsection.127}% 64
+\BOOKMARK [3][-]{subsubsection.138}{Logistic Regression}{subsection.127}% 65
+\BOOKMARK [0][-]{chapter.142}{Sarcasm Analysis}{}% 66
+\BOOKMARK [1][-]{section.143}{Introduction}{chapter.142}% 67
+\BOOKMARK [1][-]{section.144}{Architecture}{chapter.142}% 68
+\BOOKMARK [0][-]{chapter.147}{Case study}{}% 69
+\BOOKMARK [1][-]{section.148}{Introduction}{chapter.147}% 70
+\BOOKMARK [1][-]{section.149}{Rule edition}{chapter.147}% 71
+\BOOKMARK [0][-]{chapter.150}{Conclusions and future work}{}% 72
+\BOOKMARK [1][-]{section.151}{Conclusions}{chapter.150}% 73
+\BOOKMARK [1][-]{section.152}{Achieved goals}{chapter.150}% 74
+\BOOKMARK [1][-]{section.153}{Future work}{chapter.150}% 75
+\BOOKMARK [0][-]{section*.154}{Bibliography}{}% 76

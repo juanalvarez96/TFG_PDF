@@ -2,17 +2,21 @@
 \label{chap:model}
 
 \section{Introduction}
-\label{sec:introduction}
-In this chapter a technical description of the implemented model will be given.\par 
-Firstly, a description of the dataset will be given. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classificator options shall be extensively explained, making emphasis on the best classificator results. Finally, the parameter optimization will be briefed altogether with the best founded parameters results.
+\label{sec:intromodel}
+The social network Twitter has become extremely popular worldwide. It has developped into a tool that allows anyone to interact directly with people of his interest. Even world-wide leaders, like the president of the United States of America, announce important decisions using Twitter. In other words, Twitters' simplicity and easy-to-use interface has completely transformed the way citizens interact with the society. Altogether with the globalised world that we are living in and the limitless scope that the internet presents makes Twitter a resourceful platform of data.\\
+In this chapter a technical description of the implemented model will be given.\\
+Firstly, an overview of the model shall be presented, followed by the dataset details. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classificator options shall be extensively explained, making emphasis on the best classificator results. Finally, the parameter optimization will be briefed altogether with the best founded parameters results.
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/model.png}
+	\centering
+	\includegraphics[]{img/model.png}
 	\caption{The Model~\cite{model}}
 	\label{fig:model}
 \end{figure}
 \par
+\subsection{Overview}
+In this section a wide view of the system will be given.
 \Cref{fig:model} shows the steps followed during the~\ac{ml} stage.\\
-The first three steps are summarized in~\cref{sec:use-cases}. Training the algorithm is done in~\cref{sec:feature} and~\cref{sec:clasif}. Finally, the last three steps are outlined in~\cref{sec:score}.
+The first two steps are needed to collect the data from the Twitter social network, combine it with more data sources, generate a final \textit{.csv} file and prepare the dataframe (see ~\cref{sec:use-cases}). Once the dataframe is generated, a data exploration and cleaning will be performed (i.e. delete empty tweets, encode categorical variables and so on). It is then when an algorithm is built and train. The algorithm is also known as a classifier and it will be the responsible for predicting sarcasm in new tweets (see~\cref{sec:clasif}). Finally, an accuracy report of the classifier will be carried out to evauate the quality of the classifier (see~\cref{sec:score}).
 \section{Dataset}
 \label{sec:use-cases}
 This section explains the dataset choice, as well as the main label present in the dataset.\par
@@ -270,7 +274,7 @@ A grid search was optimizied for each classifier to get the best performance.
 	\begin{enumerate}
 		\item \textit{C}. Belongs to classfier
 		\item \textit{Number of topics}. Belongs to pipeline
-		\item \textit{NUmber of ngrams}. Belongs to pipeline
+		\item \textit{Number of ngrams}. Belongs to pipeline
 		
 	\end{enumerate}
 	\item \textbf{Results}
@@ -298,6 +302,7 @@ Since the results of the~\ac{knn} were very low (see~\cref{tab:knn1}) there was 
 	\item \textbf{Parameters to optimize}:
 	\begin{enumerate}
 		\item \textit{Number of topics}. Belongs to pipeline
+		\item \textit{Number of ngrams}. Belongs to pipeline
 	\end{enumerate}
 	\item \textbf{Results}
 	\begin{table}[h!]
@@ -306,9 +311,9 @@ Since the results of the~\ac{knn} were very low (see~\cref{tab:knn1}) there was 
 			\hline
 			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
 			\hline\hline
-			0 & 0.90007 & 0.90074 & 0.90040 & 1360 \\ 
-			1 & 0.90426 & 0.90361 & 0.90393 & 1411 \\
-			avg/total & 0.90220 & 0.90220 & 0.90220 & 2771 \\
+			0 & 0.92819 & 0.90361 & 0.91573 & 1359 \\ 
+			1 & 0.90953 & 0.93272 & 0.92098 & 1412 \\
+			avg/total & 0.91868 & 0.91844 & 0.91841 & 2771 \\
 			[1ex] 
 			\hline
 		\end{tabular}
