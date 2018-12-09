@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.20)  6 DEC 2018 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.20)  8 DEC 2018 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,29 +1166,29 @@ File: img/model.png Graphic file (type png)
 Package pdftex.def Info: img/model.png  used on input line 11.
 (pdftex.def)             Requested size: 306.18314pt x 228.85443pt.
 [19] [20 <./img/model.png (PNG copy)>]
-<img/dataset.png, id=744, 428.60126pt x 329.23pt>
+<img/dataset.png, id=745, 428.60126pt x 329.23pt>
 File: img/dataset.png Graphic file (type png)
 <use img/dataset.png>
-Package pdftex.def Info: img/dataset.png  used on input line 33.
+Package pdftex.def Info: img/dataset.png  used on input line 35.
 (pdftex.def)             Requested size: 433.62pt x 333.08734pt.
+ [21] [22 <./img/dataset.png>] [23]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [21 <./img/dataset.png>] [22]
 Package acronym Info: Label `acro:gs' newly defined as it shall be overridden
-although it is yet undefined on input line 66.
- [23]
+although it is yet undefined on input line 89.
+[24]
 Missing character: There is no â in font pcrr7t!
 Missing character: There is no € in font pcrr7t!
 Missing character: There is no “ in font pcrr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
 [][][][][]$\OT1/pcr/m/n/9 https : / / en . wikipedia . org / wiki / Tf \ beging
 roup \ let \ relax \ relax \
  []
 
-
-Overfull \hbox (5.04962pt too wide) in paragraph at lines 87--89
+[25]
+Overfull \hbox (5.04962pt too wide) in paragraph at lines 110--112
 \OT1/cmr/m/n/10.95 The num-ber of oc-curences of a word in a com-plete doc-u-me
 nt is com-puted with eq. ([][]4.1[][]). Equa-
  []
@@ -1196,69 +1196,68 @@ nt is com-puted with eq. ([][]4.1[][]). Equa-
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-<img/classifier.png, id=778, 541.02126pt x 472.76625pt>
+<img/classifier.png, id=795, 541.02126pt x 472.76625pt>
 File: img/classifier.png Graphic file (type png)
 <use img/classifier.png>
-Package pdftex.def Info: img/classifier.png  used on input line 94.
+Package pdftex.def Info: img/classifier.png  used on input line 117.
 (pdftex.def)             Requested size: 433.62pt x 378.92767pt.
- [24]
 Package acronym Info: Label `acro:pdf' newly defined as it shall be overridden
-although it is yet undefined on input line 101.
-
-[25 <./img/classifier.png>]
+although it is yet undefined on input line 124.
+ [26]
+[27 <./img/classifier.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26]
-Underfull \vbox (badness 1552) has occurred while \output is active []
-
- [27]
-Package acronym Info: Label `acro:tp' newly defined as it shall be overridden
-although it is yet undefined on input line 194.
-Package acronym Info: Label `acro:tn' newly defined as it shall be overridden
-although it is yet undefined on input line 195.
-Package acronym Info: Label `acro:fp' newly defined as it shall be overridden
-although it is yet undefined on input line 196.
-Package acronym Info: Label `acro:fn' newly defined as it shall be overridden
-although it is yet undefined on input line 197.
-
 [28]
-<img/model_construction.png, id=850, 679.53876pt x 353.32pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29]
+Package acronym Info: Label `acro:tp' newly defined as it shall be overridden
+although it is yet undefined on input line 217.
+Package acronym Info: Label `acro:tn' newly defined as it shall be overridden
+although it is yet undefined on input line 218.
+Package acronym Info: Label `acro:fp' newly defined as it shall be overridden
+although it is yet undefined on input line 219.
+Package acronym Info: Label `acro:fn' newly defined as it shall be overridden
+although it is yet undefined on input line 220.
+ [30]
+<img/model_construction.png, id=864, 679.53876pt x 353.32pt>
 File: img/model_construction.png Graphic file (type png)
 <use img/model_construction.png>
-Package pdftex.def Info: img/model_construction.png  used on input line 223.
+Package pdftex.def Info: img/model_construction.png  used on input line 246.
 (pdftex.def)             Requested size: 433.62pt x 225.45552pt.
- [29]
+ [31]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
- [30 <./img/model_construction.png>] [31]) [32]
+ [32 <./img/model_construction.png>] [33]) [34]
 \openout2 = `4-architecture.aux'.
 
  (./4-architecture.tex
 Chapter 5.
-) [33
+) [35
 
 
 
 ]
 \openout2 = `5-case-study.aux'.
 
- (./5-case-study.tex [34
+ (./5-case-study.tex [36
 
 
 
 ]
 Chapter 6.
-) [35]
+) [37]
 \openout2 = `6-conclusions.aux'.
 
- (./6-conclusions.tex [36
+ (./6-conclusions.tex [38
 
 
 
 ]
 Chapter 7.
-) [37] (./main.bbl [38
+) [39] (./main.bbl [40
 
 
 ]
@@ -1273,12 +1272,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
 015 . pdf ? sequence = 2 &
  []
 
-[39])
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+[]\OT1/cmr/m/n/10 Luigi doc-u-men-ta-tion.  [][]$\OT1/pcr/m/n/10 https : / / me
+dia . readthedocs . org / pdf / luigi / latest /
+ []
+
+[41])
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 103.
 See the caption package documentation for explanation.
 
-[40]
+[42]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (./main.aux (./0-preamble.aux) (./A-resumen.aux) (./B-abstract.aux)
@@ -1300,8 +1305,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 23930 strings out of 492649
- 432641 string characters out of 6129621
+ 23932 strings out of 492649
+ 432642 string characters out of 6129621
  529458 words of memory out of 5000000
  27042 multiletter control sequences out of 15000+600000
  16262 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1327,10 +1332,10 @@ t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (58 pages, 1264412 bytes).
+Output written on main.pdf (60 pages, 1266608 bytes).
 PDF statistics:
- 1059 PDF objects out of 1200 (max. 8388607)
- 937 compressed objects within 10 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 1074 PDF objects out of 1200 (max. 8388607)
+ 949 compressed objects within 10 object streams
+ 248 named destinations out of 1000 (max. 500000)
  691 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -21,13 +21,17 @@ I was expecting a `,' or a `}'---line 200 of file biblio/ref.bib
  :  author=giuseppe 
  :                  Ciaburro},
 I'm skipping whatever remains of this entry
+Repeated entry---line 204 of file biblio/ref.bib
+ : @misc{pos
+ :          ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pipeline
 Warning--to sort, need author or key in senpy
 Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
+Warning--to sort, need author, editor, or key in model
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
-Warning--to sort, need author, editor, or key in model
 Warning--empty author and editor in model
 Warning--empty publisher in model
 Warning--empty year in model
@@ -72,4 +76,4 @@ warning$ -- 10
 while$ -- 54
 width$ -- 34
 write$ -- 304
-(There was 1 error message)
+(There were 2 error messages)

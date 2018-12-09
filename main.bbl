@@ -12,8 +12,9 @@ Hacia la detección de ironía en textos cortos.
 }
 \bibitem{luigi}
 Luigi documentation.
-\newblock \url~{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.}
-
+\newblock
+\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+}
 \bibitem{model}
 {\em Regression Analysis with R}.
 
