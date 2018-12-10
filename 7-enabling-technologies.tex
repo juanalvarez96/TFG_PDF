@@ -110,24 +110,17 @@ To do so, the architecture consists of two main modules:
 \end{figure}
 \Cref{fig:senpyarch} depicts a simplified version of the processes involved in Senpy analysis framework.
 
-\section{Luigi}
-The purpose of Luigi is to run a set of pipelined processes to perform several tasks~\cite{luigi}. In that sense, Luigi will help stitching the tasks together and tends to the workflow management. Luigi is written in Python.\par
-\subsection{Architecture}
-There are two fundamental building blocks in Luigi- the \textit{Task} class and \textit{Target} class:
-\begin{itemize}
-	\item \textit{Target}: This class corresponds to a file on a disk, or some kind of checkpoint that will be used as the output of a task.
-	\item \textit{Task}: This class is where the computation is done. The \textit{Tasks} consume \textit{Targets} that were created by some other task. Each task define outputs by using the \textit{output()} method. 
-\end{itemize}
-The behaviour of Luigi is briefly depicted in the \cref{fig:luigytask}.
-\begin{figure}
-	\includegraphics[width=\linewidth]{img/luigi_tasks.png}
-	\caption{Task and Target illustration.~\cite{luigi}}
-	\label{fig:luigytask}
-\end{figure}
 \section{Bitter}
 \label{sec:bitter}
 In order to download the Tweets which integrate partially the dataset, the tool bitter was used. Bitter is able to automate several actions (e.g. downloading Tweets) by using a Python wrapper over Twitter which adds support for several Twitter API actions~\footnote{https://github.com/balkian/bitter}.\\
 Bitter could be used after installing it and running commands on the UNIX terminal.
+\subsection{Architecture}
+\Cref{fig:bitter} explains how was bitter used in this project. On the left, the reader can see the information provided to the bitter tool. The configuration file is needed to download the tweets, otherwise nothing will be downloaded. The file contains the user credentials for accessing the Twitter database.\\ The tweet id file is a \textit{.csv} database containing in one column the desired tweets. Finally, bitter will download in \textit{.json} format all the tweets in the indicated folder (indicated on the command). For those tweets that, by any reason, could not be downloaded, a folder named \textit{error} will be created containing the tweet ids that failed.
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/bitter.png}
+	\caption{Bitter Architecture}
+	\label{fig:bitter}
+\end{figure}
 \section{Sefarad}
 Sefarad~\cite{sefarad} is an environment developed to explore, analyse and visualise data. 
 \subsection{Architecture}

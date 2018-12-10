@@ -9,68 +9,67 @@
 \BOOKMARK [1][-]{section.22}{Structure of this document}{chapter.18}% 9
 \BOOKMARK [0][-]{chapter.23}{State of the Art}{}% 10
 \BOOKMARK [1][-]{section.24}{Introduction}{chapter.23}% 11
-\BOOKMARK [1][-]{section.26}{Analysis: Automatic Sarcasm Detection}{chapter.23}% 12
-\BOOKMARK [2][-]{subsection.27}{Sarcasm Definition joshi2017automatic}{section.26}% 13
-\BOOKMARK [2][-]{subsection.29}{Data-set}{section.26}% 14
-\BOOKMARK [2][-]{subsection.30}{Approaches used for Sarcasm Detection}{section.26}% 15
-\BOOKMARK [3][-]{subsubsection.31}{Rule-based Approaches joshi2017automatic}{subsection.30}% 16
-\BOOKMARK [3][-]{subsubsection.32}{Statistical Approaches}{subsection.30}% 17
-\BOOKMARK [1][-]{section.33}{Main Issues in Sarcasm Detection}{chapter.23}% 18
-\BOOKMARK [1][-]{section.34}{Figures of Merit}{chapter.23}% 19
-\BOOKMARK [0][-]{chapter.36}{Enabling Technologies}{}% 20
-\BOOKMARK [1][-]{section.37}{Introduction}{chapter.36}% 21
-\BOOKMARK [1][-]{section.38}{Natural Language Processing}{chapter.36}% 22
-\BOOKMARK [2][-]{subsection.40}{Natural Language Toolkit}{section.38}% 23
-\BOOKMARK [3][-]{subsubsection.41}{Definition}{subsection.40}% 24
-\BOOKMARK [3][-]{subsubsection.44}{Application}{subsection.40}% 25
-\BOOKMARK [1][-]{section.46}{ Machine Learning}{chapter.36}% 26
-\BOOKMARK [2][-]{subsection.49}{Sklearn}{section.46}% 27
-\BOOKMARK [3][-]{subsubsection.50}{Definition}{subsection.49}% 28
-\BOOKMARK [3][-]{subsubsection.52}{Application}{subsection.49}% 29
-\BOOKMARK [1][-]{section.61}{Senpy}{chapter.36}% 30
-\BOOKMARK [2][-]{subsection.62}{Architecture}{section.61}% 31
-\BOOKMARK [1][-]{section.64}{Luigi}{chapter.36}% 32
-\BOOKMARK [2][-]{subsection.65}{Architecture}{section.64}% 33
-\BOOKMARK [1][-]{section.67}{Bitter}{chapter.36}% 34
-\BOOKMARK [1][-]{section.69}{Sefarad}{chapter.36}% 35
-\BOOKMARK [2][-]{subsection.70}{Architecture}{section.69}% 36
-\BOOKMARK [1][-]{section.72}{Elasticsearch}{chapter.36}% 37
-\BOOKMARK [2][-]{subsection.74}{Architecture}{section.72}% 38
-\BOOKMARK [0][-]{chapter.76}{Model}{}% 39
-\BOOKMARK [1][-]{section.77}{Introduction}{chapter.76}% 40
-\BOOKMARK [2][-]{subsection.79}{Overview}{section.77}% 41
-\BOOKMARK [1][-]{section.80}{Dataset}{chapter.76}% 42
-\BOOKMARK [1][-]{section.82}{Preprocessing}{chapter.76}% 43
-\BOOKMARK [1][-]{section.83}{Feature Extraction}{chapter.76}% 44
-\BOOKMARK [2][-]{subsection.84}{Lexical Features}{section.83}% 45
-\BOOKMARK [2][-]{subsection.85}{Syntactic Features}{section.83}% 46
-\BOOKMARK [2][-]{subsection.87}{Ngram Features. Pipeline}{section.83}% 47
-\BOOKMARK [2][-]{subsection.89}{Latent Dirichlet Allocator \(LDA\) Features}{section.83}% 48
-\BOOKMARK [2][-]{subsection.91}{Frequency Inverse Document Frequency \(TFIDF\)}{section.83}% 49
-\BOOKMARK [1][-]{section.96}{Classifiers}{chapter.76}% 50
-\BOOKMARK [2][-]{subsection.98}{Naive Bayes Classifier \(NB\)}{section.96}% 51
-\BOOKMARK [2][-]{subsection.102}{Support Vector Machine \(SVM\)}{section.96}% 52
-\BOOKMARK [2][-]{subsection.104}{K-Nearest Neighbors \(k-NN\)}{section.96}% 53
-\BOOKMARK [2][-]{subsection.106}{Logistic Regression \(LR\)}{section.96}% 54
-\BOOKMARK [1][-]{section.109}{Quality of a Classfier}{chapter.76}% 55
-\BOOKMARK [2][-]{subsection.114}{Precision}{section.109}% 56
-\BOOKMARK [2][-]{subsection.116}{Recall}{section.109}% 57
-\BOOKMARK [2][-]{subsection.118}{F1 Score}{section.109}% 58
-\BOOKMARK [2][-]{subsection.120}{Model Creation}{section.109}% 59
-\BOOKMARK [1][-]{section.122}{Parameter Optimization}{chapter.76}% 60
-\BOOKMARK [2][-]{subsection.127}{Grid Search}{section.122}% 61
-\BOOKMARK [3][-]{subsubsection.128}{Naive Bayes Classifier}{subsection.127}% 62
-\BOOKMARK [3][-]{subsubsection.132}{Support Vector Machine}{subsection.127}% 63
-\BOOKMARK [3][-]{subsubsection.137}{K-Nearest Neighbors}{subsection.127}% 64
-\BOOKMARK [3][-]{subsubsection.138}{Logistic Regression}{subsection.127}% 65
-\BOOKMARK [0][-]{chapter.142}{Sarcasm Analysis}{}% 66
-\BOOKMARK [1][-]{section.143}{Introduction}{chapter.142}% 67
-\BOOKMARK [1][-]{section.144}{Architecture}{chapter.142}% 68
-\BOOKMARK [0][-]{chapter.147}{Case study}{}% 69
-\BOOKMARK [1][-]{section.148}{Introduction}{chapter.147}% 70
-\BOOKMARK [1][-]{section.149}{Rule edition}{chapter.147}% 71
-\BOOKMARK [0][-]{chapter.150}{Conclusions and future work}{}% 72
-\BOOKMARK [1][-]{section.151}{Conclusions}{chapter.150}% 73
-\BOOKMARK [1][-]{section.152}{Achieved goals}{chapter.150}% 74
-\BOOKMARK [1][-]{section.153}{Future work}{chapter.150}% 75
-\BOOKMARK [0][-]{section*.154}{Bibliography}{}% 76
+\BOOKMARK [1][-]{section.27}{Sarcasm}{chapter.23}% 12
+\BOOKMARK [2][-]{subsection.28}{Sarcasm Definition joshi2017automatic}{section.27}% 13
+\BOOKMARK [1][-]{section.30}{Dataset}{chapter.23}% 14
+\BOOKMARK [1][-]{section.31}{Approaches used for Sarcasm Detection}{chapter.23}% 15
+\BOOKMARK [2][-]{subsection.32}{Rule-based Approaches joshi2017automatic}{section.31}% 16
+\BOOKMARK [2][-]{subsection.33}{Feature sets}{section.31}% 17
+\BOOKMARK [1][-]{section.35}{Main Issues in Sarcasm Detection}{chapter.23}% 18
+\BOOKMARK [1][-]{section.36}{Figures of Merit}{chapter.23}% 19
+\BOOKMARK [0][-]{chapter.38}{Enabling Technologies}{}% 20
+\BOOKMARK [1][-]{section.39}{Introduction}{chapter.38}% 21
+\BOOKMARK [1][-]{section.40}{Natural Language Processing}{chapter.38}% 22
+\BOOKMARK [2][-]{subsection.42}{Natural Language Toolkit}{section.40}% 23
+\BOOKMARK [3][-]{subsubsection.43}{Definition}{subsection.42}% 24
+\BOOKMARK [3][-]{subsubsection.46}{Application}{subsection.42}% 25
+\BOOKMARK [1][-]{section.48}{ Machine Learning}{chapter.38}% 26
+\BOOKMARK [2][-]{subsection.51}{Sklearn}{section.48}% 27
+\BOOKMARK [3][-]{subsubsection.52}{Definition}{subsection.51}% 28
+\BOOKMARK [3][-]{subsubsection.54}{Application}{subsection.51}% 29
+\BOOKMARK [1][-]{section.63}{Senpy}{chapter.38}% 30
+\BOOKMARK [2][-]{subsection.64}{Architecture}{section.63}% 31
+\BOOKMARK [1][-]{section.66}{Bitter}{chapter.38}% 32
+\BOOKMARK [2][-]{subsection.68}{Architecture}{section.66}% 33
+\BOOKMARK [1][-]{section.70}{Sefarad}{chapter.38}% 34
+\BOOKMARK [2][-]{subsection.71}{Architecture}{section.70}% 35
+\BOOKMARK [1][-]{section.73}{Elasticsearch}{chapter.38}% 36
+\BOOKMARK [2][-]{subsection.75}{Architecture}{section.73}% 37
+\BOOKMARK [0][-]{chapter.77}{Model}{}% 38
+\BOOKMARK [1][-]{section.78}{Introduction}{chapter.77}% 39
+\BOOKMARK [2][-]{subsection.80}{Overview}{section.78}% 40
+\BOOKMARK [1][-]{section.81}{Dataset}{chapter.77}% 41
+\BOOKMARK [1][-]{section.83}{Preprocessing}{chapter.77}% 42
+\BOOKMARK [1][-]{section.84}{Feature Extraction}{chapter.77}% 43
+\BOOKMARK [2][-]{subsection.85}{Lexical Features}{section.84}% 44
+\BOOKMARK [2][-]{subsection.86}{Syntactic Features}{section.84}% 45
+\BOOKMARK [2][-]{subsection.88}{Ngram Features. Pipeline}{section.84}% 46
+\BOOKMARK [2][-]{subsection.90}{Latent Dirichlet Allocator \(LDA\) Features}{section.84}% 47
+\BOOKMARK [2][-]{subsection.92}{Frequency Inverse Document Frequency \(TFIDF\)}{section.84}% 48
+\BOOKMARK [1][-]{section.97}{Classifiers}{chapter.77}% 49
+\BOOKMARK [2][-]{subsection.99}{Naive Bayes Classifier \(NB\)}{section.97}% 50
+\BOOKMARK [2][-]{subsection.103}{Support Vector Machine \(SVM\)}{section.97}% 51
+\BOOKMARK [2][-]{subsection.105}{K-Nearest Neighbors \(k-NN\)}{section.97}% 52
+\BOOKMARK [2][-]{subsection.107}{Logistic Regression \(LR\)}{section.97}% 53
+\BOOKMARK [1][-]{section.110}{Quality of a Classfier}{chapter.77}% 54
+\BOOKMARK [2][-]{subsection.115}{Precision}{section.110}% 55
+\BOOKMARK [2][-]{subsection.117}{Recall}{section.110}% 56
+\BOOKMARK [2][-]{subsection.119}{F1 Score}{section.110}% 57
+\BOOKMARK [2][-]{subsection.121}{Model Creation}{section.110}% 58
+\BOOKMARK [1][-]{section.123}{Parameter Optimization}{chapter.77}% 59
+\BOOKMARK [2][-]{subsection.128}{Grid Search}{section.123}% 60
+\BOOKMARK [3][-]{subsubsection.129}{Naive Bayes Classifier}{subsection.128}% 61
+\BOOKMARK [3][-]{subsubsection.133}{Support Vector Machine}{subsection.128}% 62
+\BOOKMARK [3][-]{subsubsection.138}{K-Nearest Neighbors}{subsection.128}% 63
+\BOOKMARK [3][-]{subsubsection.139}{Logistic Regression}{subsection.128}% 64
+\BOOKMARK [0][-]{chapter.143}{Sarcasm Analysis}{}% 65
+\BOOKMARK [1][-]{section.144}{Introduction}{chapter.143}% 66
+\BOOKMARK [1][-]{section.145}{Architecture}{chapter.143}% 67
+\BOOKMARK [0][-]{chapter.148}{Case study}{}% 68
+\BOOKMARK [1][-]{section.149}{Introduction}{chapter.148}% 69
+\BOOKMARK [1][-]{section.150}{Rule edition}{chapter.148}% 70
+\BOOKMARK [0][-]{chapter.151}{Conclusions and future work}{}% 71
+\BOOKMARK [1][-]{section.152}{Conclusions}{chapter.151}% 72
+\BOOKMARK [1][-]{section.153}{Achieved goals}{chapter.151}% 73
+\BOOKMARK [1][-]{section.154}{Future work}{chapter.151}% 74
+\BOOKMARK [0][-]{section*.155}{Bibliography}{}% 75
