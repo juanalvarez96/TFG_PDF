@@ -16,64 +16,73 @@ A level-1 auxiliary file: 6-conclusions.aux
 The style file: plain.bst
 Database file #1: biblio/ref.bib
 Warning--string name "giuseppe" is undefined
---line 200 of file biblio/ref.bib
-I was expecting a `,' or a `}'---line 200 of file biblio/ref.bib
+--line 203 of file biblio/ref.bib
+I was expecting a `,' or a `}'---line 203 of file biblio/ref.bib
  :  author=giuseppe 
  :                  Ciaburro},
 I'm skipping whatever remains of this entry
-Repeated entry---line 204 of file biblio/ref.bib
+Repeated entry---line 207 of file biblio/ref.bib
  : @misc{pos
  :          ,
 I'm skipping whatever remains of this entry
+Warning--string name "mark" is undefined
+--line 214 of file biblio/ref.bib
+I was expecting a `,' or a `}'---line 214 of file biblio/ref.bib
+ :  author= mark 
+ :               G. Sobell; Matthew Helmke},
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pipeline
-Warning--to sort, need author or key in senpy
-Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
 Warning--to sort, need author, editor, or key in model
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
+Warning--to sort, need author, editor, or key in pickle
+Warning--to sort, need author or key in luigi
+Warning--empty author and editor in pickle
+Warning--empty publisher in pickle
+Warning--empty year in pickle
 Warning--empty author and editor in model
 Warning--empty publisher in model
 Warning--empty year in model
-You've used 32 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            629 strings with 7181 characters,
-and the built_in function-call counts, 6972 in all, are:
-= -- 632
-> -- 226
-< -- 1
-+ -- 99
-- -- 66
-* -- 305
-:= -- 1158
-add.period$ -- 88
-call.type$ -- 32
-change.case$ -- 109
+            634 strings with 7452 characters,
+and the built_in function-call counts, 7515 in all, are:
+= -- 685
+> -- 249
+< -- 2
++ -- 109
+- -- 74
+* -- 350
+:= -- 1236
+add.period$ -- 91
+call.type$ -- 33
+change.case$ -- 115
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 355
-empty$ -- 711
-format.name$ -- 66
-if$ -- 1513
+cite$ -- 46
+duplicate$ -- 384
+empty$ -- 753
+format.name$ -- 74
+if$ -- 1632
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 44
-newline$ -- 155
-num.names$ -- 50
-pop$ -- 245
+int.to.str$ -- 33
+missing$ -- 46
+newline$ -- 159
+num.names$ -- 52
+pop$ -- 257
 preamble$ -- 1
-purify$ -- 97
+purify$ -- 103
 quote$ -- 0
-skip$ -- 217
+skip$ -- 232
 stack$ -- 0
-substring$ -- 199
-swap$ -- 40
-text.length$ -- 1
+substring$ -- 237
+swap$ -- 51
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 86
-warning$ -- 10
-while$ -- 54
-width$ -- 34
-write$ -- 304
-(There were 2 error messages)
+type$ -- 88
+warning$ -- 13
+while$ -- 59
+width$ -- 35
+write$ -- 314
+(There were 3 error messages)

@@ -7,14 +7,17 @@ Classification models.
 
 \bibitem{mexic}
 Hacia la detección de ironía en textos cortos.
-\newblock
-\url{  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y.
-}
+\newblock \url{
+  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y}.
+
 \bibitem{luigi}
 Luigi documentation.
-\newblock
-\url{ https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
-}
+\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
+
+\bibitem{pickle}
+{\em A Practical Guide to Linux Commands, Editors, and Shell Programming,
+  Fourth Edition}.
+
 \bibitem{model}
 {\em Regression Analysis with R}.
 
@@ -25,10 +28,6 @@ Sefarad architecture.
 \bibitem{pipeline}
 Spark dataframes and ml pipelines.
 \newblock https://www.slideshare.net/databricks/dataframes-and-pipelines.
-
-\bibitem{senpy}
-What is senpy?
-\newblock https://senpy.readthedocs.io/en/latest/senpy.html.
 
 \bibitem{elastic1}
 Abhishek Andhavarapu.
@@ -138,6 +137,13 @@ J.~Fernando S{\'a}nchez-Rada.
 \newblock {D}esign and {I}mplementation of an {A}gent {A}rchitecture {B}ased on
   {W}eb {H}ooks.
 \newblock Master's thesis, ETSIT-UPM, 2012.
+
+\bibitem{senpy}
+J~Fernando S{\'a}nchez-Rada, Carlos~A Iglesias, Ignacio Corcuera, and Oscar
+  Araque.
+\newblock Senpy: A pragmatic linked sentiment analysis framework.
+\newblock In {\em Data Science and Advanced Analytics (DSAA), 2016 IEEE
+  International Conference on}, pages 735--742. IEEE, 2016.
 
 \bibitem{preprocess}
 Bhargav Srinivasa-Desikan.

@@ -155,7 +155,9 @@ The most common terms used in Elasticsearch are:
 	\item \textit{Shard}: Containers which can be stored on a single node or multiple nodes. A  shard can be either primary or secondary. A primary shard is the one where all the operations that change the index are directed. A secondary shard is the one that contains duplicate data of the primary shard and helps in quickly searching the data as well as for high availability; in a case where the machine that holds the primary shard goes down, then the secondary shard becomes the primary automatically.
 	\item \textit{Replica}: Duplicate copy of the data living in a shard for high availability.
 \end{itemize}
-
+\section{Pickle}
+The pickle module makes it possible to store an object in a file in a standard format for later use by the same or a different program. The stored can be any type of object as long as it does not require an operating system resource such as a file handle or network socket~\cite{pickle}.\\
+Pickle is very useful for using an already trained classifier in different modules.
 
 
 

@@ -346,6 +346,24 @@ Since the results of the~\ac{knn} were very low (see~\cref{tab:knn1}) there was 
 	
 \end{itemize}
 
+\section{Senpy}
+Senpy was used in this project as a framework for wrapping the classifier work in a plugin, providing an interactive interface where the user only needs to type in text and senpy detects the sarcastic property of the text.\\
+To make senpy work, the following was required:
+\begin{itemize}
+	\item Install senpy using command line\footnote{\url{https://github.com/gsi-upm/senpy}} 
+	\item Integrate the classifier as a plugin
+\end{itemize}
 
-
+\subsection{Results}
+The following pictures illustrate the result of using senpy using as examples a sarcastic sentence and a non-sarcastic one.
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/ironia.png}
+	\caption{Sarcastic example using Senpys' Playground~\cite{senpy}}
+	\label{fig:senpyex1}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/noironia.png}
+	\caption{Non-sarcastic example using Senpys' Playground~\cite{senpy}}
+	\label{fig:senpyex2}
+\end{figure}
 
