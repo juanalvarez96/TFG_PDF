@@ -29,6 +29,11 @@ Sefarad architecture.
 Spark dataframes and ml pipelines.
 \newblock https://www.slideshare.net/databricks/dataframes-and-pipelines.
 
+\bibitem{elastic3}
+Hüseyin Akdoğan.
+\newblock {\em Elasticsearch Indexing}.
+\newblock Packt Publishing, 2015.
+
 \bibitem{elastic1}
 Abhishek Andhavarapu.
 \newblock {\em Learning Elasticsearch}.

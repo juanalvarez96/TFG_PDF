@@ -9,6 +9,16 @@ A level-1 auxiliary file: E-contents.aux
 A level-1 auxiliary file: 1-introduction.aux
 A level-1 auxiliary file: 2-state-of-the-art.aux
 A level-1 auxiliary file: 7-enabling-technologies.aux
+Case mismatch error between cite keys TFIDF and tfidf
+---line 61 of file 7-enabling-technologies.aux
+ : \citation{TFIDF
+ :                }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys TFIDF and tfidf
+---line 77 of file 7-enabling-technologies.aux
+ : \citation{TFIDF
+ :                }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: 3-requirements.aux
 A level-1 auxiliary file: 4-architecture.aux
 A level-1 auxiliary file: 5-case-study.aux
@@ -32,57 +42,57 @@ I was expecting a `,' or a `}'---line 214 of file biblio/ref.bib
  :               G. Sobell; Matthew Helmke},
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pipeline
-Warning--to sort, need author or key in sefarad
 Warning--to sort, need author, editor, or key in model
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in mexic
 Warning--to sort, need author, editor, or key in pickle
 Warning--to sort, need author or key in luigi
+Warning--to sort, need author or key in sefarad
 Warning--empty author and editor in pickle
 Warning--empty publisher in pickle
 Warning--empty year in pickle
 Warning--empty author and editor in model
 Warning--empty publisher in model
 Warning--empty year in model
-You've used 33 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            634 strings with 7452 characters,
-and the built_in function-call counts, 7515 in all, are:
-= -- 685
-> -- 249
+            637 strings with 7499 characters,
+and the built_in function-call counts, 7730 in all, are:
+= -- 704
+> -- 256
 < -- 2
-+ -- 109
-- -- 74
-* -- 350
-:= -- 1236
-add.period$ -- 91
-call.type$ -- 33
-change.case$ -- 115
++ -- 112
+- -- 76
+* -- 358
+:= -- 1274
+add.period$ -- 94
+call.type$ -- 34
+change.case$ -- 118
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 384
-empty$ -- 753
-format.name$ -- 74
-if$ -- 1632
+cite$ -- 47
+duplicate$ -- 396
+empty$ -- 775
+format.name$ -- 76
+if$ -- 1678
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 46
-newline$ -- 159
-num.names$ -- 52
-pop$ -- 257
+int.to.str$ -- 34
+missing$ -- 48
+newline$ -- 164
+num.names$ -- 54
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 106
 quote$ -- 0
-skip$ -- 232
+skip$ -- 238
 stack$ -- 0
-substring$ -- 237
-swap$ -- 51
+substring$ -- 242
+swap$ -- 52
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 90
 warning$ -- 13
-while$ -- 59
-width$ -- 35
-write$ -- 314
-(There were 3 error messages)
+while$ -- 61
+width$ -- 36
+write$ -- 324
+(There were 5 error messages)

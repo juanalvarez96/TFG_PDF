@@ -1,22 +1,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Features used for Statistical Classifiers\nobreakspace {}\cite {joshi2017automatic}\relax }}{6}{figure.caption.34}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Features used for Statistical Classifiers\nobreakspace {}\cite {joshi2017automatic}\relax }}{6}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Image is taken from\nobreakspace {}\url {http://www.gartner.com/newsroom/id/2819918}\relax }}{10}{figure.caption.42}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Underfitting\nobreakspace {}\cite {gs}\relax }}{13}{figure.caption.50}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Overfitting\nobreakspace {}\cite {gs}\relax }}{13}{figure.caption.51}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A Pipeline.\nobreakspace {}\cite {pipeline}\relax }}{15}{figure.caption.63}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Senpy's Architecture\nobreakspace {}\cite {senpy}\relax }}{16}{figure.caption.66}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Bitter Architecture\relax }}{17}{figure.caption.70}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Sefarad Architecture\nobreakspace {}\cite {sefarad}\relax }}{18}{figure.caption.73}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Elasticsearch as a Database\nobreakspace {}\cite {elastic2}\relax }}{19}{figure.caption.77}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image is taken from\nobreakspace {}\url {http://www.gartner.com/newsroom/id/2819918}\relax }}{10}{figure.caption.41}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Linear regression plotted\nobreakspace {}\cite {tfidf}\relax }}{13}{figure.caption.61}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Underfitting\nobreakspace {}\cite {gs}\relax }}{14}{figure.caption.62}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Overfitting\nobreakspace {}\cite {gs}\relax }}{15}{figure.caption.63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A Pipeline.\nobreakspace {}\cite {pipeline}\relax }}{17}{figure.caption.70}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Senpy's Architecture\nobreakspace {}\cite {senpy}\relax }}{18}{figure.caption.73}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Bitter Architecture\relax }}{19}{figure.caption.77}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Elasticsearch\nobreakspace {}\cite {elastic3}\relax }}{20}{figure.caption.81}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Elasticsearch and a Database\nobreakspace {}\cite {elastic1}.\relax }}{21}{figure.caption.82}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The\nobreakspace {}\acl {ml}\nobreakspace {}\cite {model} Model\relax }}{22}{figure.caption.81}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Dataset\relax }}{24}{figure.caption.84}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Classifier\nobreakspace {}\cite {classif}\relax }}{29}{figure.caption.100}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Model Construction\nobreakspace {}\cite {modcons}\relax }}{34}{figure.caption.124}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sarcastic example using Senpys' Playground\nobreakspace {}\cite {senpy}\relax }}{38}{figure.caption.148}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Non-sarcastic example using Senpys' Playground\nobreakspace {}\cite {senpy}\relax }}{39}{figure.caption.149}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The\nobreakspace {}\acl {ml}\nobreakspace {}\cite {model} Model\relax }}{24}{figure.caption.86}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dataset\relax }}{26}{figure.caption.89}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Classifier\nobreakspace {}\cite {classif}\relax }}{31}{figure.caption.105}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Model Construction\nobreakspace {}\cite {modcons}\relax }}{36}{figure.caption.129}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sarcastic example using Senpys' Playground\nobreakspace {}\cite {senpy}\relax }}{40}{figure.caption.153}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Non-sarcastic example using Senpys' Playground\nobreakspace {}\cite {senpy}\relax }}{41}{figure.caption.154}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
