@@ -23,7 +23,7 @@ The way senpy is implemented is by defining just one plugin, which will contain 
 \label{sec:use-cases}
 This section explains the dataset choice, as well as the main label present in the dataset.\par
 This project is formerly designed to detect sarcasm in spanish written texts, particularly tweets. Therefore, all the datasets used in this project are written in spanish.\\
-The dataset body will contain two rows, the tweet body, i.e. the text, and a binary value expressing the sarcasm nature of that tweet.\\
+The dataset body will contain two columns, the tweet body, i.e. the text, and a binary value expressing the sarcasm nature of that tweet.\\
 The final dataset will be composed of three different datasets.\\ 
 The initial database~\cite{mexic} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. At first, the dataset contained only the tweet identifier and the sarcastic label, meaning there was no text present on the dataset. In order to obtain the tweet text, it was necessary to use the bitter tool (see~\cref{sec:bitter}). While doing so, many tweet bodies were no longer available to retrieve since the Twitter platform had removed them or the owners had privatized them. As a consequence, new sarcastic tweets were provided by a colleague from the Intelligent Systems Group in the UPM.\\
 Even though the numerous amount of sarcastic tweets was a good start, the dataset was completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the mayority of the dataset is sarcastic, finding new non-sarcastic tweets was not a difficult duty.\\

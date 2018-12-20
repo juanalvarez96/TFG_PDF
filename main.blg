@@ -15,7 +15,7 @@ Case mismatch error between cite keys TFIDF and tfidf
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys TFIDF and tfidf
----line 77 of file 7-enabling-technologies.aux
+---line 78 of file 7-enabling-technologies.aux
  : \citation{TFIDF
  :                }
 I'm skipping whatever remains of this command
@@ -44,55 +44,57 @@ I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pipeline
 Warning--to sort, need author, editor, or key in model
 Warning--to sort, need author or key in modcons
+Warning--to sort, need author or key in twitter1
+Warning--to sort, need author or key in twitter2
 Warning--to sort, need author or key in mexic
 Warning--to sort, need author, editor, or key in pickle
-Warning--to sort, need author or key in luigi
 Warning--to sort, need author or key in sefarad
+Warning--to sort, need author or key in luigi
 Warning--empty author and editor in pickle
 Warning--empty publisher in pickle
 Warning--empty year in pickle
 Warning--empty author and editor in model
 Warning--empty publisher in model
 Warning--empty year in model
-You've used 34 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            637 strings with 7499 characters,
-and the built_in function-call counts, 7730 in all, are:
-= -- 704
-> -- 256
+            649 strings with 8060 characters,
+and the built_in function-call counts, 8598 in all, are:
+= -- 785
+> -- 301
 < -- 2
-+ -- 112
-- -- 76
-* -- 358
-:= -- 1274
-add.period$ -- 94
-call.type$ -- 34
-change.case$ -- 118
++ -- 131
+- -- 92
+* -- 420
+:= -- 1403
+add.period$ -- 101
+call.type$ -- 37
+change.case$ -- 135
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 396
-empty$ -- 775
-format.name$ -- 76
-if$ -- 1678
+cite$ -- 52
+duplicate$ -- 421
+empty$ -- 851
+format.name$ -- 92
+if$ -- 1863
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 48
-newline$ -- 164
-num.names$ -- 54
-pop$ -- 265
+int.to.str$ -- 37
+missing$ -- 49
+newline$ -- 177
+num.names$ -- 56
+pop$ -- 290
 preamble$ -- 1
-purify$ -- 106
+purify$ -- 120
 quote$ -- 0
-skip$ -- 238
+skip$ -- 261
 stack$ -- 0
-substring$ -- 242
-swap$ -- 52
+substring$ -- 294
+swap$ -- 55
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 13
-while$ -- 61
-width$ -- 36
-write$ -- 324
+type$ -- 102
+warning$ -- 15
+while$ -- 65
+width$ -- 39
+write$ -- 349
 (There were 5 error messages)

@@ -1,22 +1,37 @@
 \chapter{Introduction}
 
 \section{Context}
+The emergence of the social network Twitter in 2006 resulted in a tremendous boost of the Digital Revolution taking place since the end of the 20th century. As a result, there are on average at least 6000 tweets being tweeted every second. It is estimated that by 2020 the number of users in Twitter will increase up to 275 million users worlwide~\cite{twitter1}. Twitter has become so popular that roughly 74\% of all the Twitters' users claim to use the social network as a source to get the daily news~\cite{twitter2}. One could say that Twitter has become part of our lives and he would not be far from the truth.\par
 
-
-
+ Combining the data allocated in the Twitter database with mathematical models can create insights that we are not capable of imagining. Moreover, the Twitter API offers the possibility of making topic-based queries, allowing the developer to get an enormous amount of data from almost any subject. Therefore, Twitter is like a gold mine of data. Additionally, spatial data can also be obtained by using the Twitter API. This can be very interesting if the developer wants to see what is the feeling of the people from an area towards a certain product or company. \par
+According to~\cite{shayaa2018sentiment}, the world has already generated 1~\ac{zb} of data and it is supposed to increase up to 44~\ac{zb} of data by 2020. The 44~\ac{zb} of data will contain at least half of lexical data, coming from social networks like Facebook, Twitter and instant-messaging platforms. Furthermore, it is expected that the amount of data will continuously grow because of the influx of digital technologies that have already sprung up in the digital era.\par
+Since an enormous amount of text data has arisen, there is a great need to give some insight to raw data. In that context, text mining uses~\ac{nlp} and~\ac{ml} techniques to process the data. Usually text analysis is consucted for two purposes~\cite{shayaa2018sentiment}. The first purpose is to analyze peoples' sentiment on an issue. The second purpose is to evaluate peoples' opinion and sentiment on a product or topic.\par
+Finally, to give a glimpse of the results achieved, the senpy engine was implemented to provide a framework where a user could insert a short text and the classifier could detect whether or not the text is sarcastic.
 \section{Project goals}
-The objective of this project is to define a classifier capable of detecting sarcasm in texts, particularly in tweets. By using a dataset of over 11,000 tweets and \ac{ml} techniques, the objective shall be overcome.
+The main objective of this project is to define a classifier capable of detecting sarcasm in texts, particularly in tweets. To do so, the following challenges shall be overcome:
 
-
-  
 \begin{itemize}
 
-
-\item  G1
+\item  \textit{Tweet body retrieval}: The data provided will only contain tweets id and a sarcastis indicator. Hence, software capable of downloading the body of the tweets is required.
+\item \textit{Dataset preprocessing}: To combine different datasets and encode categorical values, a preprocessing stage is mandatory.
+\item \textit{Feature extracion}: If the mathematical classifier is to learn from the body of the tweets, a feature extraction process is required.
+\item \textit{Model creation}: Create classification models using different mathematical learning techniques.
+\item \textit{Optimization}: For the classifier to be optimal, the optimum model will have the best parameters, most relevant features and greatest mathematical learning technique.
+\item \textit{Senpy implementation}: Implement the optimum classifier in the senpy engine as a plugin to create a framework where a user can insert a short text and the classifier detects whether or not the text is sarcastic.
 
 \end{itemize}
 
 \section{Structure of this document}
 In this section we provide a brief overview of the chapters included in this document. The structure is as follows:
 
-\textbf{\textit{Chapter 1}} ...
+\textbf{\textit{Chapter 1}} discusses the context wherein this project is located and gives an insight of the topics that this project will cover.
+
+\textbf{\textit{Chapter 2}} describes what are the results already achieved in similar works. Serves as a benchmark.
+
+\textbf{\textit{Chapter 3}} under a generic perspective explains the technologies decided used to create the model.
+
+\textbf{\textit{Chapter 4}} analyzes extensively how are the technologies from~\cref{chap:entech} implemented and shows the results achieved.
+
+\textbf{\textit{Chapter 5}}
+
+\textbf{\textit{Chapter 6}} finalizes the project showing the conclusions drawn and shows what were the problems faced.

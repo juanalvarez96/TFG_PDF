@@ -14,6 +14,11 @@ Hacia la detección de ironía en textos cortos.
 Luigi documentation.
 \newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
 
+\bibitem{twitter1}
+Number of twitter users worldwide from 2014 to 2020 (in millions).
+\newblock
+  \url{https://www.statista.com/statistics/303681/twitter-users-worldwide/}.
+
 \bibitem{pickle}
 {\em A Practical Guide to Linux Commands, Editors, and Shell Programming,
   Fourth Edition}.
@@ -28,6 +33,10 @@ Sefarad architecture.
 \bibitem{pipeline}
 Spark dataframes and ml pipelines.
 \newblock https://www.slideshare.net/databricks/dataframes-and-pipelines.
+
+\bibitem{twitter2}
+Twitter by the numbers: Stats, demographics and fun facts.
+\newblock \url{https://www.omnicoreagency.com/twitter-statistics/}.
 
 \bibitem{elastic3}
 Hüseyin Akdoğan.
@@ -149,6 +158,14 @@ J~Fernando S{\'a}nchez-Rada, Carlos~A Iglesias, Ignacio Corcuera, and Oscar
 \newblock Senpy: A pragmatic linked sentiment analysis framework.
 \newblock In {\em Data Science and Advanced Analytics (DSAA), 2016 IEEE
   International Conference on}, pages 735--742. IEEE, 2016.
+
+\bibitem{shayaa2018sentiment}
+Shahid Shayaa, Noor~Ismawati Jaafar, Shamshul Bahri, Ainin Sulaiman,
+  Phoong~Seuk Wai, Yeong~Wai Chung, Arsalan~Zahid Piprani, and Mohammed~Ali
+  Al-Garadi.
+\newblock Sentiment analysis of big data: Methods, applications, and open
+  challenges.
+\newblock {\em IEEE Access}, 6:37807--37827, 2018.
 
 \bibitem{preprocess}
 Bhargav Srinivasa-Desikan.
