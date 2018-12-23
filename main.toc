@@ -64,14 +64,8 @@
 \contentsline {section}{\numberline {4.8}Senpy}{43}{section.151}
 \contentsline {subsection}{\numberline {4.8.1}Results}{43}{subsection.153}
 \contentsline {section}{\numberline {4.9}Elasticsearch}{46}{section.156}
-\contentsline {chapter}{\numberline {5}Sarcasm Analysis}{47}{chapter.157}
-\contentsline {section}{\numberline {5.1}Introduction}{47}{section.158}
-\contentsline {section}{\numberline {5.2}Architecture}{47}{section.159}
-\contentsline {chapter}{\numberline {6}Case study}{49}{chapter.162}
-\contentsline {section}{\numberline {6.1}Introduction}{49}{section.163}
-\contentsline {section}{\numberline {6.2}Rule edition}{49}{section.164}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{51}{chapter.165}
-\contentsline {section}{\numberline {7.1}Conclusions}{51}{section.166}
-\contentsline {section}{\numberline {7.2}Achieved goals}{51}{section.167}
-\contentsline {section}{\numberline {7.3}Future work}{51}{section.168}
-\contentsline {chapter}{Bibliography}{52}{section*.169}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{47}{chapter.157}
+\contentsline {section}{\numberline {5.1}Conclusions}{47}{section.158}
+\contentsline {section}{\numberline {5.2}Achieved goals}{47}{section.159}
+\contentsline {section}{\numberline {5.3}Future work}{48}{section.160}
+\contentsline {chapter}{Bibliography}{49}{section*.161}
