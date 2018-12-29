@@ -120,6 +120,11 @@ Mikhail Khodak, Nikunj Saunshi, and Kiran Vodrahalli.
 \newblock A large self-annotated corpus for sarcasm.
 \newblock {\em arXiv preprint arXiv:1704.05579}, 2017.
 
+\bibitem{clasif}
+Pascal Bugnion; Patrick R. Nicolas;~Alex Kozlov.
+\newblock {\em Scala:Applied Machine Learning}.
+\newblock 2017.
+
 \bibitem{nltk}
 Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
 \newblock {\em Natural Language Processing: Python and NLTK}.

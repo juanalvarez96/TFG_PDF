@@ -2,26 +2,53 @@
 \label{chap:conclusions}
 The conclusions reached in the previous chapter will be brought together in this chapter.\\
 Moreover, a description of the achieved goals and the lines of future work will be explained.\\
-Finally, the problems faced will be described.
+Finally,  the problems faced and an overview of future lines will be given.
 
 \section{Conclusions}
 \label{sec:conclusions}
-The objective of this project is to develop a classifier, making use of~\ac{ml} techniques and~\ac{nlp} techniques, with the ability to datect sarcasm in short text, such as Twitter.\\
-For that objective, three datasets were used. After combining the three datasets, the final dataset contained two columns, one column for the tweet text field, and a second column indicating whether or not that tweet is sarcastic.\\
-To construct the model, a preprocessing stage was designed to encode categorical variables and delete those tweets that lacked text.\\
-The next step was to design the pipeline, which would be responsible for the feature extraction process. It was in this step that 
-
+This project resembles an example for automatic sarcasm detection. The approach followed consisted of training a classifier using a dataset cosisting of two columns, one for the text body and the last column to feature the sarcastic property of the text body. This goal could be fulfilled by making use of~\ac{ml} techniques and~\ac{nlp} techniques, with the ability to detect sarcasm in short text, such as Twitter.\\
+To compile the final dataset, three datasets containing tweets where assembled and put together generating a final dataset with the tweet body and the feature.\\
+Later on, the model could be built by introducing a preprocessing stage designed to encode categorical variables and delete those tweets that lacked a text body. To ensure a non-dependency between the tweets, the rows of the dataset were randomized.\\
+Once the dataset was ready a pipeline was designed, which would be responsible for the feature extraction process. The features that gave more infromation to the classifier were:
+\begin{enumerate}
+	\item \textbf{Lexical features:} The word repetition frequency had a relationship with the sarcastic property of a short text.
+	\item \textbf{Ngram features:} This feature shows that depending on how many words uses the algorithm to consider a noun, the model can be more precise.
+	\item \textbf{Number of topics feature (\ac{lda}):} Taking into account the possible number of topics that a text can be talking about is a relevant characteristic of sarcasm.
+\end{enumerate} 
+ As an interesting fact, the model predicted with more accuracy having only these three features extracted rather than counting on the syntactic features.\\
+The next step was to feed the features extracted to a classifier. According to~\cite{clasif}, a classifier is a kind of rule-based system with general mechanisms for processing rules in parallel, for adaptive generation of new rules, and for testing the effectiveness of new rules. The classifiers which had an outstanding performance were:
+\begin{enumerate}
+	\item \textbf{\acl{nb}}: This classifier was by far the best one, reaching an F1 score of $0.92$.
+	\item \textbf{\acl{lr}}: This classifier had an F1 score of $0.91$.
+	\item \textbf{\acl{svm}:} This classifier had an F1 score of $0.91$.
+\end{enumerate} 
+The three classifiers were trained using a training set and the F1 score was extracted by using a testing set.
+Additionally, the~\acl{knn} classifier was also implemented but it had a very bad performance.\\
+Finally, the senpy engine was implemented to provide a user-friendly interface allowing the user to insert text and get a message saying if the tweet is sarcastic. An example can be found in~\cref{fig:senpyex1}.
+ 
 \section{Achieved goals}
-\label{sec:achieved-goals}
+The main goals achieved in this project were:
 \begin{description}
-\item N1
+\item \textbf{Construction of a~\ac{ml} classifier capable of detecting sarcasm in short texts, such as tweets.}\\
+This was the main objective of this project.
+\item \textbf{Implementation of the classifier in a web engine which allows any user to detect sarcasm in a user-inserted text.}\\
+This goal could be achieved because of the Senpy engine.
+
 \end{description}
 
 \section{Future work}
-\label{sec:future-work}
+In regard to the future development of the model, the following improvements could be done:
+\begin{enumerate}
+	\item More feature detection. In sum, only four features have been extracted in this project, however more features could give more information concerning sarcasm. However, this classifier has shown a better performance when analyzing three features rather than four. Therefore, if many more features are considered, the performance of the classifier may be degraded due to the overfitting phenomen.
+	\item Take into account previous tweets. It is very common that tweets are used to answer other tweets. Sometimes the sarcasm is hidden in an answer to a message. In this project, that possibility was never considered, deeming a sarcastic tweet only if the tweets' text field is sarcastic. It could be a good improvement to consider the text field of a tweet and also the predecessing tweets' text field.
+	\item Implement a dashboard. In~\cref{sec:elastic} it was discussed the possibility of using the elastic search engine to generate a dashboard and offer a better interface to the user. To do so, the Sefarad engine offered by the Intelligent Systems Group at the UPM (GSI) is very useful. In~\cite{sefarad} more information regarding the dashboard can be found.
+\end{enumerate}
+\section{Problems encountered}
+The problems faced in this project shall be explained
+\begin{enumerate}
+	\item \textbf{Technologies used}: At the beginning of the project, it was required that I learned all the technologies used as well as the libraries implemented. This required a considerable amount of time.
+	\item \textbf{Retrieval of tweets:} The provided datasets contained only a column indicating the tweet id and sarcastic value ('True' or 'False'). To retrieve the text bodies that would later be fed to the classifier, those text bodies were obtained by using the Bitter(\cref{sec:bitter}) software. 
+	
+\end{enumerate}
 
-\begin{itemize}
 
-\item F1
-
-\end{itemize}

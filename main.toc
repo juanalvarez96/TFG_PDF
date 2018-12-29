@@ -66,6 +66,12 @@
 \contentsline {section}{\numberline {4.9}Elasticsearch}{46}{section.156}
 \contentsline {chapter}{\numberline {5}Conclusions and future work}{47}{chapter.157}
 \contentsline {section}{\numberline {5.1}Conclusions}{47}{section.158}
-\contentsline {section}{\numberline {5.2}Achieved goals}{47}{section.159}
-\contentsline {section}{\numberline {5.3}Future work}{48}{section.160}
-\contentsline {chapter}{Bibliography}{49}{section*.161}
+\contentsline {section}{\numberline {5.2}Achieved goals}{48}{section.165}
+\contentsline {section}{\numberline {5.3}Future work}{49}{section.166}
+\contentsline {section}{\numberline {5.4}Problems encountered}{49}{section.170}
+\contentsline {chapter}{\numberline {A}Cost of System}{51}{appendix.173}
+\contentsline {section}{\numberline {A.1}Introduction}{51}{section.174}
+\contentsline {section}{\numberline {A.2}Physical requirements}{51}{section.175}
+\contentsline {section}{\numberline {A.3}Human resources}{52}{section.176}
+\contentsline {section}{\numberline {A.4}License}{52}{section.177}
+\contentsline {chapter}{Bibliography}{53}{section*.178}
