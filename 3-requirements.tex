@@ -3,9 +3,9 @@
 
 \section{Introduction}
 \label{sec:intromodel}
-The social network Twitter has become extremely popular worldwide. It has developped into a tool that allows anyone to interact directly with people of his interest. Even world-wide leaders, like the president of the United States of America, announce important decisions using Twitter. In other words, Twitters' simplicity and easy-to-use interface has completely transformed the way citizens interact with the society. Altogether with the globalised world that we are living in and the limitless scope that the internet presents makes Twitter a resourceful platform of data.\\
-In this chapter a technical description of the implemented model will be given.\\
-Firstly, an overview of the model shall be presented, followed by the dataset details. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classificator options shall be extensively explained, making emphasis on the best classificator results. Finally, the parameter optimization will be briefed altogether with the best founded parameters results.
+The social network Twitter has become extremely popular worldwide. It has developed into a tool that allows anyone to interact directly with people of his interest. Even world-wide leaders, like the president of the United States of America, announce important decisions using Twitter. In other words, Twitters' simplicity and easy-to-use interface has completely transformed the way citizens interact with the society. Altogether with the globalised world that we are living in and the limitless scope that the internet presents makes Twitter a resourceful platform of data.\\
+In this chapter, a technical description of the implemented model will be given.\\
+Firstly, an overview of the model shall be presented, followed by the dataset details. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classification options shall be extensively explained, making emphasis on the best classification results. Finally, the parameter optimization will be briefed altogether with the best-founded parameters results.
 \begin{figure}
 	\centering
 	\includegraphics[]{img/model.png}
@@ -14,20 +14,20 @@ Firstly, an overview of the model shall be presented, followed by the dataset de
 \end{figure}
 \par
 \subsection{Overview}
-In this subsection a wide view of the system will be given. The first part of this project consists of elaborating the \ac{ml} model.
+In this subsection, a wide view of the system will be given. The first part of this project consists of elaborating the \ac{ml} model.
 \Cref{fig:model} shows the steps followed during the~\ac{ml} stage.\\
-The first two steps are needed to collect the data from the Twitter social network, combine it with more data sources, generate a final \textit{.csv} file and prepare the dataframe (see ~\cref{sec:use-cases}). Once the dataframe is generated, a data exploration and cleaning will be performed (i.e. delete empty tweets, encode categorical variables and so on). It is then when an algorithm is built and train. The algorithm is also known as a classifier and it will be the responsible for predicting sarcasm in new tweets (see~\cref{sec:clasif}). Finally, an accuracy report of the classifier will be carried out to evauate the quality of the classifier (see~\cref{sec:score}).\\
+The first two steps are needed to collect the data from the Twitter social network, combine it with more data sources, generate a final \textit{.csv} file and prepare the data frame (see ~\cref{sec:use-cases}). Once the data frame is generated, data exploration and cleaning will be performed (i.e. delete empty tweets, encode categorical variables and so on). It is then when an algorithm is built and trained. The algorithm is also known as a classifier and it will be responsible for predicting sarcasm in new tweets (see~\cref{sec:clasif}). Finally, an accuracy report of the classifier will be carried out to evaluate the quality of the classifier (see~\cref{sec:score}).\\
 The second part of the project consists of defining a framework, where the~\ac{ml} process can be added as an analysis module. This can be accomplished thanks to senpy~\cite{senpy}.\\
-The way senpy is implemented is by defining just one plugin, which will contain the complete~\ac{ml} process previously desgined. The plugin will be run every time the user types in some text (see pon la foto del playground) and,finally, the results will be visualized in the web.
+The way senpy is implemented is by defining just one plugin, which will contain the complete~\ac{ml} process previously designed.  In other words, the plugin will contain the classifier. The plugin will be run every time the user types in some text (see~\cref{fig:senpyex1} ) and, finally, the results will be visualized in the web.
 \section{Dataset}
 \label{sec:use-cases}
 This section explains the dataset choice, as well as the main label present in the dataset.\par
-This project is formerly designed to detect sarcasm in spanish written texts, particularly tweets. Therefore, all the datasets used in this project are written in spanish.\\
+This project is formerly designed to detect sarcasm in Spanish written texts, particularly tweets. Therefore, all the datasets used in this project are written in Spanish.\\
 The dataset body will contain two columns, the tweet body, i.e. the text, and a binary value expressing the sarcasm nature of that tweet.\\
 The final dataset will be composed of three different datasets.\\ 
 The initial database~\cite{mexic} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. At first, the dataset contained only the tweet identifier and the sarcastic label, meaning there was no text present on the dataset. In order to obtain the tweet text, it was necessary to use the bitter tool (see~\cref{sec:bitter}). While doing so, many tweet bodies were no longer available to retrieve since the Twitter platform had removed them or the owners had privatized them. As a consequence, new sarcastic tweets were provided by a colleague from the Intelligent Systems Group in the UPM.\\
-Even though the numerous amount of sarcastic tweets was a good start, the dataset was completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the mayority of the dataset is sarcastic, finding new non-sarcastic tweets was not a difficult duty.\\
-At the end, the result was 5638 sarcastic tweets and 5444 non-sarcastic. That can be rewritten as $49.12\%$ of non-sarcastic and $49.5\%$ of sarcastic tweets.\par
+Even though the numerous amount of sarcastic tweets was a good start, the dataset was completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the majority of the dataset is sarcastic, finding new non-sarcastic tweets was not a difficult duty.\\
+In the end, the result was 5638 sarcastic tweets and 5444 non-sarcastic. That can be rewritten as $49.12\%$ of non-sarcastic and $49.5\%$ of sarcastic tweets.\par
 
 
 The~\cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The '1' refers to sarcastic, while '0' is non-sarcastic.
@@ -42,24 +42,26 @@ The~\cref{fig:dataset} displays the dataset structure. As explained before, ther
 The preprocessing stage is conceived to dispose of any information that will not be needed during the \ac{ml} step~\cite{preprocess}. The preprocessing was applied individually to each tweet.
 The changes in the dataset that have been made are:
 \begin{itemize}
-	\item \textit{False items}: Since almost half the dataset tweets come from tweeter, it was required to download those tweets from the social network. Some of the captured tweets were false.
+	\item \textit{False items}: Since almost half the dataset tweets come from Twitter, it was required to download those tweets from the social network. Some of the captured tweets were false.
 	\item \textit{Categorical values}: Originally the labels of the dataset were either 'True' or 'False'. These two values were encoded into 'True'= 1 and 'False' = 0.
-	\item \textit{Stopwords}:  In \ac{ml} it is a very common practice to delete words which barely provide any information to the text (e.g. 'a', 'I', 'you'). In this project, the list of stopwords was chosen for the spanish language due to the language of the tweets. The list of words can be consulted in~\cite{stopwords}.
-	\item \textit{Tokenization}:This process consists of splitting a string (tweet) into tokens. Usually a token is the same as a word.
-	\item 
-	\textit{Stemming}: This process consists of reducing the tokens into its root. Basically the words are transformed into its root. Stemming was accomplished using a Snowball stemmer. 
+	\item \textit{Randomization}: This step was used to provide a randomized dataset and have the tweets mixed up. This was important because initially almost every sarcastic tweet was at the beginning and that is not desirable.
 \end{itemize}
-These steps of preprocessing were all executed defining a custom tokenizer but the categorical value encoding and the false item removal, which were done previously.\\
-It is noteworthy to mention that the custom tokenizer is used later for the feature extraction.\\
-At the beginning of the preprocessing stage, the dataset is split into two parts, a training part and a testing part. The purpose of this split is to train a clasifier using the train  sequence and evaluate the accuracy of the classifier using the test sequence. The split is taken randomly. The size of each sequence is 75\% for the train sequence and 25\% for the test sequence (8311 and 2771). More information on can be found on \cref{sec:modcons}.
+At the beginning of the preprocessing stage, the dataset is split into two parts, a training part and a testing part. The purpose of this split is to train a classifier using the train sequence and evaluate the accuracy of the classifier using the test sequence. The split is taken randomly. The size of each sequence is 75\% for the train sequence and 25\% for the test sequence (8311 and 2771). More information on can be found on \cref{sec:modcons}.
 \section{Feature Extraction}
 \label{sec:feature}
- The feature extraction process consist of reading the text and extracting certain features. Furthermore, those extracted features will be fed to the classifier and finally the model will be completed. As a result, the accuracy of the model will be directly related to the choice of features. Therefore, it is very important to choose wisely the features to extract.\\
+The feature extraction process consists of reading the text and extracting certain features. Furthermore, those extracted features will be fed to the classifier and finally the model will be completed. As a result, the accuracy of the model will be directly related to the choice of features. Therefore, it is very important to choose wisely the features to extract.\\
 This section will be committed to extensively explaining the selected features.
 \par
 The extraction will be performed inside a Pipeline, which will execute each extraction sequentially. In this project, two pipelines are defined, the first aims at extracting the ngrams. With the ngrams extracted from the first pipeline, a second one will extract other features and unify the ngrams with the other extracted features. Even though there are two pipelines defined, the results of the ngrams pipeline are added to the other pipeline. This is done thanks to the Feature Union class provided by Scikit-Learn.
 \subsection{Lexical Features}
-Usually extracting lexical features involves getting the number of sentences and the number of words in each sentence. However, since this projects' dataset is made out of tweets and the number of characters in a tweet is limited, I have considered that each tweet contains only one sentence. As a consequence, the lexical feature extraction becomes very simple. The extraction consists of tokenizing each sentence and stemming each token (or word) to get the root. At the same time, the words belonging to the spanish stop list are removed (see \cref{sec:preprocessing} for more details). In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage.
+Usually extracting lexical features involves getting the number of sentences and the number of words in each sentence. However, since this projects' dataset is made out of tweets and the number of characters in a tweet is limited, I have considered that each tweet contains only one sentence. As a consequence, the lexical feature extraction becomes very simple. The extraction consists of tokenizing each sentence and stemming each token (or word) to get the root. At the same time, the words belonging to the Spanish stop list are removed (see \cref{sec:preprocessing} for more details). In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage. The list of operations made for the lexical feature extraction are as follows:
+\begin{enumerate}
+	\item \textit{Stopwords}:  In \ac{ml} it is a very common practice to delete words which barely provide any information to the text (e.g. 'a', 'I', 'you'). In this project, the list of stopwords was chosen for the Spanish language due to the language of the tweets. The list of words can be consulted in~\cite{stopwords}.
+	\item \textit{Tokenization}:This process consists of splitting a string (tweet) into tokens. Usually, a token is the same as a word.
+	\item 
+	\textit{Stemming}: This process consists of reducing the tokens into its root. Basically, the words are transformed into its root. Stemming was accomplished using a Snowball stemmer. 
+\end{enumerate}
+After performing these operations, the remaining words were passed to a~\acl{tfidf} transformer (see~\cref{sec:tfidf}).
 \subsection{Syntactic Features}
 The syntactic feature extraction consists of counting the number of nouns, adjectives, verbs, adverbs, conjunctions, pronouns and numbers present in each tweet.\\
 The~\cref{tab:pos} details the syntactic features extracted in this project. The approach to do so consisted of labelling every token present in a tweet, assigning to the token the grammar tag (see~\cref{tab:pos}) and generating a dictionary with the number of verbs, number of nouns, and so on.\\
@@ -96,23 +98,23 @@ The main parameter of this statistical model is the number of topics. Similarly 
 The equation used is~\cite{tfidf}:
 \begin{equation}
 \label{ec:tf}
-	tf_{t,d} = \frac{count(t)}{count(alltermsindocument)}
+tf_{t,d} = \frac{count(t)}{count(alltermsindocument)}
 \end{equation}
 with
 \begin{equation}
 \label{ec:idf}
-	idf_t=log(\frac{N}{df_t})
+idf_t=log(\frac{N}{df_t})
 \end{equation}
 and
 \begin{equation}
 \label{ec:tfidf}
-	tfidf_{t,d}=tf_{t,d}\times idf_t
+tfidf_{t,d}=tf_{t,d}\times idf_t
 \end{equation}
-The number of occurences of a word in a complete document is computed with~\cref{ec:tf}.~\Cref{ec:idf} represents the $idf$ of a word. That amount serves as how much information a word provides. As explained before, terms with less frequency are considered to provide more information to the whole document as more common terms. Finally,~\cref{ec:tfidf} computes the weight of a word.
+The number of occurrences of a word in a complete document is computed with~\cref{ec:tf}.~\Cref{ec:idf} represents the $idf$ of a word. That amount serves as how much information a word provides. As explained before, terms with less frequency are considered to provide more information to the whole document as more common terms. Finally,~\cref{ec:tfidf} computes the weight of a word.
 \section{Classifiers}
 \label{sec:clasif}
 This section will explain extensively the classifiers used for the learning process.\\
-Classification~\cite{classif} is the task of predicting the class to which an object, known as pattern, belongs. The pattern is assumed to belong to one and only one among a number of a priori known classes. Each pattern is uniquely represented by a set of measurements, known as features. One of the early stages in designing a classification system is to select an appropriate set of feature variables. These should “encode” as much class-discriminatory information, so that, by measuring their value for a given pattern, to be able to predict, with high enough probability, the class of the pattern. 
+Classification~\cite{classif} is the task of predicting the class to which an object, known as a pattern, belongs. The pattern is assumed to belong to one and only one among a number of a priori known classes. Each pattern is uniquely represented by a set of measurements, known as features. One of the early stages in designing a classification system is to select an appropriate set of feature variables. These should “encode” as much class-discriminatory information, so that, by measuring their value for a given pattern, to be able to predict, with high enough probability, the class of the pattern. 
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/classifier.png}
 	\caption{Classifier~\cite{classif}}
@@ -123,8 +125,8 @@ In this project, there will be three classifiers.
 \subsection{\acf{nb}}
 The~\ac{nb} classifier is a typical and popular example of a suboptimal classifier. The basic assumption is that the components (features) in the feature vector are statistically independent; hence, the joint~\ac{pdf} can be written as a product of $l$ marginals~\cite{classif}:
 \begin{equation}
-	p(x|\omega_i)=\prod_{k=1}^{l}p(x_k|\omega_i)
-	\label{ec:nb}
+p(x|\omega_i)=\prod_{k=1}^{l}p(x_k|\omega_i)
+\label{ec:nb}
 \end{equation}
 Considering that both $\omega_i$ and $x$ are Gaussian variables, it is only necessary to compute the mean and the variance for each pair of variables. That leads to a total of $2\times l$ unknown variables for a subclass. Computationally speaking, $2\times l$ complexity is achievable in a reasonable amount of time for a large $l$. This is the great advantage of the \ac{nb}.\par
 The \ac{nb} classifier was defined setting the parameter $alpha = 0.01$. Nevertheless, it is not very important what parameters to set when defining the classifier since a \ac{gs} will be performed with the purpose of discovering the best classifier parameters. (See~\cref{sec:gs})
@@ -141,12 +143,12 @@ In this project, the results obtained for the~\ac{nb} with no parameter optimiza
 		[1ex] 
 		\hline
 	\end{tabular}
-		\caption{\acl{nb} Classification Report}
-		\label{tab:nb1}
+	\caption{\acl{nb} Classification Report}
+	\label{tab:nb1}
 \end{table}
 The quality of a classifier will be established using the \textit{F1-Score} field from the classification report. For more details about this precedent see~\cref{sec:score}.
 \subsection{\acf{svm}}
-Support vector machine~\cite{svm} is a supervised learning algorithm that can be used for classification and regression. It is able to classify data linearly and nonlinearly using kernel methods. Each data point in the training dataset is labeled, as it is supervised learning, and mapped to the input feature space, and the aim is to classify every point of new data to one of the classes. A data point is an N dimension number, as N is the number of features, and the problem is to separate this data using N-1 dimensional hyperplane and this is considered to be a linear classifier.\par
+Support vector machine~\cite{svm} is a supervised learning algorithm that can be used for classification and regression. It is able to classify data linearly and nonlinearly using kernel methods. Each data point in the training dataset is labelled, as it is supervised learning, and mapped to the input feature space, and the aim is to classify every point of new data to one of the classes. A data point is an N dimension number, as N is the number of features, and the problem is to separate this data using N-1 dimensional hyperplane and this is considered to be a linear classifier.\par
 The~\ac{svm} was defined setting as parameters \textit{C} = 1 and \textit{kernel} = linear. In other words, the initial~\ac{svm} model was the linear~\ac{svm} model.\\
 With such parameters, the results can be observed in~\cref{tab:sv1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}. 
 
@@ -185,31 +187,31 @@ The results can be observed in~\cref{tab:knn1}. The quality of the classifier wa
 	\label{tab:knn1}
 \end{table}
 \subsection{\acf{lr}}
- \acl{lr} is a classification method that is based on the probability of a sample belonging to a class.
- It consists of maximum-entropy classification. Mathematically, the aim is to compute the minimum of~\cref{ec:lr}~\cite{lr}.
- \begin{equation}
- 	min_{w,c}\frac{1}{2}w^{T}w+C\sum_{i=1}^{n}log(exp(-y_i(X_i^{T}w+c))+1)
- 	\label{ec:lr}
- \end{equation}
- The~\ac{lr} classifier was defined setting the parameter \textit{C} = 1. \\
- For such a parameter, the results obtained can be observed in~\cref{tab:lr1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}.
- 
- \begin{table}[h!]
- 	\centering
- 	\begin{tabular}{||c c c c c||} 
- 		\hline
- 		Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
- 		\hline\hline
- 		0 & 0.90007 & 0.90074 & 0.90040 & 1360 \\ 
- 		1 & 0.90426 & 0.90361 & 0.90393 & 1411 \\
- 		avg/total & 0.90220 & 0.90220 & 0.90220 & 2771 \\
- 		[1ex] 
- 		\hline
- 	\end{tabular}
- 	\caption{\acl{lr} Classification Report}
- 	\label{tab:lr1}
- \end{table}
- 
+\acl{lr} is a classification method that is based on the probability of a sample belonging to a class.
+It consists of maximum-entropy classification. Mathematically, the aim is to compute the minimum of~\cref{ec:lr}~\cite{lr}.
+\begin{equation}
+min_{w,c}\frac{1}{2}w^{T}w+C\sum_{i=1}^{n}log(exp(-y_i(X_i^{T}w+c))+1)
+\label{ec:lr}
+\end{equation}
+The~\ac{lr} classifier was defined setting the parameter \textit{C} = 1. \\
+For such a parameter, the results obtained can be observed in~\cref{tab:lr1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c c c||} 
+		\hline
+		Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+		\hline\hline
+		0 & 0.90007 & 0.90074 & 0.90040 & 1360 \\ 
+		1 & 0.90426 & 0.90361 & 0.90393 & 1411 \\
+		avg/total & 0.90220 & 0.90220 & 0.90220 & 2771 \\
+		[1ex] 
+		\hline
+	\end{tabular}
+	\caption{\acl{lr} Classification Report}
+	\label{tab:lr1}
+\end{table}
+
 \section{Quality of a Classfier}
 \label{sec:score}
 In order to ensure a sufficient classifier accuracy, precision is not always the best indicator. Let us consider a binary class dataset where 99\% of the data belongs to one class and only 1\% of the data belongs to the other class. Now, if a classifier were to always predict the majority class for every data point, it would have 99\% accuracy. But that would not mean that the classifier is performing well. To have a better idea of the classifiers' efficiency we first must define some parameters~\cite{f1score}:
@@ -221,27 +223,27 @@ In order to ensure a sufficient classifier accuracy, precision is not always the
 \end{itemize}
 To better understand these definitions let us imagine a classifier that predicts a sarcastic when in fact that tweet is not sarcastic, that would be a false positive. On the other hand, if the classifier predicts that a tweet is not sarcastic when in reality is sarcastic, that would be a false negative.
 \subsection{Precision}
-Precision is defined as the ratio of number of positive cases that were correct to all the cases that were identified as positive~\cite{f1score}. Mathematically:
+Precision is defined as the ratio of the number of positive cases that were correct to all the cases that were identified as positive~\cite{f1score}. Mathematically:
 \begin{equation}
-	Precision = \frac{\ac{tp}}{\ac{tp}+\ac{fp}}
-	\label{ec:precision}
+Precision = \frac{\ac{tp}}{\ac{tp}+\ac{fp}}
+\label{ec:precision}
 \end{equation}
 \subsection{Recall}
 Recall is defined as the ratio of the number of positive cases that were identified to the all positive cases present in the dataset~\cite{f1score}. Mathematically:
 \begin{equation}
-	Recall = \frac{\ac{tp}}{\ac{tp}+\ac{fn}}
-	\label{ec:recall}
+Recall = \frac{\ac{tp}}{\ac{tp}+\ac{fn}}
+\label{ec:recall}
 \end{equation}
 \subsection{F1 Score}
 is the harmonic average of the precision and recall. It is a metric that conveys the balance between precision and recall~\cite{f1score}. Mathematically:
 \begin{equation}
-	F1 = 2\times \frac{Precision \times Recall}{Precision + Recall}
-	\label{ec:f1score}
+F1 = 2\times \frac{Precision \times Recall}{Precision + Recall}
+\label{ec:f1score}
 \end{equation}
-Since the F1 score takes into account both the precision and the recall (see~\cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropiate quality measure.
+Since the F1 score takes into account both the precision and the recall (see~\cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropriate quality measure.
 \subsection{Model Creation}
 \label{sec:modcons}
-The~\cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary in this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
+The~\cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary for this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/model_construction.png}
 	\caption{Model Construction~\cite{modcons}}
@@ -249,7 +251,7 @@ The~\cref{fig:modcons} depicts the methodology followed for training and evaluat
 \end{figure}
 \section{Parameter Optimization}
 This section will cover how was the parameter optimization performed and what were the results obtained for each classifier.\\
-To understand the parameter optimization, first we must comprehend how is the classifier built in this project.\\
+To understand the parameter optimization, first, we must comprehend how is the classifier built in this project.\\
 The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{lr}. That stage is accomplished by making use of the pipeline described in~\cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in~\cref{sec:feature} and one of the classifiers chosen in~\cref{sec:clasif}.\\
 In order to find the right classifier parameters, it must be carried out a parameter search for the pipeline parameters and the classifier parameters.\\
 From~\cref{sec:feature}, the pipeline extracts three main features; ngrams, words (custom tokenizer) and topics (\ac{lda}). From these features, the only parameters that will be searched are the number of topics from~\ac{lda} and the number of ngrams.\\
@@ -257,14 +259,15 @@ From~\cref{sec:clasif}, the parameters searched will depend on the type of class
 The parameter search will be done using the GridSearchCV from the Scikit Learn class. The principle of the GridSearchCV is:
 \begin{enumerate}
 	\item Define a dictionary of parameters to change.
-	\item Fit the grid search with the train dataset (this process can take a very long time).
+	\item Fit the grid search with the training dataset (this process can take a very long time).
 	\item Print best score alongside with the best parameters.
 	\item Print the metrics accuracy score by testing the classifier with the best parameters found. For this, it is required a test dataset.
 \end{enumerate}
 \subsection{Grid Search}
 \label{sec:gs}
 A grid search is an exhaustive search through a manually-specified subset of the hyperparameter space. The grid search algorithm requires a performance metric, such as cross-validation error or validation-set error to evaluate the best possible parameter~\cite{gs}. The grid search method comes from the Scikit Learn class.\\
-A grid search was optimizied for each classifier to get the best performance. 
+A grid search was optimized for each classifier to get the best performance. During the process of optimization not only the parameters of the classifiers were optimized, but also the type of features to extract.\\
+The results found extracting ngrams, lexical features and the number of topics shall be presented alongside with the scores found extracting ngrams, lexical features, syntactic features and number of topics. The optimized parameters are the same either for the four feature extraction than for the three feature extraction.
 \subsubsection{\acl{nb}}
 \begin{itemize}
 	\item \textbf{Parameters to optimize}:
@@ -273,21 +276,21 @@ A grid search was optimizied for each classifier to get the best performance.
 		\item \textit{Number of topics}. Belongs to pipeline
 	\end{enumerate}
 	\item \textbf{Results}
-		\begin{table}[h!]
-			\centering
-			\begin{tabular}{||c c c c c||} 
-				\hline
-				Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
-				\hline\hline
-				0 & 0.96481 & 0.96765 & 0.96623 & 1360 \\ 
-				1 & 0.96873 & 0.96598 & 0.96735 & 1411 \\
-				avg/total & 0.96680 & 0.96680 & 0.92602 & 2771 \\
-				[1ex] 
-				\hline
-			\end{tabular}
-			\caption{\acl{nb} Classification Report Optimized}
-			\label{tab:nb2}
-		\end{table}
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c c c c c||} 
+			\hline
+			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
+			\hline\hline
+			0 & 0.96481/0.87704 & 0.96765/0.86740 & 0.96623/0.87219 & 1360/1365 \\ 
+			1 & 0.96873/0.87262 & 0.96598/0.88193 & 0.96735/0.87726 & 1411/1406 \\
+			avg/total & 0.96680/0.87480 & 0.96680/0.87477 & 0.92602/0.87476 & 2771/2771 \\
+			[1ex] 
+			\hline
+		\end{tabular}
+		\caption{\acl{nb} Classification Report Optimized. Three features extracted/Four features extracted}
+		\label{tab:nb2}
+	\end{table}
 	
 \end{itemize}
 
@@ -307,13 +310,14 @@ A grid search was optimizied for each classifier to get the best performance.
 			\hline
 			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
 			\hline\hline
-			0 & 0.91131 & 0.90662 & 0.90896 & 1360 \\ 
-			1 & 0.91044 & 0.91495 & 0.91269 & 1411 \\
-			avg/total & 0.91086 & 0.91086 & 0.91086 & 2771 \\
+			0 & 0.91131/0.89993 & 0.90662/0.89597 & 0.90896/0.89794 & 1360/1365 \\ 
+			1 & 0.91044/0.89943 & 0.91495/0.90327 & 0.91269/0.90135 & 1411/1406 \\
+			avg/total & 0.91086/0.89968 & 0.91086/0.89968 & 0.91086/0.89967 & 2771/2771 \\
 			[1ex] 
 			\hline
 		\end{tabular}
-		\caption{\acl{svm} Classification Report Optimized}
+		\caption{\acl{svm} Classification Report Optimized.
+			Three features extracted/Four features extracted}
 		\label{tab:sv2}
 	\end{table}
 	
@@ -334,13 +338,14 @@ Since the results of the~\ac{knn} were very low (see~\cref{tab:knn1}) there was 
 			\hline
 			Variable & Precision & Recall & F1-Score & Support \\ [0.5ex] 
 			\hline\hline
-			0 & 0.92819 & 0.90361 & 0.91573 & 1359 \\ 
-			1 & 0.90953 & 0.93272 & 0.92098 & 1412 \\
-			avg/total & 0.91868 & 0.91844 & 0.91841 & 2771 \\
+			0 & 0.92819/0.90767 & 0.90361/0.89304 & 0.91573/0.90030 & 1359/1365 \\ 
+			1 & 0.90953/0.89776 & 0.93272/0.91181 & 0.92098/0.90473 & 1412/1406 \\
+			avg/total & 0.91868/0.90264 & 0.91844/0.90256 & 0.91841/0.90254 & 2771/2771 \\
 			[1ex] 
 			\hline
 		\end{tabular}
-		\caption{\acl{lr} Classification Report Optimized}
+		\caption{\acl{lr} Classification Report Optimized
+			Three features extracted/Four features extracted}
 		\label{tab:lr2}
 	\end{table}
 	

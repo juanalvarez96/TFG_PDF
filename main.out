@@ -23,55 +23,55 @@
 \BOOKMARK [2][-]{subsection.43}{Natural Language Toolkit}{section.41}% 23
 \BOOKMARK [3][-]{subsubsection.44}{Definition}{subsection.43}% 24
 \BOOKMARK [3][-]{subsubsection.47}{Application}{subsection.43}% 25
-\BOOKMARK [1][-]{section.61}{ Machine Learning tfidf}{chapter.39}% 26
-\BOOKMARK [2][-]{subsection.65}{Sklearn}{section.61}% 27
-\BOOKMARK [3][-]{subsubsection.66}{Definition}{subsection.65}% 28
-\BOOKMARK [3][-]{subsubsection.69}{Application}{subsection.65}% 29
-\BOOKMARK [1][-]{section.73}{Senpy}{chapter.39}% 30
-\BOOKMARK [2][-]{subsection.74}{Architecture}{section.73}% 31
-\BOOKMARK [1][-]{section.76}{Bitter}{chapter.39}% 32
-\BOOKMARK [2][-]{subsection.78}{Architecture}{section.76}% 33
-\BOOKMARK [1][-]{section.80}{Elasticsearch}{chapter.39}% 34
-\BOOKMARK [2][-]{subsection.82}{Architecture elastic3}{section.80}% 35
-\BOOKMARK [1][-]{section.85}{Pickle}{chapter.39}% 36
-\BOOKMARK [0][-]{chapter.86}{Model}{}% 37
-\BOOKMARK [1][-]{section.87}{Introduction}{chapter.86}% 38
-\BOOKMARK [2][-]{subsection.89}{Overview}{section.87}% 39
-\BOOKMARK [1][-]{section.90}{Dataset}{chapter.86}% 40
-\BOOKMARK [1][-]{section.92}{Preprocessing}{chapter.86}% 41
-\BOOKMARK [1][-]{section.93}{Feature Extraction}{chapter.86}% 42
-\BOOKMARK [2][-]{subsection.94}{Lexical Features}{section.93}% 43
-\BOOKMARK [2][-]{subsection.95}{Syntactic Features}{section.93}% 44
-\BOOKMARK [2][-]{subsection.97}{Ngram Features. Pipeline}{section.93}% 45
-\BOOKMARK [2][-]{subsection.98}{Latent Dirichlet Allocator \(LDA\) Features}{section.93}% 46
-\BOOKMARK [2][-]{subsection.100}{Frequency Inverse Document Frequency \(TFIDF\)}{section.93}% 47
-\BOOKMARK [1][-]{section.105}{Classifiers}{chapter.86}% 48
-\BOOKMARK [2][-]{subsection.107}{Multinomial Naive Bayes \(MNB\)}{section.105}% 49
-\BOOKMARK [2][-]{subsection.111}{Support Vector Machine \(SVM\)}{section.105}% 50
-\BOOKMARK [2][-]{subsection.113}{K-Nearest Neighbors \(k-NN\)}{section.105}% 51
-\BOOKMARK [2][-]{subsection.115}{Logistic Regression \(LR\)}{section.105}% 52
-\BOOKMARK [1][-]{section.118}{Quality of a Classfier}{chapter.86}% 53
-\BOOKMARK [2][-]{subsection.123}{Precision}{section.118}% 54
-\BOOKMARK [2][-]{subsection.125}{Recall}{section.118}% 55
-\BOOKMARK [2][-]{subsection.127}{F1 Score}{section.118}% 56
-\BOOKMARK [2][-]{subsection.129}{Model Creation}{section.118}% 57
-\BOOKMARK [1][-]{section.131}{Parameter Optimization}{chapter.86}% 58
-\BOOKMARK [2][-]{subsection.136}{Grid Search}{section.131}% 59
-\BOOKMARK [3][-]{subsubsection.137}{Multinomial Naive Bayes}{subsection.136}% 60
-\BOOKMARK [3][-]{subsubsection.141}{Support Vector Machine}{subsection.136}% 61
-\BOOKMARK [3][-]{subsubsection.146}{K-Nearest Neighbors}{subsection.136}% 62
-\BOOKMARK [3][-]{subsubsection.147}{Logistic Regression}{subsection.136}% 63
-\BOOKMARK [1][-]{section.151}{Senpy}{chapter.86}% 64
-\BOOKMARK [2][-]{subsection.153}{Results}{section.151}% 65
-\BOOKMARK [1][-]{section.156}{Elasticsearch}{chapter.86}% 66
-\BOOKMARK [0][-]{chapter.157}{Conclusions and future work}{}% 67
-\BOOKMARK [1][-]{section.158}{Conclusions}{chapter.157}% 68
-\BOOKMARK [1][-]{section.165}{Achieved goals}{chapter.157}% 69
-\BOOKMARK [1][-]{section.166}{Future work}{chapter.157}% 70
-\BOOKMARK [1][-]{section.170}{Problems encountered}{chapter.157}% 71
-\BOOKMARK [0][-]{appendix.173}{Cost of System}{}% 72
-\BOOKMARK [1][-]{section.174}{Introduction}{appendix.173}% 73
-\BOOKMARK [1][-]{section.175}{Physical requirements}{appendix.173}% 74
-\BOOKMARK [1][-]{section.176}{Human resources}{appendix.173}% 75
-\BOOKMARK [1][-]{section.177}{License}{appendix.173}% 76
-\BOOKMARK [0][-]{section*.178}{Bibliography}{}% 77
+\BOOKMARK [1][-]{section.60}{ Machine Learning tfidf}{chapter.39}% 26
+\BOOKMARK [2][-]{subsection.64}{Sklearn}{section.60}% 27
+\BOOKMARK [3][-]{subsubsection.65}{Definition}{subsection.64}% 28
+\BOOKMARK [3][-]{subsubsection.67}{Application}{subsection.64}% 29
+\BOOKMARK [1][-]{section.71}{Senpy}{chapter.39}% 30
+\BOOKMARK [2][-]{subsection.72}{Architecture}{section.71}% 31
+\BOOKMARK [1][-]{section.74}{Bitter}{chapter.39}% 32
+\BOOKMARK [2][-]{subsection.76}{Architecture}{section.74}% 33
+\BOOKMARK [1][-]{section.78}{Elasticsearch}{chapter.39}% 34
+\BOOKMARK [2][-]{subsection.80}{Architecture elastic3}{section.78}% 35
+\BOOKMARK [1][-]{section.83}{Pickle}{chapter.39}% 36
+\BOOKMARK [0][-]{chapter.84}{Model}{}% 37
+\BOOKMARK [1][-]{section.85}{Introduction}{chapter.84}% 38
+\BOOKMARK [2][-]{subsection.87}{Overview}{section.85}% 39
+\BOOKMARK [1][-]{section.88}{Dataset}{chapter.84}% 40
+\BOOKMARK [1][-]{section.90}{Preprocessing}{chapter.84}% 41
+\BOOKMARK [1][-]{section.91}{Feature Extraction}{chapter.84}% 42
+\BOOKMARK [2][-]{subsection.92}{Lexical Features}{section.91}% 43
+\BOOKMARK [2][-]{subsection.96}{Syntactic Features}{section.91}% 44
+\BOOKMARK [2][-]{subsection.98}{Ngram Features. Pipeline}{section.91}% 45
+\BOOKMARK [2][-]{subsection.99}{Latent Dirichlet Allocator \(LDA\) Features}{section.91}% 46
+\BOOKMARK [2][-]{subsection.101}{Frequency Inverse Document Frequency \(TFIDF\)}{section.91}% 47
+\BOOKMARK [1][-]{section.106}{Classifiers}{chapter.84}% 48
+\BOOKMARK [2][-]{subsection.108}{Multinomial Naive Bayes \(MNB\)}{section.106}% 49
+\BOOKMARK [2][-]{subsection.112}{Support Vector Machine \(SVM\)}{section.106}% 50
+\BOOKMARK [2][-]{subsection.114}{K-Nearest Neighbors \(k-NN\)}{section.106}% 51
+\BOOKMARK [2][-]{subsection.116}{Logistic Regression \(LR\)}{section.106}% 52
+\BOOKMARK [1][-]{section.119}{Quality of a Classfier}{chapter.84}% 53
+\BOOKMARK [2][-]{subsection.124}{Precision}{section.119}% 54
+\BOOKMARK [2][-]{subsection.126}{Recall}{section.119}% 55
+\BOOKMARK [2][-]{subsection.128}{F1 Score}{section.119}% 56
+\BOOKMARK [2][-]{subsection.130}{Model Creation}{section.119}% 57
+\BOOKMARK [1][-]{section.132}{Parameter Optimization}{chapter.84}% 58
+\BOOKMARK [2][-]{subsection.137}{Grid Search}{section.132}% 59
+\BOOKMARK [3][-]{subsubsection.138}{Multinomial Naive Bayes}{subsection.137}% 60
+\BOOKMARK [3][-]{subsubsection.142}{Support Vector Machine}{subsection.137}% 61
+\BOOKMARK [3][-]{subsubsection.147}{K-Nearest Neighbors}{subsection.137}% 62
+\BOOKMARK [3][-]{subsubsection.148}{Logistic Regression}{subsection.137}% 63
+\BOOKMARK [1][-]{section.152}{Senpy}{chapter.84}% 64
+\BOOKMARK [2][-]{subsection.154}{Results}{section.152}% 65
+\BOOKMARK [1][-]{section.157}{Elasticsearch}{chapter.84}% 66
+\BOOKMARK [0][-]{chapter.158}{Conclusions and future work}{}% 67
+\BOOKMARK [1][-]{section.159}{Conclusions}{chapter.158}% 68
+\BOOKMARK [1][-]{section.166}{Achieved goals}{chapter.158}% 69
+\BOOKMARK [1][-]{section.167}{Future work}{chapter.158}% 70
+\BOOKMARK [1][-]{section.171}{Problems encountered}{chapter.158}% 71
+\BOOKMARK [0][-]{appendix.174}{Cost of System}{}% 72
+\BOOKMARK [1][-]{section.175}{Introduction}{appendix.174}% 73
+\BOOKMARK [1][-]{section.176}{Physical requirements}{appendix.174}% 74
+\BOOKMARK [1][-]{section.177}{Human resources}{appendix.174}% 75
+\BOOKMARK [1][-]{section.178}{License}{appendix.174}% 76
+\BOOKMARK [0][-]{section*.179}{Bibliography}{}% 77

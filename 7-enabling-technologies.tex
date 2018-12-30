@@ -2,7 +2,7 @@
 \label{chap:entech}
 
 
-In this chapter the technologies used to achieve this projects' objective shall be discussed.
+In this chapter, the technologies used to achieve this projects' objective shall be discussed.
 
 \section{Introduction}\par
 In this project two main technologies have been used:~\acf{nlp}  and~\acf{ml}. The implementation of these tools has been performed in a combined fashion. Furthermore, other technologies have also been used but they are less relevant than~\ac{nlp} and~\ac{ml}.
@@ -17,7 +17,7 @@ In short, this is how the project was carried out. Both technologies will be ext
 	\label{fig:nlptech}
 \end{figure}
 When the task is handling text,~\ac{nlp} is a very powerful tool. Such is the importance that many other applications that can be found everyday already implement it. \Cref{fig:nlptech} shows many emerging technologies that are using \ac{nlp} to provide their services.
-Many other examples of \ac{nlp} applications are machine translation, optical character recognition, language detection, topic modeling and many more~\cite{stopwords}.
+Many other examples of \ac{nlp} applications are machine translation, optical character recognition, language detection, topic modelling and many more~\cite{stopwords}.
 
 \label{sec:NLP}
 \subsection{Natural Language Toolkit}
@@ -29,8 +29,8 @@ The following applications explained beneath belong to the~\ac{nltk} class.
 \begin{itemize}
 	
 	\item \textit{Tokenizer}: A word (Token) is the minimal unit that a machine can understand and process. So any text string cannot be further processed without going through tokenization. Tokenization is the process of splitting the raw string into meaningful tokens~\cite{nltk}. In this project, tokenization was required to get the words containing a tweet. Furthermore, some of the tokens were removed since they do not add meaningful information (e.g. yo, a). These words belong to a stoplist provided by~\ac{nltk} for all supported languages~\cite{nltk}.
-	\item \textit{Stemmer}: An stemmer is needed to remove afflixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of index while increasing retrieval accuracy~\cite{nltk}. Particularly, the SnowballStemmer was chosen because it supports stemming in 13 non-English languages, especially Spanish.
-	\item \textit{Part-of-Speech tagging}: \todo[inline]{En tu proyecto no has usado POS porque te fallaba.} A-part-of-Speech tagger (pos\_tag) indicates how a word is functioning within the context of a sentence~\cite{pos}. This part is crucial since a word can function in multiple ways and we would like to distinguish those cases. POS\_tagging has been achieved by collecting each word feature and building up a dictionary with the word features' stats. The word features offered by~\ac{nltk} are:
+	\item \textit{Stemmer}: An stemmer is needed to remove affixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of the index while increasing retrieval accuracy~\cite{nltk}. Particularly, the SnowballStemmer was chosen because it supports stemming in 13 non-English languages, especially Spanish.
+	\item \textit{Part-of-Speech tagging}:  A-part-of-Speech tagger (pos\_tag) indicates how a word is functioning within the context of a sentence~\cite{pos}. This part is crucial since a word can function in multiple ways and we would like to distinguish those cases. POS\_tagging has been achieved by collecting each word feature and building up a dictionary with the word features' stats. The word features offered by~\ac{nltk} are:
 	\begin{enumerate}
 		\item \textit{VERB}: Verbs (all tenses and modes)
 		\item \textit{NOUN}: Nouns (common and proper)
@@ -48,14 +48,14 @@ The following applications explained beneath belong to the~\ac{nltk} class.
 \end{itemize}
 
 The applications at the top of this section are more commonly known as the preprocessing part previously needed to any \ac{ml} application. Since there are plenty of tasks, they could be easily coordinated by using pipelines.\\ 
-More information on how were these technlogies implemented in the project can be found in~\cref{sec:preprocessing}.
+More information on how were these technologies implemented in the project can be found in~\cref{sec:preprocessing}.
 
 \section{~\acl{ml} \cite{tfidf}}
-When it comes to defining models capable of learning from a text-based source, the two dominant technologies are~\acl{nlp} and~\acl{ml}. These two main technologies are concerned in how does the machine process human text. \\
+When it comes to defining models capable of learning from a text-based source, the two dominant technologies are~\acl{nlp} and~\acl{ml}. These two main technologies are concerned about how does the machine process human text. \\
 Given data and the proper statistical techniques,~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required.~\ac{ml} algorithms can be classified into three categories~\cite{dataclust}:
 \begin{itemize}
-	\item \textit{Regression}: Regression learning is predicting a continous varying variable. Regression methods can be used to address clasification and prediction models. To visualize a simple example of what regression is we can see the picture~\cref{fig:regresion}.
-		\begin{figure}
+	\item \textit{Regression}: Regression learning is predicting a continuous varying variable. Regression methods can be used to address classification and prediction models. To visualize a simple example of what regression is we can see the picture~\cref{fig:regresion}.
+	\begin{figure}
 		\includegraphics[width=\linewidth]{img/regression.png}
 		\caption{Linear regression plotted~\cite{tfidf}}
 		\label{fig:regresion}
@@ -70,7 +70,7 @@ Furthermore, depending on the dataset the learning process can be carried out in
 	
 	\item \textit{Unsupervised learning:} These algorithms base their learning properties on learning patterns present on the dataset. Unlike in supervised learning, there is no training and test dataset partition
 \end{itemize}
-Two major problems encountered in a~\ac{ml} appication are underfitting and overfitting. These two problems appear due to the bias generated when training the model.\\
+Two major problems encountered in a~\ac{ml} application are underfitting and overfitting. These two problems appear due to the bias generated when training the model.\\
 It turns out that depending on \textit{how much trained} the classifier is, it can make more assumptions than desired. A learned function that can perform well enough on unseen data points as well as on the training data is termed a generalizable function~\cite{gs}. A generalizable function is achieved through a generalizing fit. To get a proper fit, the function must not be biased, it must be perfectly balanced. 
 \begin{itemize}
 	\item \textit{Underfitting:}
@@ -79,23 +79,22 @@ It turns out that depending on \textit{how much trained} the classifier is, it c
 		\caption{Underfitting~\cite{gs}}
 		\label{fig:underfit}
 	\end{figure}
-\Cref{fig:underfit} shows that for any point in the diagram, the function always assigns the same predicted value. Solving the problem of underfitting means making the line approximate the data better.
+	\Cref{fig:underfit} shows that for any point in the diagram, the function always assigns the same predicted value. Solving the problem of underfitting means making the line approximate the data better.
 	\item \textit{Overfitting:} 
-		\begin{figure}
+	\begin{figure}
 		\includegraphics[width=\linewidth]{img/overfit.png}
 		\caption{Overfitting~\cite{gs}}
 		\label{fig:overfit}
 	\end{figure}
-\Cref{fig:overfit} shows that for any point in the diagram, the function performs very good. However, the function has become very unflexible and it will not perform good enough on new points. According to~\cite{tfidf}, overfitting can also be understood as a probable distributions of data. The training set of data that the line is being drawn through is just a sample of a larger unknown set, and the line which will be drawn needs to fit the larger set equally well if it is to have any predictive power. Therefore, it must be assumed that our sample is loosely representative of a larger set.
+	\Cref{fig:overfit} shows that for any point in the diagram, the function performs very good. However, the function has become very inflexible and it will not perform good enough on new points. According to~\cite{tfidf}, overfitting can also be understood as a probable distribution of data. The training set of data that the line is being drawn through is just a sample of a larger unknown set, and the line which will be drawn needs to fit the larger set equally well if it is to have any predictive power. Therefore, it must be assumed that our sample is loosely representative of a larger set.
 \end{itemize}
 In contrast with~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so,~\ac{nlp} provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though~\ac{nlp} has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
 
 \subsection{Sklearn}
 \subsubsection{Definition}
-\todo[inline]{Hasta aquí leído}
-Sklearn (a.k.a scikit-learn) is defined \footnote{http://scikit-learn.org/stable/} as a simple and efficient set of tools for data mining and data analysis. It is built on NumPy and SciPy. Sklearn will provide not only the classifiers needed for the pipeline, but also meaningful tools.
+Sklearn (a.k.a scikit-learn) is defined \footnote{http://scikit-learn.org/stable/} as a simple and efficient set of tools for data mining and data analysis. It is built on NumPy and SciPy. Sklearn will provide not only the classifiers needed for the pipeline but also meaningful tools.
 \subsubsection{Application}
-Sklearn has provided the following tools to this project:
+Sklearn has provided the following tools for this project:
 \begin{itemize}
 	\item \textit{Train and Test splitting}: This method is responsible for splitting the main dataset into two parts, one for training the model and the other one for testing the model. It is a very common~\ac{ml} technique. In addition, the testing set will later be used to compute parameters such as accuracy and f1 score. More information on accuracy and f1 score can be found in \cref{sec:score}.
 	\item \textit{Pipeline}: A pipeline is a set of procedures connected in series, one after the other where the output of one process is the input to the next~\cite{pipeline1}. Image~\ref{fig:pipeline}\footnote{\url{https://www.slideshare.net/databricks/dataframes-and-pipelines}} represents the idea of a pipeline, though it does not resemble exactly this projects' pipeline.
@@ -103,7 +102,7 @@ Sklearn has provided the following tools to this project:
 	\item \textit{Count Vectorizer}: The algorithm consists of representing a token by considering how many times it appears in a text~\cite{countvect1}. It basically counts the vocabulary and generates a dictionary which can later be fed into a pipeline, like in this project.
 	\item \textit{\acl{nb}}: A multinomial distribution useful to model feature vectors where each value represents a number of occurrences of a term (or its relative frequency)~\cite{countvect1}.
 	\item \textit{\acl{svm}}: Given a set of training examples, each marked as belonging to one or the other of two categories, a \acf{svm} training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier\footnote{\url{https://en.wikipedia.org/wiki/Support_vector_machine}}.
-	\item \textit{\acl{knn}}: Is a non-generalized~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{knn1}.The KNeighbors classifier has been  fed into the pipeline as input.
+	\item \textit{\acl{knn}}: Is a non-generalized~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{knn1}.The KNeighbors classifier has been fed into the pipeline as input.
 	\item \textit{\acl{lr} classifier}: Is analogous to multiple linear regression, except the outcome is binary. Various transformations are employed to convert the problem to one in which a linear model can be fit~\cite{lr1}.
 \end{itemize}
 
@@ -118,7 +117,7 @@ All the methods illustrated above are widely explained altogether with an implem
 Senpy~\cite{senpy} is a framework for text analysis using linked data. It aims at providing a framework where analysis modules can be easily integrated as plugins and, at the same time, provides the core functionalities (data validation, user interaction, logging, etc).
 
 \subsection{Architecture}
-Senpy introduces a modular and dynamic architecture which allows implementing different algorithms in an extensible way, while offering a common interface and offering common services that facilitate development, so developers can focus on implementing new and better algorithms.\par
+Senpy introduces a modular and dynamic architecture which allows implementing different algorithms in an extensible way while offering a common interface and offering common services that facilitate development, so developers can focus on implementing new and better algorithms.\par
 To do so, the architecture consists of two main modules:
 \begin{itemize}
 	\item Senpy core: Building block of the service.
@@ -136,7 +135,7 @@ To do so, the architecture consists of two main modules:
 In order to download the Tweets which integrate partially the dataset, the tool bitter was used. Bitter is able to automate several actions (e.g. downloading Tweets) by using a Python wrapper over Twitter which adds support for several Twitter API actions~\footnote{https://github.com/balkian/bitter}.\\
 Bitter could be used after installing it and running commands on the UNIX terminal.
 \subsection{Architecture}
-\Cref{fig:bitter} explains how was bitter used in this project. On the left, the reader can see the information provided to the bitter tool. The configuration file is needed to download the tweets, otherwise nothing will be downloaded. The file contains the user credentials for accessing the Twitter database.\\ The tweet id file is a \textit{.csv} database containing in one column the desired tweets. Finally, bitter will download in \textit{.json} format all the tweets in the indicated folder (indicated on the command). For those tweets that, by any reason, could not be downloaded, a folder named \textit{error} will be created containing the tweet ids that failed.
+\Cref{fig:bitter} explains how was bitter used in this project. On the left, the reader can see the information provided to the bitter tool. The configuration file is needed to download the tweets, otherwise, nothing will be downloaded. The file contains the user credentials for accessing the Twitter database.\\ The tweet id file is a \textit{.csv} database containing in one column the desired tweets. Finally, bitter will download in \textit{.json} format all the tweets in the indicated folder (indicated on the command). For those tweets that, by any reason, could not be downloaded, a folder named \textit{error} will be created containing the tweet ids that failed.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/bitter.png}
 	\caption{Bitter Architecture}
@@ -147,7 +146,7 @@ Elasticsearch is a highly scalable open source search engine with a very powerfu
 \subsection{Architecture~\cite{elastic3}}
 Elasticsearch indices compared to database management systems may be considered to be databases. How a database is a collection of regular information, Elasticsearch indices are a collection of structured JSON document. In other words, an index is a logical partition for user data. Documents will be stored as an index in Elasticsearch.\\
 When it comes to indices, Elasticsearch uses shards and replicas in order to distribute data around the cluster.\\
- Elasticsearch distributes the shards by performing a process called \textit{sharding}. The indices (or index) are called shards and Elasticsearch automatically manages the shards, like a low-level working unit.
+Elasticsearch distributes the shards by performing a process called \textit{sharding}. The indices (or index) are called shards and Elasticsearch automatically manages the shards, like a low-level working unit.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/elasticsearch.jpeg}
 	\caption{Elasticsearch~\cite{elastic3}}
