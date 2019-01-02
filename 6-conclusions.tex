@@ -2,13 +2,13 @@
 \label{chap:conclusions}
 The conclusions reached in the previous chapter will be brought together in this chapter.\\
 Moreover, a description of the achieved goals and the lines of future work will be explained.\\
-Finally,  the problems faced and an overview of future lines will be given.
+Finally, the problems faced
 
 \section{Conclusions}
 \label{sec:conclusions}
-This project resembles an example of automatic sarcasm detection. The approach followed consisted of training a classifier using a dataset consisting of two columns, one for the text body and the last column to feature the sarcastic property of the text body. This goal could be fulfilled by making use of~\ac{ml} techniques and~\ac{nlp} techniques, with the ability to detect sarcasm in short text, such as Twitter.\\
+This project resembles an example of automatic sarcasm detection. The approach followed was training a classifier using a dataset consisting of two columns, one for the text body and the last column to feature the sarcastic property of the text body. This goal was fulfilled by making use of~\ac{ml} techniques and~\ac{nlp} techniques, with the ability to detect sarcasm in short text, such as Twitter.\\
 To compile the final dataset, three datasets containing tweets where assembled and put together generating a final dataset with the tweet body and the feature.\\
-Later on, the model could be built by introducing a preprocessing stage designed to encode categorical variables and delete those tweets that lacked a text body. To ensure a non-dependency between the tweets, the rows of the dataset were randomized.\\
+Later on, the model could be built by introducing a preprocessing stage designed to encode categorical variables and delete tweets lacking a text body. To ensure a non-dependency between the tweets, the rows of the dataset were randomized.\\
 Once the dataset was ready a pipeline was designed, which would be responsible for the feature extraction process. The features that gave more information to the classifier were:
 \begin{enumerate}
 	\item \textbf{Lexical features:} The word repetition frequency had a relationship with the sarcastic property of a short text.
