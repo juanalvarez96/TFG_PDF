@@ -9,95 +9,69 @@ A level-1 auxiliary file: E-contents.aux
 A level-1 auxiliary file: 1-introduction.aux
 A level-1 auxiliary file: 2-state-of-the-art.aux
 A level-1 auxiliary file: 7-enabling-technologies.aux
-Case mismatch error between cite keys TFIDF and tfidf
----line 61 of file 7-enabling-technologies.aux
- : \citation{TFIDF
- :                }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys TFIDF and tfidf
----line 78 of file 7-enabling-technologies.aux
- : \citation{TFIDF
- :                }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: 3-requirements.aux
 A level-1 auxiliary file: 6-conclusions.aux
+A level-1 auxiliary file: appendix.aux
 The style file: plain.bst
 Database file #1: biblio/ref.bib
-Warning--string name "giuseppe" is undefined
---line 203 of file biblio/ref.bib
-I was expecting a `,' or a `}'---line 203 of file biblio/ref.bib
- :  author=giuseppe 
- :                  Ciaburro},
-I'm skipping whatever remains of this entry
-Repeated entry---line 207 of file biblio/ref.bib
+Repeated entry---line 195 of file biblio/ref.bib
  : @misc{pos
  :          ,
 I'm skipping whatever remains of this entry
-Warning--string name "mark" is undefined
---line 214 of file biblio/ref.bib
-I was expecting a `,' or a `}'---line 214 of file biblio/ref.bib
- :  author= mark 
- :               G. Sobell; Matthew Helmke},
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 248 of file biblio/ref.bib
+Illegal end of database file---line 235 of file biblio/ref.bib
  :  publisher={Packt Publishing}
  :                              
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lr"
 Warning--to sort, need author or key in pipeline
-Warning--to sort, need author, editor, or key in model
 Warning--to sort, need author or key in modcons
 Warning--to sort, need author or key in twitter1
 Warning--to sort, need author or key in twitter2
 Warning--to sort, need author or key in mexic
-Warning--to sort, need author, editor, or key in pickle
 Warning--to sort, need author or key in sefarad
 Warning--to sort, need author or key in luigi
-Warning--empty author and editor in pickle
-Warning--empty publisher in pickle
-Warning--empty year in pickle
-Warning--empty author and editor in model
+Warning--empty journal in pos
 Warning--empty publisher in model
-Warning--empty year in model
 Warning--empty publisher in clasif
-You've used 38 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            650 strings with 8109 characters,
-and the built_in function-call counts, 8814 in all, are:
-= -- 803
-> -- 308
+            652 strings with 8643 characters,
+and the built_in function-call counts, 8936 in all, are:
+= -- 815
+> -- 385
 < -- 2
-+ -- 134
-- -- 94
-* -- 430
-:= -- 1440
-add.period$ -- 104
-call.type$ -- 38
-change.case$ -- 138
++ -- 160
+- -- 122
+* -- 459
+:= -- 1485
+add.period$ -- 102
+call.type$ -- 36
+change.case$ -- 149
 chr.to.int$ -- 0
-cite$ -- 54
-duplicate$ -- 433
-empty$ -- 873
-format.name$ -- 94
-if$ -- 1908
+cite$ -- 46
+duplicate$ -- 405
+empty$ -- 820
+format.name$ -- 122
+if$ -- 1913
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 51
-newline$ -- 182
+int.to.str$ -- 36
+missing$ -- 48
+newline$ -- 176
 num.names$ -- 58
-pop$ -- 299
+pop$ -- 292
 preamble$ -- 1
-purify$ -- 123
+purify$ -- 133
 quote$ -- 0
-skip$ -- 267
+skip$ -- 264
 stack$ -- 0
-substring$ -- 299
-swap$ -- 56
+substring$ -- 289
+swap$ -- 53
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 16
+type$ -- 102
+warning$ -- 10
 while$ -- 67
-width$ -- 40
-write$ -- 358
-(There were 6 error messages)
+width$ -- 38
+write$ -- 346
+(There were 2 error messages)

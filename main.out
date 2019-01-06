@@ -1,69 +1,69 @@
 \BOOKMARK [0][-]{chapter*.3}{Resumen}{}% 1
-\BOOKMARK [0][-]{chapter*.9}{Abstract}{}% 2
-\BOOKMARK [0][-]{chapter*.11}{Agradecimientos}{}% 3
-\BOOKMARK [0][-]{section*.12}{Contents}{}% 4
-\BOOKMARK [0][-]{section*.19}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter.21}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.22}{Context}{chapter.21}% 7
-\BOOKMARK [1][-]{section.24}{Project goals}{chapter.21}% 8
-\BOOKMARK [1][-]{section.25}{Structure of this document}{chapter.21}% 9
-\BOOKMARK [0][-]{chapter.26}{State of the Art}{}% 10
-\BOOKMARK [1][-]{section.27}{Introduction}{chapter.26}% 11
-\BOOKMARK [1][-]{section.28}{Sarcasm}{chapter.26}% 12
-\BOOKMARK [2][-]{subsection.29}{Sarcasm Definition joshi2017automatic}{section.28}% 13
-\BOOKMARK [1][-]{section.31}{Dataset joshi2017automatic}{chapter.26}% 14
-\BOOKMARK [1][-]{section.32}{Approaches used for Sarcasm Detection}{chapter.26}% 15
-\BOOKMARK [2][-]{subsection.33}{Rule-based Approaches joshi2017automatic}{section.32}% 16
-\BOOKMARK [2][-]{subsection.34}{Feature sets joshi2017automatic}{section.32}% 17
-\BOOKMARK [1][-]{section.36}{Main Issues in Sarcasm Detection}{chapter.26}% 18
-\BOOKMARK [1][-]{section.37}{Figures of Merit}{chapter.26}% 19
-\BOOKMARK [0][-]{chapter.39}{Enabling Technologies}{}% 20
-\BOOKMARK [1][-]{section.40}{Introduction}{chapter.39}% 21
-\BOOKMARK [1][-]{section.41}{Natural Language Processing}{chapter.39}% 22
-\BOOKMARK [2][-]{subsection.43}{Natural Language Toolkit}{section.41}% 23
-\BOOKMARK [3][-]{subsubsection.44}{Definition}{subsection.43}% 24
-\BOOKMARK [3][-]{subsubsection.47}{Application}{subsection.43}% 25
-\BOOKMARK [1][-]{section.60}{ Machine Learning tfidf}{chapter.39}% 26
-\BOOKMARK [2][-]{subsection.64}{Sklearn}{section.60}% 27
-\BOOKMARK [3][-]{subsubsection.65}{Definition}{subsection.64}% 28
-\BOOKMARK [3][-]{subsubsection.67}{Application}{subsection.64}% 29
-\BOOKMARK [1][-]{section.71}{Senpy}{chapter.39}% 30
-\BOOKMARK [2][-]{subsection.72}{Architecture}{section.71}% 31
-\BOOKMARK [1][-]{section.74}{Bitter}{chapter.39}% 32
-\BOOKMARK [2][-]{subsection.76}{Architecture}{section.74}% 33
-\BOOKMARK [1][-]{section.78}{Elasticsearch}{chapter.39}% 34
-\BOOKMARK [2][-]{subsection.80}{Architecture elastic3}{section.78}% 35
-\BOOKMARK [1][-]{section.83}{Pickle}{chapter.39}% 36
-\BOOKMARK [0][-]{chapter.84}{Model}{}% 37
-\BOOKMARK [1][-]{section.85}{Introduction}{chapter.84}% 38
-\BOOKMARK [2][-]{subsection.87}{Overview}{section.85}% 39
-\BOOKMARK [1][-]{section.88}{Dataset}{chapter.84}% 40
-\BOOKMARK [1][-]{section.90}{Preprocessing}{chapter.84}% 41
-\BOOKMARK [1][-]{section.91}{Feature Extraction}{chapter.84}% 42
-\BOOKMARK [2][-]{subsection.92}{Lexical Features}{section.91}% 43
-\BOOKMARK [2][-]{subsection.96}{Syntactic Features}{section.91}% 44
-\BOOKMARK [2][-]{subsection.98}{Ngram Features. Pipeline}{section.91}% 45
-\BOOKMARK [2][-]{subsection.99}{Latent Dirichlet Allocator \(LDA\) Features}{section.91}% 46
-\BOOKMARK [2][-]{subsection.101}{Frequency Inverse Document Frequency \(TFIDF\)}{section.91}% 47
-\BOOKMARK [1][-]{section.106}{Classifiers}{chapter.84}% 48
-\BOOKMARK [2][-]{subsection.108}{Multinomial Naive Bayes \(MNB\)}{section.106}% 49
-\BOOKMARK [2][-]{subsection.112}{Support Vector Machine \(SVM\)}{section.106}% 50
+\BOOKMARK [0][-]{chapter*.6}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.8}{Agradecimientos}{}% 3
+\BOOKMARK [0][-]{section*.9}{Contents}{}% 4
+\BOOKMARK [0][-]{section*.14}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter.16}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.17}{Context}{chapter.16}% 7
+\BOOKMARK [1][-]{section.21}{Project goals}{chapter.16}% 8
+\BOOKMARK [1][-]{section.22}{Structure of this document}{chapter.16}% 9
+\BOOKMARK [0][-]{chapter.23}{State of the Art}{}% 10
+\BOOKMARK [1][-]{section.24}{Introduction}{chapter.23}% 11
+\BOOKMARK [1][-]{section.25}{Sarcasm}{chapter.23}% 12
+\BOOKMARK [2][-]{subsection.26}{Sarcasm Definition}{section.25}% 13
+\BOOKMARK [1][-]{section.28}{Dataset}{chapter.23}% 14
+\BOOKMARK [1][-]{section.29}{Approaches used for Sarcasm Detection}{chapter.23}% 15
+\BOOKMARK [2][-]{subsection.30}{Rule-based Approaches}{section.29}% 16
+\BOOKMARK [2][-]{subsection.31}{Feature sets}{section.29}% 17
+\BOOKMARK [1][-]{section.35}{Main Issues in Sarcasm Detection}{chapter.23}% 18
+\BOOKMARK [1][-]{section.36}{Figures of Merit}{chapter.23}% 19
+\BOOKMARK [0][-]{chapter.38}{Enabling Technologies}{}% 20
+\BOOKMARK [1][-]{section.39}{Introduction}{chapter.38}% 21
+\BOOKMARK [1][-]{section.40}{Natural Language Processing}{chapter.38}% 22
+\BOOKMARK [2][-]{subsection.42}{Natural Language Toolkit}{section.40}% 23
+\BOOKMARK [3][-]{subsubsection.43}{Definition}{subsection.42}% 24
+\BOOKMARK [3][-]{subsubsection.46}{Application}{subsection.42}% 25
+\BOOKMARK [1][-]{section.59}{Machine Learning}{chapter.38}% 26
+\BOOKMARK [2][-]{subsection.63}{Sklearn}{section.59}% 27
+\BOOKMARK [3][-]{subsubsection.64}{Definition}{subsection.63}% 28
+\BOOKMARK [3][-]{subsubsection.66}{Application}{subsection.63}% 29
+\BOOKMARK [1][-]{section.70}{Senpy}{chapter.38}% 30
+\BOOKMARK [2][-]{subsection.71}{Architecture}{section.70}% 31
+\BOOKMARK [1][-]{section.73}{Bitter}{chapter.38}% 32
+\BOOKMARK [2][-]{subsection.75}{Architecture}{section.73}% 33
+\BOOKMARK [1][-]{section.77}{Elasticsearch}{chapter.38}% 34
+\BOOKMARK [2][-]{subsection.79}{Architecture}{section.77}% 35
+\BOOKMARK [1][-]{section.82}{Pickle}{chapter.38}% 36
+\BOOKMARK [0][-]{chapter.83}{Model}{}% 37
+\BOOKMARK [1][-]{section.84}{Introduction}{chapter.83}% 38
+\BOOKMARK [2][-]{subsection.86}{Overview}{section.84}% 39
+\BOOKMARK [1][-]{section.87}{Dataset}{chapter.83}% 40
+\BOOKMARK [1][-]{section.89}{Preprocessing}{chapter.83}% 41
+\BOOKMARK [1][-]{section.90}{Feature Extraction}{chapter.83}% 42
+\BOOKMARK [2][-]{subsection.91}{Lexical Features}{section.90}% 43
+\BOOKMARK [2][-]{subsection.95}{Syntactic Features}{section.90}% 44
+\BOOKMARK [2][-]{subsection.97}{Ngram Features. Pipeline}{section.90}% 45
+\BOOKMARK [2][-]{subsection.99}{Latent Dirichlet Allocator \(LDA\) Features}{section.90}% 46
+\BOOKMARK [2][-]{subsection.101}{Frequency Inverse Document Frequency \(TFIDF\)}{section.90}% 47
+\BOOKMARK [1][-]{section.106}{Classifiers}{chapter.83}% 48
+\BOOKMARK [2][-]{subsection.108}{Naive Bayes}{section.106}% 49
+\BOOKMARK [2][-]{subsection.112}{Support Vector Machine}{section.106}% 50
 \BOOKMARK [2][-]{subsection.114}{K-Nearest Neighbors \(k-NN\)}{section.106}% 51
 \BOOKMARK [2][-]{subsection.116}{Logistic Regression \(LR\)}{section.106}% 52
-\BOOKMARK [1][-]{section.119}{Quality of a Classfier}{chapter.84}% 53
+\BOOKMARK [1][-]{section.119}{Quality of a Classfier}{chapter.83}% 53
 \BOOKMARK [2][-]{subsection.124}{Precision}{section.119}% 54
 \BOOKMARK [2][-]{subsection.126}{Recall}{section.119}% 55
 \BOOKMARK [2][-]{subsection.128}{F1 Score}{section.119}% 56
 \BOOKMARK [2][-]{subsection.130}{Model Creation}{section.119}% 57
-\BOOKMARK [1][-]{section.132}{Parameter Optimization}{chapter.84}% 58
+\BOOKMARK [1][-]{section.132}{Parameter Optimization}{chapter.83}% 58
 \BOOKMARK [2][-]{subsection.137}{Grid Search}{section.132}% 59
 \BOOKMARK [3][-]{subsubsection.138}{Multinomial Naive Bayes}{subsection.137}% 60
 \BOOKMARK [3][-]{subsubsection.142}{Support Vector Machine}{subsection.137}% 61
 \BOOKMARK [3][-]{subsubsection.147}{K-Nearest Neighbors}{subsection.137}% 62
 \BOOKMARK [3][-]{subsubsection.148}{Logistic Regression}{subsection.137}% 63
-\BOOKMARK [1][-]{section.152}{Senpy}{chapter.84}% 64
+\BOOKMARK [1][-]{section.152}{Senpy}{chapter.83}% 64
 \BOOKMARK [2][-]{subsection.154}{Results}{section.152}% 65
-\BOOKMARK [1][-]{section.157}{Elasticsearch}{chapter.84}% 66
+\BOOKMARK [1][-]{section.157}{Elasticsearch}{chapter.83}% 66
 \BOOKMARK [0][-]{chapter.158}{Conclusions and future work}{}% 67
 \BOOKMARK [1][-]{section.159}{Conclusions}{chapter.158}% 68
 \BOOKMARK [1][-]{section.166}{Achieved goals}{chapter.158}% 69
@@ -74,4 +74,6 @@
 \BOOKMARK [1][-]{section.176}{Physical requirements}{appendix.174}% 74
 \BOOKMARK [1][-]{section.177}{Human resources}{appendix.174}% 75
 \BOOKMARK [1][-]{section.178}{License}{appendix.174}% 76
-\BOOKMARK [0][-]{section*.179}{Bibliography}{}% 77
+\BOOKMARK [0][-]{appendix.179}{Impact of the Project}{}% 77
+\BOOKMARK [1][-]{section.180}{Introduction}{appendix.179}% 78
+\BOOKMARK [0][-]{section*.181}{Bibliography}{}% 79

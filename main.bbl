@@ -19,13 +19,6 @@ Number of twitter users worldwide from 2014 to 2020 (in millions).
 \newblock
   \url{https://www.statista.com/statistics/303681/twitter-users-worldwide/}.
 
-\bibitem{pickle}
-{\em A Practical Guide to Linux Commands, Editors, and Shell Programming,
-  Fourth Edition}.
-
-\bibitem{model}
-{\em Regression Analysis with R}.
-
 \bibitem{sefarad}
 Sefarad architecture.
 \newblock https://sefarad.readthedocs.io/en/latest/sefarad.html.
@@ -38,15 +31,20 @@ Spark dataframes and ml pipelines.
 Twitter by the numbers: Stats, demographics and fun facts.
 \newblock \url{https://www.omnicoreagency.com/twitter-statistics/}.
 
+\bibitem{dataclust}
+Charu~C Aggarwal and Chandan~K Reddy.
+\newblock {\em Data clustering: algorithms and applications}.
+\newblock CRC press, 2013.
+
 \bibitem{elastic3}
-Hüseyin Akdoğan.
+Huseyin Akdogan.
 \newblock {\em Elasticsearch Indexing}.
-\newblock Packt Publishing, 2015.
+\newblock Packt Publishing Ltd, 2015.
 
 \bibitem{elastic1}
 Abhishek Andhavarapu.
 \newblock {\em Learning Elasticsearch}.
-\newblock Packt Publishing, 2017.
+\newblock Packt Publishing Ltd, 2017.
 
 \bibitem{oaraque}
 Oscar Araque.
@@ -56,8 +54,15 @@ Oscar Araque.
 
 \bibitem{f1score}
 Rounak Banik.
-\newblock {\em Hands-On Recommendation Systems with Python}.
-\newblock Packt Publishing, 2018.
+\newblock {\em Hands-On Recommendation Systems with Python: Start building
+  powerful and personalized, recommendation engines with Python}.
+\newblock Packt Publishing Ltd, 2018.
+
+\bibitem{pos}
+Benjamin Bengfort, Rebecca Bilbro, and Tony Ojeda.
+\newblock Applied text analysis with python: Enabling language-aware data
+  products with machine learning.
+\newblock 2018.
 
 \bibitem{bird2009natural}
 Steven Bird, Ewan Klein, and Edward Loper.
@@ -65,45 +70,46 @@ Steven Bird, Ewan Klein, and Edward Loper.
   natural language toolkit}.
 \newblock " O'Reilly Media, Inc.", 2009.
 
-\bibitem{knn1}
-Giuseppe Bonaccorso.
-\newblock {\em Machine Learning Algorithms}.
-\newblock "Packt Publishing", 2017.
-
 \bibitem{countvect1}
 Giuseppe Bonaccorso.
-\newblock {\em Machine Learning Algorithms - Second Edition}.
-\newblock "Packt Publishing", 2018.
+\newblock {\em Machine Learning Algorithms}.
+\newblock Packt Publishing Ltd, 2017.
 
 \bibitem{lr1}
-Andrew Bruce;~Peter Bruce.
-\newblock {\em Practical Statistics for Data Scientists}.
-\newblock "O'Reilly Media, Inc", 2017.
+Peter Bruce and Andrew Bruce.
+\newblock {\em Practical Statistics for Data Scientists: 50 Essential
+  Concepts}.
+\newblock " O'Reilly Media, Inc.", 2017.
 
 \bibitem{mltypes}
 Giuseppe Ciaburro.
 \newblock {\em MATLAB for Machine Learning}.
-\newblock Packt Publishing, 2017.
+\newblock Packt Publishing Ltd, 2017.
+
+\bibitem{model}
+Giuseppe Ciaburro.
+\newblock {\em Regression Analysis with R}.
+\newblock 2018.
 
 \bibitem{elastic2}
 Bharvi Dixit.
 \newblock {\em Elasticsearch Essentials}.
-\newblock Packt Publishing, 2016.
-
-\bibitem{gs}
-Dipanjan Sarkar; Raghav Bali;~Tamoghna Ghosh.
-\newblock {\em Hands-On Transfer Learning with Python}.
-\newblock Packt Publishing, 2018.
-
-\bibitem{tfidf}
-Josh Patterson;~Adam Gibso.
-\newblock {\em Deep Learning}.
-\newblock " O'Reilly Media, Inc.", 2017.
+\newblock Packt Publishing Ltd, 2016.
 
 \bibitem{stopwords}
 Nitin Hardeniya.
-\newblock {\em NLTK Essentials}.
-\newblock "Packt Publishing", 2015.
+\newblock {\em NLTK essentials}.
+\newblock Packt Publishing Ltd, 2015.
+
+\bibitem{nltk}
+Nitin Hardeniya, Jacob Perkins, Deepti Chopra, Nisheeth Joshi, and Iti Mathur.
+\newblock {\em Natural Language Processing: Python and NLTK}.
+\newblock Packt Publishing Ltd, 2016.
+
+\bibitem{svm}
+Param Jeet and Prashant Vats.
+\newblock {\em Learning Quantitative Finance with R}.
+\newblock Packt Publishing Ltd, 2017.
 
 \bibitem{joshi2017automatic}
 Aditya Joshi, Pushpak Bhattacharyya, and Mark~J Carman.
@@ -113,7 +119,7 @@ Aditya Joshi, Pushpak Bhattacharyya, and Mark~J Carman.
 \bibitem{pipeline1}
 Russell Jurney.
 \newblock {\em Agile Data Science 2.0, 1st Edition}.
-\newblock "O'Reilly Media, Inc", 2017.
+\newblock " O'Reilly Media, Inc. ", 2017.
 
 \bibitem{khodak2017large}
 Mikhail Khodak, Nikunj Saunshi, and Kiran Vodrahalli.
@@ -125,31 +131,22 @@ Pascal Bugnion; Patrick R. Nicolas;~Alex Kozlov.
 \newblock {\em Scala:Applied Machine Learning}.
 \newblock 2017.
 
-\bibitem{nltk}
-Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
-\newblock {\em Natural Language Processing: Python and NLTK}.
-\newblock " Packt Publishing", 2016.
+\bibitem{tfidf1}
+Sinan Ozdemir and Divya Susarla.
+\newblock {\em Feature Engineering Made Easy: Identify unique features from
+  your dataset in order to build powerful machine learning systems}.
+\newblock Packt Publishing, 2018.
 
-\bibitem{lr}
-Nitin Hardeniya; Jacob Perkins; Deepti Chopra; Nisheeth Joshi;~Iti Mathur.
-\newblock {\em Natural Language Processing: Python and NLTK}.
-\newblock Packt Publishing, 2016.
-
-\bibitem{pos}
-Benjamin Bengfort; Rebecca Bilbro;~Tony Ojedar.
-\newblock {\em Applied Text Analysis with Python}.
-\newblock " O'Reilly Media, Inc", 2018.
+\bibitem{tfidf}
+Josh Patterson and Adam Gibson.
+\newblock {\em Deep Learning: A Practitioner's Approach}.
+\newblock " O'Reilly Media, Inc.", 2017.
 
 \bibitem{ptavcek2014sarcasm}
 Tom{\'a}{\v{s}} Pt{\'a}{\v{c}}ek, Ivan Habernal, and Jun Hong.
 \newblock Sarcasm detection on czech and english twitter.
 \newblock In {\em Proceedings of COLING 2014, the 25th International Conference
   on Computational Linguistics: Technical Papers}, pages 213--223, 2014.
-
-\bibitem{dataclust}
-Charu C. Aggarwal; Chandan~K. Reddy.
-\newblock {\em Data Clustering}.
-\newblock "Chapman and Hall/CRC", 2013.
 
 \bibitem{jfernando}
 J.~Fernando S{\'a}nchez-Rada.
@@ -164,6 +161,12 @@ J~Fernando S{\'a}nchez-Rada, Carlos~A Iglesias, Ignacio Corcuera, and Oscar
 \newblock In {\em Data Science and Advanced Analytics (DSAA), 2016 IEEE
   International Conference on}, pages 735--742. IEEE, 2016.
 
+\bibitem{gs}
+Dipanjan Sarkar, Raghav Bali, and Tamoghna Ghosh.
+\newblock {\em Hands-On Transfer Learning with Python: Implement advanced deep
+  learning and neural network models using TensorFlow and Keras}.
+\newblock Packt Publishing Ltd, 2018.
+
 \bibitem{shayaa2018sentiment}
 Shahid Shayaa, Noor~Ismawati Jaafar, Shamshul Bahri, Ainin Sulaiman,
   Phoong~Seuk Wai, Yeong~Wai Chung, Arsalan~Zahid Piprani, and Mohammed~Ali
@@ -172,24 +175,20 @@ Shahid Shayaa, Noor~Ismawati Jaafar, Shamshul Bahri, Ainin Sulaiman,
   challenges.
 \newblock {\em IEEE Access}, 6:37807--37827, 2018.
 
+\bibitem{pickle}
+Mark~G Sobell and Matthew Helmke.
+\newblock {\em A practical guide to Linux commands, editors, and shell
+  programming}.
+\newblock Prentice Hall Professional Technical Reference, 2005.
+
 \bibitem{preprocess}
 Bhargav Srinivasa-Desikan.
 \newblock {\em Natural Language Processing and Computational Linguistics}.
-\newblock "Packt Publishing", 2018.
-
-\bibitem{tfidf1}
-Sinan Ozdemir;~Divya Susarla.
-\newblock {\em eature Engineering Made Easy}.
-\newblock "Packt Publishing", 2018.
+\newblock Packt Publishing Ltd, 2018.
 
 \bibitem{classif}
 Sergios Theodoridis.
-\newblock {\em Machine Learning}.
+\newblock {\em Machine learning: a Bayesian and optimization perspective}.
 \newblock Academic Press, 2015.
-
-\bibitem{svm}
-Dr. Param Jeet;~Prashant Vats.
-\newblock {\em Learning Quantitative Finance with R}.
-\newblock Packt Publishing, 2017.
 
 \end{thebibliography}

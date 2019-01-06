@@ -12,7 +12,8 @@ In short, this is how the project was carried out. Both technologies will be ext
 \section{Natural Language Processing}
 \ac{nlp} has a crucial role in this project since texts (tweets) is what this project is trying to deal with. Hence, the information that used to train the~\ac{ml} algorithm will come in the form of text. According to~\cite{bird2009natural}, at one extreme~\ac{nlp} could be as simple as counting word frequencies to compare different writing styles. At the other extreme,~\ac{nlp} involves "understanding" complete human utterances, at least to the extent of being able to give useful responses to them.\\
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/nlp.jpg}
+	\hspace{-1.45cm}
+	\includegraphics[]{img/nlp.jpg}
 	\caption{Image is taken from~\url{http://www.gartner.com/newsroom/id/2819918}}
 	\label{fig:nlptech}
 \end{figure}
@@ -22,14 +23,14 @@ Many other examples of \ac{nlp} applications are machine translation, optical ch
 \label{sec:NLP}
 \subsection{Natural Language Toolkit}
 \subsubsection{Definition}
-\ac{nltk} is a platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength~\ac{nlp} libraries, and an active discussion forum. \footnote{https://www.nltk.org/}.\\
+\ac{nltk} is a platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength~\ac{nlp} libraries, and an active discussion forum~\footnote{https://www.nltk.org/}.\\
 The following applications explained beneath belong to the~\ac{nltk} class.
 \subsubsection{Application}
 ~\ac{nltk} has provided the following tools to this project:
 \begin{itemize}
 	
 	\item \textit{Tokenizer}: A word (Token) is the minimal unit that a machine can understand and process. So any text string cannot be further processed without going through tokenization. Tokenization is the process of splitting the raw string into meaningful tokens~\cite{nltk}. In this project, tokenization was required to get the words containing a tweet. Furthermore, some of the tokens were removed since they do not add meaningful information (e.g. yo, a). These words belong to a stoplist provided by~\ac{nltk} for all supported languages~\cite{nltk}.
-	\item \textit{Stemmer}: An stemmer is needed to remove affixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of the index while increasing retrieval accuracy~\cite{nltk}. Particularly, the SnowballStemmer was chosen because it supports stemming in 13 non-English languages, especially Spanish.
+	\item \textit{Stemmer}: A stemmer is needed to remove affixes from a word, ending up with a stem. Stemming is frequently used for indexing words. Instead of storing all forms of a word, the algorithm stores only the stems, greatly reducing the size of the index while increasing retrieval accuracy~\cite{nltk}. Particularly, the SnowballStemmer was chosen because it supports stemming in 13 non-English languages, especially Spanish.
 	\item \textit{Part-of-Speech tagging}:  A-part-of-Speech tagger (pos\_tag) indicates how a word is functioning within the context of a sentence~\cite{pos}. This part is crucial since a word can function in multiple ways and we would like to distinguish those cases. POS\_tagging has been achieved by collecting each word feature and building up a dictionary with the word features' stats. The word features offered by~\ac{nltk} are:
 	\begin{enumerate}
 		\item \textit{VERB}: Verbs (all tenses and modes)
@@ -50,13 +51,14 @@ The following applications explained beneath belong to the~\ac{nltk} class.
 The applications at the top of this section are more commonly known as the preprocessing part previously needed to any \ac{ml} application. Since there are plenty of tasks, they could be easily coordinated by using pipelines.\\ 
 More information on how were these technologies implemented in the project can be found in~\cref{sec:preprocessing}.
 
-\section{~\acl{ml} \cite{tfidf}}
-When it comes to defining models capable of learning from a text-based source, the two dominant technologies are~\acl{nlp} and~\acl{ml}. These two main technologies are concerned about how does the machine process human text. \\
+\section{Machine Learning}
+When it comes to defining models capable of learning from a text-based source, the two dominant technologies are~\acl{nlp} and~\acl{ml}. These two main technologies are concerned about how does the machine process human text~\cite{tfidf}. \\
 Given data and the proper statistical techniques,~\ac{ml} automates analytical model building capable of recognizing patterns with the aim of making predictions and learning from the model. To be able to do so, a learning process is required.~\ac{ml} algorithms can be classified into three categories~\cite{dataclust}:
 \begin{itemize}
-	\item \textit{Regression}: Regression learning is predicting a continuous varying variable. Regression methods can be used to address classification and prediction models. To visualize a simple example of what regression is we can see the picture~\cref{fig:regresion}.
+	\item \textit{Regression}: Regression learning is predicting a continuous varying variable. Regression methods can be used to address classification and prediction models. To visualize a simple example of what regression is we can see the picture~\Cref{fig:regresion}.
 	\begin{figure}
-		\includegraphics[width=\linewidth]{img/regression.png}
+		\centering
+		\includegraphics[scale=1.6]{img/regression.png}
 		\caption{Linear regression plotted~\cite{tfidf}}
 		\label{fig:regresion}
 	\end{figure}
@@ -75,20 +77,22 @@ It turns out that depending on \textit{how much trained} the classifier is, it c
 \begin{itemize}
 	\item \textit{Underfitting:}
 	\begin{figure}
-		\includegraphics[width=\linewidth]{img/underfit.png}
+		\centering
+		\includegraphics[scale=0.4]{img/underfit.png}
 		\caption{Underfitting~\cite{gs}}
 		\label{fig:underfit}
 	\end{figure}
 	\Cref{fig:underfit} shows that for any point in the diagram, the function always assigns the same predicted value. Solving the problem of underfitting means making the line approximate the data better.
 	\item \textit{Overfitting:} 
 	\begin{figure}
-		\includegraphics[width=\linewidth]{img/overfit.png}
+		\centering
+		\includegraphics[scale=0.4]{img/overfit.png}
 		\caption{Overfitting~\cite{gs}}
 		\label{fig:overfit}
 	\end{figure}
 	\Cref{fig:overfit} shows that for any point in the diagram, the function performs very good. However, the function has become very inflexible and it will not perform good enough on new points. According to~\cite{tfidf}, overfitting can also be understood as a probable distribution of data. The training set of data that the line is being drawn through is just a sample of a larger unknown set, and the line which will be drawn needs to fit the larger set equally well if it is to have any predictive power. Therefore, it must be assumed that our sample is loosely representative of a larger set.
 \end{itemize}
-In contrast with~\ac{ml},~\ac{nlp} is a way to analyze and derive the meaning of human language. To do so,~\ac{nlp} provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though~\ac{nlp} has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
+Another field of Artrificial Intelligence is~\ac{nlp}, which provides tools for analyzing and deriving meaning in human language. To do so,~\ac{nlp} provides a means to process lexical properties as well as syntactic recognition of the human language. However, human language can be rarely precise and ambiguous. Even though~\ac{nlp} has a very wide range of applications, such as automatic text summarizing, relationship extracting, stemming, sentiment analysis and more, it is a difficult problem to tackle in computer science.
 
 \subsection{Sklearn}
 \subsubsection{Definition}
@@ -102,11 +106,12 @@ Sklearn has provided the following tools for this project:
 	\item \textit{Count Vectorizer}: The algorithm consists of representing a token by considering how many times it appears in a text~\cite{countvect1}. It basically counts the vocabulary and generates a dictionary which can later be fed into a pipeline, like in this project.
 	\item \textit{\acl{nb}}: A multinomial distribution useful to model feature vectors where each value represents a number of occurrences of a term (or its relative frequency)~\cite{countvect1}.
 	\item \textit{\acl{svm}}: Given a set of training examples, each marked as belonging to one or the other of two categories, a \acf{svm} training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier\footnote{\url{https://en.wikipedia.org/wiki/Support_vector_machine}}.
-	\item \textit{\acl{knn}}: Is a non-generalized~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{knn1}.The KNeighbors classifier has been fed into the pipeline as input.
+	\item \textit{\acl{knn}}: Is a non-generalized~\ac{ml} algorithm that computes distances from one point to all the training dataset points and chooses the $k$ nearest points~\cite{countvect1}.The KNeighbors classifier has been fed into the pipeline as input.
 	\item \textit{\acl{lr} classifier}: Is analogous to multiple linear regression, except the outcome is binary. Various transformations are employed to convert the problem to one in which a linear model can be fit~\cite{lr1}.
 \end{itemize}
 
 \begin{figure}
+	\centering
 	\includegraphics[width=\linewidth]{img/pipeline1.png}
 	\caption{A Pipeline.~\cite{pipeline}}
 	\label{fig:pipeline}
@@ -124,7 +129,8 @@ To do so, the architecture consists of two main modules:
 	\item Senpy plugins: Analysis algorithms.
 \end{itemize}
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/senpy_architecture.png}
+	\hspace{-2.1cm}
+	\includegraphics[scale=0.85]{img/senpy_architecture.png}
 	\caption{Senpy's Architecture~\cite{senpy}}
 	\label{fig:senpyarch}
 \end{figure}
@@ -143,8 +149,8 @@ Bitter could be used after installing it and running commands on the UNIX termin
 \end{figure}
 \section{Elasticsearch}
 Elasticsearch is a highly scalable open source search engine with a very powerful analytical engine. The data stored in Elasticsearch is \ac{json} formatted. The primary way of interacting with Elasticsearch is via \textbf{REST API}~\cite{elastic1}. The most powerful tool that Elasticsearch provides is indexing. Indexing becomes a very important task when dealing with lots of amount of data, in this case, with many tweets.
-\subsection{Architecture~\cite{elastic3}}
-Elasticsearch indices compared to database management systems may be considered to be databases. How a database is a collection of regular information, Elasticsearch indices are a collection of structured JSON document. In other words, an index is a logical partition for user data. Documents will be stored as an index in Elasticsearch.\\
+\subsection{Architecture}
+All data stored in Apache Lucene's data is stored in \textit{inverted index}. This means that the data is being transformed. The process of transforming data is called analysis, which relies in two basic pillars: \textbf{tokenizing} and \textbf{normalizing}. The normalizing step is mandatory to make the tokens readable. Inverted index processes are performed by analyzers. An analyzer is composed of a tokenizer and one or more token filters. During the indexing time, when Elasticsearch processes a field that must be indexed, it checks whether an analyzer is defined in several levels~\cite{elastic1}.\\
 When it comes to indices, Elasticsearch uses shards and replicas in order to distribute data around the cluster.\\
 Elasticsearch distributes the shards by performing a process called \textit{sharding}. The indices (or index) are called shards and Elasticsearch automatically manages the shards, like a low-level working unit.
 \begin{figure}
@@ -162,9 +168,9 @@ The most common terms used in Elasticsearch are:
 	\item \textit{Shard}: Containers which can be stored on a single node or multiple nodes. A  shard can be either primary or secondary. A primary shard is the one where all the operations that change the index are directed. A secondary shard is the one that contains duplicate data of the primary shard and helps in quickly searching the data as well as for high availability; in a case where the machine that holds the primary shard goes down, then the secondary shard becomes the primary automatically.
 	\item \textit{Replica}: Duplicate copy of the data living in a shard for high availability.
 \end{itemize}
-Finally, as mentioned before, Elasticsearch can be related to a traditional database managing system. This is depicted in~\cref{fig:elastic2}.
+Finally, as mentioned before, Elasticsearch can be related to a traditional database managing system. This is depicted in~\Cref{fig:elastic2}.
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/elastic_1.png}
+	\includegraphics[scale=0.65]{img/elastic_1.png}
 	\caption{Elasticsearch and a Database~\cite{elastic1}.}
 	\label{fig:elastic2}
 \end{figure}

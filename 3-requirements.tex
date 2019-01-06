@@ -8,7 +8,7 @@ In this chapter, a technical description of the implemented model will be given.
 Firstly, an overview of the model shall be presented, followed by the dataset details. Furthermore, the data munging preprocessing will be made clear. Later on, the model building alongside with the classification options shall be extensively explained, making emphasis on the best classification results. Finally, the parameter optimization will be briefed altogether with the best-founded parameters results.
 \begin{figure}
 	\centering
-	\includegraphics[]{img/model.png}
+	\includegraphics[scale=1.65]{img/model.png}
 	\caption{The~\acl{ml}~\cite{model} Model}
 	\label{fig:model}
 \end{figure}
@@ -18,7 +18,7 @@ In this subsection, a wide view of the system will be given. The first part of t
 \Cref{fig:model} shows the steps followed during the~\ac{ml} stage.\\
 The first two steps are needed to collect the data from the Twitter social network, combine it with more data sources, generate a final \textit{.csv} file and prepare the data frame (see ~\cref{sec:use-cases}). Once the data frame is generated, data exploration and cleaning will be performed (i.e. delete empty tweets, encode categorical variables and so on). It is then when an algorithm is built and trained. The algorithm is also known as a classifier and it will be responsible for predicting sarcasm in new tweets (see~\cref{sec:clasif}). Finally, an accuracy report of the classifier will be carried out to evaluate the quality of the classifier (see~\cref{sec:score}).\\
 The second part of the project consists of defining a framework, where the~\ac{ml} process can be added as an analysis module. This can be accomplished thanks to senpy~\cite{senpy}.\\
-The way senpy is implemented is by defining just one plugin, which will contain the complete~\ac{ml} process previously designed.  In other words, the plugin will contain the classifier. The plugin will be run every time the user types in some text (see~\cref{fig:senpyex1} ) and, finally, the results will be visualized in the web.
+The way senpy is implemented is by defining just one plugin, which will contain the complete~\ac{ml} process previously designed.  In other words, the plugin will contain the classifier. The plugin will be run every time the user types in some text (see~\Cref{fig:senpyex1} ) and, finally, the results will be visualized in the web.
 \section{Dataset}
 \label{sec:use-cases}
 This section explains the dataset choice, as well as the main label present in the dataset.\par
@@ -30,9 +30,10 @@ Even though the numerous amount of sarcastic tweets was a good start, the datase
 In the end, the result was 5638 sarcastic tweets and 5444 non-sarcastic. That can be rewritten as $49.12\%$ of non-sarcastic and $49.5\%$ of sarcastic tweets.\par
 
 
-The~\cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The '1' refers to sarcastic, while '0' is non-sarcastic.
+The~\Cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The '1' refers to sarcastic, while '0' is non-sarcastic.
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/dataset.png}
+	\centering
+	\includegraphics[scale=0.9]{img/dataset.png}
 	\caption{Dataset}
 	\label{fig:dataset}
 \end{figure}
@@ -116,13 +117,14 @@ The number of occurrences of a word in a complete document is computed with~\cre
 This section will explain extensively the classifiers used for the learning process.\\
 Classification~\cite{classif} is the task of predicting the class to which an object, known as a pattern, belongs. The pattern is assumed to belong to one and only one among a number of a priori known classes. Each pattern is uniquely represented by a set of measurements, known as features. One of the early stages in designing a classification system is to select an appropriate set of feature variables. These should “encode” as much class-discriminatory information, so that, by measuring their value for a given pattern, to be able to predict, with high enough probability, the class of the pattern. 
 \begin{figure}
-	\includegraphics[width=\linewidth]{img/classifier.png}
+	\centering
+	\includegraphics[scale=0.5]{img/classifier.png}
 	\caption{Classifier~\cite{classif}}
 	\label{fig:classifier}
 \end{figure}
 \Cref{fig:classifier} is an example of two linearly separable classes, where a straight line can separate the two classes. \\
 In this project, there will be three classifiers.
-\subsection{\acf{nb}}
+\subsection{Naive Bayes}
 The~\ac{nb} classifier is a typical and popular example of a suboptimal classifier. The basic assumption is that the components (features) in the feature vector are statistically independent; hence, the joint~\ac{pdf} can be written as a product of $l$ marginals~\cite{classif}:
 \begin{equation}
 p(x|\omega_i)=\prod_{k=1}^{l}p(x_k|\omega_i)
@@ -147,7 +149,7 @@ In this project, the results obtained for the~\ac{nb} with no parameter optimiza
 	\label{tab:nb1}
 \end{table}
 The quality of a classifier will be established using the \textit{F1-Score} field from the classification report. For more details about this precedent see~\cref{sec:score}.
-\subsection{\acf{svm}}
+\subsection{Support Vector Machine}
 Support vector machine~\cite{svm} is a supervised learning algorithm that can be used for classification and regression. It is able to classify data linearly and nonlinearly using kernel methods. Each data point in the training dataset is labelled, as it is supervised learning, and mapped to the input feature space, and the aim is to classify every point of new data to one of the classes. A data point is an N dimension number, as N is the number of features, and the problem is to separate this data using N-1 dimensional hyperplane and this is considered to be a linear classifier.\par
 The~\ac{svm} was defined setting as parameters \textit{C} = 1 and \textit{kernel} = linear. In other words, the initial~\ac{svm} model was the linear~\ac{svm} model.\\
 With such parameters, the results can be observed in~\cref{tab:sv1}. The quality of the classifier was established following the \textit{F1-Score} field from the classification report. For more details see~\cref{sec:score}. 
@@ -188,7 +190,7 @@ The results can be observed in~\cref{tab:knn1}. The quality of the classifier wa
 \end{table}
 \subsection{\acf{lr}}
 \acl{lr} is a classification method that is based on the probability of a sample belonging to a class.
-It consists of maximum-entropy classification. Mathematically, the aim is to compute the minimum of~\cref{ec:lr}~\cite{lr}.
+It consists of maximum-entropy classification. Mathematically, the aim is to compute the minimum of~\cref{ec:lr}~\cite{nltk}.
 \begin{equation}
 min_{w,c}\frac{1}{2}w^{T}w+C\sum_{i=1}^{n}log(exp(-y_i(X_i^{T}w+c))+1)
 \label{ec:lr}
@@ -243,7 +245,7 @@ F1 = 2\times \frac{Precision \times Recall}{Precision + Recall}
 Since the F1 score takes into account both the precision and the recall (see~\cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropriate quality measure.
 \subsection{Model Creation}
 \label{sec:modcons}
-The~\cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary for this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
+The~\Cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\Cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary for this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/model_construction.png}
 	\caption{Model Construction~\cite{modcons}}
@@ -252,7 +254,7 @@ The~\cref{fig:modcons} depicts the methodology followed for training and evaluat
 \section{Parameter Optimization}
 This section will cover how was the parameter optimization performed and what were the results obtained for each classifier.\\
 To understand the parameter optimization, first, we must comprehend how is the classifier built in this project.\\
-The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{lr}. That stage is accomplished by making use of the pipeline described in~\cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in~\cref{sec:feature} and one of the classifiers chosen in~\cref{sec:clasif}.\\
+The simplest definition of text classification is that it is a classification of text based on the content of that text. Now, in general, all the machine learning methods and algorithms are written for numeric features/variables. One of the most important problems with text corpus is how to represent text as numeric features~\cite{nltk}. That stage is accomplished by making use of the pipeline described in~\cref{sec:feature}. Depending on how the feature extraction pipeline was created, the parameters of the final classifier change. Therefore, the classifier is assembled by both the pipeline described in~\cref{sec:feature} and one of the classifiers chosen in~\cref{sec:clasif}.\\
 In order to find the right classifier parameters, it must be carried out a parameter search for the pipeline parameters and the classifier parameters.\\
 From~\cref{sec:feature}, the pipeline extracts three main features; ngrams, words (custom tokenizer) and topics (\ac{lda}). From these features, the only parameters that will be searched are the number of topics from~\ac{lda} and the number of ngrams.\\
 From~\cref{sec:clasif}, the parameters searched will depend on the type of classifier. On the following subsections from this section, the topics will be covered.
