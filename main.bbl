@@ -1,36 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{modcons}
-Classification models.
-\newblock
-  http://algolytics.com/tutorial-how-to-determine-the-quality-and-correctness-of-classification-models-part-1-introduction/.
-
-\bibitem{mexic}
-Hacia la detección de ironía en textos cortos.
-\newblock \url{
-  http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y}.
-
-\bibitem{luigi}
-Luigi documentation.
-\newblock https://media.readthedocs.org/pdf/luigi/latest/luigi.pdf.
-
-\bibitem{twitter1}
-Number of twitter users worldwide from 2014 to 2020 (in millions).
-\newblock
-  \url{https://www.statista.com/statistics/303681/twitter-users-worldwide/}.
-
-\bibitem{sefarad}
-Sefarad architecture.
-\newblock https://sefarad.readthedocs.io/en/latest/sefarad.html.
-
-\bibitem{pipeline}
-Spark dataframes and ml pipelines.
-\newblock https://www.slideshare.net/databricks/dataframes-and-pipelines.
-
-\bibitem{twitter2}
-Twitter by the numbers: Stats, demographics and fun facts.
-\newblock \url{https://www.omnicoreagency.com/twitter-statistics/}.
-
 \bibitem{dataclust}
 Charu~C Aggarwal and Chandan~K Reddy.
 \newblock {\em Data clustering: algorithms and applications}.
@@ -129,7 +98,7 @@ Mikhail Khodak, Nikunj Saunshi, and Kiran Vodrahalli.
 \bibitem{clasif}
 Pascal Bugnion; Patrick R. Nicolas;~Alex Kozlov.
 \newblock {\em Scala:Applied Machine Learning}.
-\newblock 2017.
+\newblock Packt Publishing, 2017.
 
 \bibitem{tfidf1}
 Sinan Ozdemir and Divya Susarla.

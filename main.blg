@@ -12,66 +12,51 @@ A level-1 auxiliary file: 7-enabling-technologies.aux
 A level-1 auxiliary file: 3-requirements.aux
 A level-1 auxiliary file: 6-conclusions.aux
 A level-1 auxiliary file: appendix.aux
+A level-1 auxiliary file: 2-appendix.aux
 The style file: plain.bst
 Database file #1: biblio/ref.bib
-Repeated entry---line 195 of file biblio/ref.bib
- : @misc{pos
- :          ,
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 235 of file biblio/ref.bib
- :  publisher={Packt Publishing}
- :                              
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "lr"
-Warning--to sort, need author or key in pipeline
-Warning--to sort, need author or key in modcons
-Warning--to sort, need author or key in twitter1
-Warning--to sort, need author or key in twitter2
-Warning--to sort, need author or key in mexic
-Warning--to sort, need author or key in sefarad
-Warning--to sort, need author or key in luigi
+Warning--I didn't find a database entry for "sefarad"
 Warning--empty journal in pos
 Warning--empty publisher in model
-Warning--empty publisher in clasif
-You've used 36 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            652 strings with 8643 characters,
-and the built_in function-call counts, 8936 in all, are:
-= -- 815
-> -- 385
+            632 strings with 7816 characters,
+and the built_in function-call counts, 7822 in all, are:
+= -- 711
+> -- 378
 < -- 2
-+ -- 160
++ -- 153
 - -- 122
-* -- 459
-:= -- 1485
-add.period$ -- 102
-call.type$ -- 36
-change.case$ -- 149
+* -- 422
+:= -- 1367
+add.period$ -- 88
+call.type$ -- 29
+change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 405
-empty$ -- 820
+cite$ -- 31
+duplicate$ -- 356
+empty$ -- 659
 format.name$ -- 122
-if$ -- 1913
+if$ -- 1634
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 29
 missing$ -- 48
-newline$ -- 176
+newline$ -- 148
 num.names$ -- 58
-pop$ -- 292
+pop$ -- 235
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 119
 quote$ -- 0
-skip$ -- 264
+skip$ -- 208
 stack$ -- 0
-substring$ -- 289
-swap$ -- 53
+substring$ -- 254
+swap$ -- 46
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
-warning$ -- 10
+type$ -- 74
+warning$ -- 2
 while$ -- 67
-width$ -- 38
-write$ -- 346
-(There were 2 error messages)
+width$ -- 31
+write$ -- 298
+(There were 3 warnings)

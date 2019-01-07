@@ -21,19 +21,19 @@ The second part of the project consists of defining a framework, where the~\ac{m
 The way senpy is implemented is by defining just one plugin, which will contain the complete~\ac{ml} process previously designed.  In other words, the plugin will contain the classifier. The plugin will be run every time the user types in some text (see~\Cref{fig:senpyex1} ) and, finally, the results will be visualized in the web.
 \section{Dataset}
 \label{sec:use-cases}
-This section explains the dataset choice, as well as the main label present in the dataset.\par
+This section explains the dataset choice, as well as the main label present in the dataset.\\
 This project is formerly designed to detect sarcasm in Spanish written texts, particularly tweets. Therefore, all the datasets used in this project are written in Spanish.\\
 The dataset body will contain two columns, the tweet body, i.e. the text, and a binary value expressing the sarcasm nature of that tweet.\\
 The final dataset will be composed of three different datasets.\\ 
-The initial database~\cite{mexic} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. At first, the dataset contained only the tweet identifier and the sarcastic label, meaning there was no text present on the dataset. In order to obtain the tweet text, it was necessary to use the bitter tool (see~\cref{sec:bitter}). While doing so, many tweet bodies were no longer available to retrieve since the Twitter platform had removed them or the owners had privatized them. As a consequence, new sarcastic tweets were provided by a colleague from the Intelligent Systems Group in the UPM.\\
+The initial database\footnote{\url{ http://ru.ffyl.unam.mx/bitstream/handle/10391/4787/VII_CoLiCo_G_Jasso_Mesa_3_2015.pdf?sequence=2&isAllowed=y}} consists of 4529 sarcastic tweets and 335 non-sarcastic tweets. At first, the dataset contained only the tweet identifier and the sarcastic label, meaning there was no text present on the dataset. In order to obtain the tweet text, it was necessary to use the bitter tool (see~\cref{sec:bitter}). While doing so, many tweet bodies were no longer available to retrieve since the Twitter platform had removed them or the owners had privatized them. As a consequence, new sarcastic tweets were provided by a colleague from the Intelligent Systems Group in the UPM.\\
 Even though the numerous amount of sarcastic tweets was a good start, the dataset was completely unbalanced. Consequently, new tweets had to be searched to obtain a properly balanced dataset. Considering the fact that the majority of the dataset is sarcastic, finding new non-sarcastic tweets was not a difficult duty.\\
 In the end, the result was 5638 sarcastic tweets and 5444 non-sarcastic. That can be rewritten as $49.12\%$ of non-sarcastic and $49.5\%$ of sarcastic tweets.\par
 
 
-The~\Cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The '1' refers to sarcastic, while '0' is non-sarcastic.
+The~\Cref{fig:dataset} displays the dataset structure. As explained before, there is one column showing the tweet text and another column showing the sarcastic value of the tweet. The ``1" refers to sarcastic, while ``0" is non-sarcastic.
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.9]{img/dataset.png}
+	\includegraphics[scale=0.8]{img/dataset.png}
 	\caption{Dataset}
 	\label{fig:dataset}
 \end{figure}
@@ -44,7 +44,7 @@ The preprocessing stage is conceived to dispose of any information that will not
 The changes in the dataset that have been made are:
 \begin{itemize}
 	\item \textit{False items}: Since almost half the dataset tweets come from Twitter, it was required to download those tweets from the social network. Some of the captured tweets were false.
-	\item \textit{Categorical values}: Originally the labels of the dataset were either 'True' or 'False'. These two values were encoded into 'True'= 1 and 'False' = 0.
+	\item \textit{Categorical values}: Originally the labels of the dataset were either ``True" or ``False". These two values were encoded into ``True"= 1 and ``False" = 0.
 	\item \textit{Randomization}: This step was used to provide a randomized dataset and have the tweets mixed up. This was important because initially almost every sarcastic tweet was at the beginning and that is not desirable.
 \end{itemize}
 At the beginning of the preprocessing stage, the dataset is split into two parts, a training part and a testing part. The purpose of this split is to train a classifier using the train sequence and evaluate the accuracy of the classifier using the test sequence. The split is taken randomly. The size of each sequence is 75\% for the train sequence and 25\% for the test sequence (8311 and 2771). More information on can be found on \cref{sec:modcons}.
@@ -57,7 +57,7 @@ The extraction will be performed inside a Pipeline, which will execute each extr
 \subsection{Lexical Features}
 Usually extracting lexical features involves getting the number of sentences and the number of words in each sentence. However, since this projects' dataset is made out of tweets and the number of characters in a tweet is limited, I have considered that each tweet contains only one sentence. As a consequence, the lexical feature extraction becomes very simple. The extraction consists of tokenizing each sentence and stemming each token (or word) to get the root. At the same time, the words belonging to the Spanish stop list are removed (see \cref{sec:preprocessing} for more details). In~\cref{sec:tfidf} is explained what happens with the extracted words in this stage. The list of operations made for the lexical feature extraction are as follows:
 \begin{enumerate}
-	\item \textit{Stopwords}:  In \ac{ml} it is a very common practice to delete words which barely provide any information to the text (e.g. 'a', 'I', 'you'). In this project, the list of stopwords was chosen for the Spanish language due to the language of the tweets. The list of words can be consulted in~\cite{stopwords}.
+	\item \textit{Stopwords}:  In \ac{ml} it is a very common practice to delete words which barely provide any information to the text (e.g. ``a", ``I", ``you"). In this project, the list of stopwords was chosen for the Spanish language due to the language of the tweets. The list of words can be consulted in~\cite{stopwords}.
 	\item \textit{Tokenization}:This process consists of splitting a string (tweet) into tokens. Usually, a token is the same as a word.
 	\item 
 	\textit{Stemming}: This process consists of reducing the tokens into its root. Basically, the words are transformed into its root. Stemming was accomplished using a Snowball stemmer. 
@@ -65,7 +65,7 @@ Usually extracting lexical features involves getting the number of sentences and
 After performing these operations, the remaining words were passed to a~\acl{tfidf} transformer (see~\cref{sec:tfidf}).
 \subsection{Syntactic Features}
 The syntactic feature extraction consists of counting the number of nouns, adjectives, verbs, adverbs, conjunctions, pronouns and numbers present in each tweet.\\
-The~\cref{tab:pos} details the syntactic features extracted in this project. The approach to do so consisted of labelling every token present in a tweet, assigning to the token the grammar tag (see~\cref{tab:pos}) and generating a dictionary with the number of verbs, number of nouns, and so on.\\
+The~\cref{tab:pos}\footnote{\url{http://www.nltk.org/book/ch05.html}} details the syntactic features extracted in this project. The approach to do so consisted of labelling every token present in a tweet, assigning to the token the grammar tag (see~\cref{tab:pos}) and generating a dictionary with the number of verbs, number of nouns, and so on.\\
 Finally, the dictionary will be processed by the \ac{tfidf} (see~\cref{sec:tfidf} for more details on this stage).
 \begin{table}[h!]
 	\centering
@@ -84,7 +84,7 @@ Finally, the dictionary will be processed by the \ac{tfidf} (see~\cref{sec:tfidf
 		[1ex] 
 		\hline
 	\end{tabular}
-	\caption{POS Used Tagset~\cite{pos}}
+	\caption[POS Tagset]{POS Used Tagset}
 	\label{tab:pos}
 \end{table}
 \subsection{Ngram Features. Pipeline}
@@ -245,10 +245,10 @@ F1 = 2\times \frac{Precision \times Recall}{Precision + Recall}
 Since the F1 score takes into account both the precision and the recall (see~\cref{ec:f1score}), it is the most suitable for determining a binary classifiers' quality. In this project, a tweet can either be sarcastic or non-sarcastic. Therefore, F1 score report is the appropriate quality measure.
 \subsection{Model Creation}
 \label{sec:modcons}
-The~\Cref{fig:modcons} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\Cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary for this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
+The~\Cref{fig:modcons}\footnote{\url{http://algolytics.com/tutorial-how-to-determine-the-quality-and-correctness-of-classification-models-part-1-introduction/}} depicts the methodology followed for training and evaluating the classifier. Firstly, the dataset is split into two sets, the training and the test. (In the~\Cref{fig:modcons}, there is another subdivision called \textit{val} but that will not be necessary for this project). Once the split is done, a model is constructed. Finally, the quality of that model is evaluated using the test set and applying the F1 score.
 \begin{figure}
 	\includegraphics[width=\linewidth]{img/model_construction.png}
-	\caption{Model Construction~\cite{modcons}}
+	\caption[Model Construction]{Model Construction}
 	\label{fig:modcons}
 \end{figure}
 \section{Parameter Optimization}
@@ -375,4 +375,4 @@ The following pictures illustrate the result of using senpy using as examples a 
 \end{figure}
 \section{Elasticsearch}
 \label{sec:elastic}
-Elasticsearch was implemented in this project as a place to store the tweets. The advantage of using Elasticsearch is its versatility to introduce new improvements to the project, such as implementing a dashboard using Sefarad~\cite{sefarad}.
+Elasticsearch was implemented in this project as a place to store the tweets. The advantage of using Elasticsearch is its versatility to introduce new improvements to the project, such as implementing a dashboard using Sefarad\footnote{\url{https://sefarad.readthedocs.io/en/latest/sefarad.html}}.
